@@ -1,0 +1,11 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary test / log artifacts
+test_*.py
+test_*.js
+*.log
+.vscode/
+.idea/

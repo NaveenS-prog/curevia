@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CUREVIA: Nearby Healthcare Service Finder</title>
+  <meta name="description" content="CUREVIA helps you find and compare nearby healthcare services by cost, availability, waiting time and accessibility. Design Thinking CA-2 prototype.">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230f766e'/%3E%3Cpath d='M16 24.5s-8.5-5.2-8.5-11A4.6 4.6 0 0 1 16 11a4.6 4.6 0 0 1 8.5 2.5c0 5.8-8.5 11-8.5 11z' fill='white'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+  <a class="skip" href="#app">Skip to content</a>
+  <div id="header"></div>
+  <main id="app" tabindex="-1"></main>
+  <footer id="footer"></footer>
+  <div id="tray" class="tray" hidden></div>
+  <div id="test-root"></div>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <noscript><p style="padding:24px;font-family:sans-serif">CUREVIA needs JavaScript enabled to run.</p></noscript>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
