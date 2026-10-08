@@ -62,6 +62,31 @@ Sourced via OpenStreetMap Nominatim API across:
 
 ---
 
+## 🔄 Live OpenStreetMap Ingestion Script (`ingest_osm.py`)
+
+CUREVIA includes an automated, turn-key OpenStreetMap ingestion script (`ingest_osm.py`) that queries OpenStreetMap's Nominatim API, dedupes records, maps medical service profiles, and instantly rebuilds `data.js`:
+
+```powershell
+# 1. Ingest full South Bengaluru & Kanakapura Road corridor (Default)
+python ingest_osm.py
+
+# 2. Ingest Harohalli & Jain Global Campus vicinity only
+python ingest_osm.py --area harohalli
+
+# 3. Ingest Kanakapura town only
+python ingest_osm.py --area kanakapura
+
+# 4. Ingest South Bengaluru core (Jayanagar / JP Nagar / Banashankari)
+python ingest_osm.py --area bangalore
+
+# 5. Ingest ANY custom city or district across India
+python ingest_osm.py --custom "Mysuru"
+```
+
+The script automatically backs up your previous `data.js` to `data.js.backup.js` and outputs a breakdown of all sanitized facilities.
+
+---
+
 ## 🧪 Built-in Usability Test Mode (Section 10 Validation Plan)
 
 To satisfy the **Evidence Integrity Note (Section 2.8)** requiring real interaction with 3–4 participants:
@@ -85,8 +110,9 @@ curevia/
 ├── styles.css                 # Custom responsive design system & UI tokens
 ├── data.js                    # 68 verified OpenStreetMap healthcare facilities & 22 service schemas
 ├── app.js                     # Client-side router, Haversine engine, Leaflet integration & test harness
-├── process_facilities.py      # Data cleaning and OSM facility structuring pipeline
-├── fetch_nominatim.py         # OpenStreetMap Nominatim ingestion script
+├── ingest_osm.py              # Single-command OpenStreetMap live ingestion script (CLI)
+├── process_facilities.py      # Modular data cleaning & service mapping logic
+├── fetch_nominatim.py         # Raw Nominatim API connector
 ├── generate_full_data_js.py   # Dataset builder script
 ├── .gitignore                 # Git ignore rules
 └── README.md                  # Project documentation & evaluation guide
