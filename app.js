@@ -95,10 +95,12 @@
   const TYPE_LABEL = {
     hospital: 'Multispeciality hospital', government: 'Government hospital', clinic: 'Clinic',
     diagnostic: 'Diagnostic centre', dental: 'Dental clinic', physio: 'Physiotherapy centre',
-    community: 'Community health centre', eye: 'Eye hospital', urgent: 'Urgent care centre'
+    community: 'Community health centre', eye: 'Eye hospital', urgent: 'Urgent care centre',
+    general: 'General hospital', private: 'Private hospital', maternity: 'Maternity hospital'
   };
+  const typeLabel = (t) => TYPE_LABEL[t] || (t ? t.charAt(0).toUpperCase() + t.slice(1) + ' hospital' : 'Healthcare facility');
   const TYPE_GROUPS = [
-    ['hosp', 'Hospitals', ['hospital', 'government', 'eye']],
+    ['hosp', 'Hospitals', ['hospital', 'government', 'eye', 'general', 'private', 'maternity']],
     ['clinic', 'Clinics', ['clinic', 'dental', 'physio', 'community', 'urgent']],
     ['diag', 'Diagnostic centres', ['diagnostic']],
     ['public', 'Government / subsidised', ['government', 'community']]
@@ -106,7 +108,11 @@
   const SOURCE = {
     facility: { label: 'Confirmed by facility', short: 'by facility' },
     community: { label: 'Reported by visitors', short: 'by visitors' },
-    listed: { label: 'From public listing', short: 'from listing' }
+    listed: { label: 'From public listing', short: 'from listing' },
+    registry: { label: 'Bangalore Health Registry (Open Data)', short: 'registry' },
+    'Bangalore Health Registry (Open Data)': { label: 'Bangalore Health Registry (Open Data)', short: 'registry' },
+    'Karnataka Health & Family Welfare Department': { label: 'Karnataka Health Dept', short: 'gov health' },
+    'NABH Accredited Tertiary Center': { label: 'NABH Accredited Center', short: 'accredited' }
   };
   const ACCESS = [
     ['wheelchair', 'Wheelchair accessible', 'access'],
@@ -227,12 +233,14 @@
   }
 
   function svcSchedule(f, sid, day) {
+    if (!f || !f.services || !f.hours) return null;
     const s = f.services[sid];
     const fh = f.hours[day];
     if (!fh || !s) return null;
     if (s.days && !s.days.includes(day)) return null;
-    if (s.time) {
-      const o = Math.max(fh[0], s.time[0]), c = Math.min(fh[1], s.time[1]);
+    const timeRange = s.time || (s.slots && s.slots.length ? [s.slots[0][0], s.slots[s.slots.length - 1][1]] : null);
+    if (timeRange) {
+      const o = Math.max(fh[0], timeRange[0]), c = Math.min(fh[1], timeRange[1]);
       return c > o ? [o, c] : null;
     }
     return fh;
@@ -282,12 +290,24 @@
 
   function freshness(f) {
     let tone = 'good', title = 'Recently updated';
+    if (!f) return { tone: 'muted', title: 'Status unknown', ago: 'Recently', source: 'Registry', short: 'verified' };
     if (f.updated > 1440) { tone = 'bad'; title = 'May be outdated'; }
     else if (f.updated > 240 || f.source !== 'facility') { tone = 'warn'; title = 'Confirm before travelling'; }
-    return { tone, title, ago: fmtAgo(f.updated), source: SOURCE[f.source].label, short: SOURCE[f.source].short };
+    const srcObj = (f.source && SOURCE[f.source]) ? SOURCE[f.source] : {
+      label: f.source || 'Public health registry',
+      short: 'registry'
+    };
+    return {
+      tone,
+      title,
+      ago: fmtAgo(f.updated != null ? f.updated : 10),
+      source: srcObj.label,
+      short: srcObj.short
+    };
   }
 
   function accessSummary(a) {
+    if (!a) return { tone: 'muted', title: 'Not confirmed', sub: 'Call to check access' };
     if (a.wheelchair === true) {
       const extras = [a.lift && 'Lift', a.toilet && 'Accessible toilet', a.parking && 'Parking'].filter(Boolean);
       return { tone: 'good', title: 'Wheelchair accessible', sub: extras.length ? extras.slice(0, 2).join(' · ') : 'Step-free entry' };
@@ -321,13 +341,14 @@
     } else {
       dist = Math.round(Math.hypot((f.x || 0) - (loc.x || 0), (f.y || 0) - (loc.y || 0)) * 1.25 * 10) / 10;
     }
+    const waitVal = s.wait != null ? s.wait : (s.waitMin != null ? s.waitMin : null);
     return {
       f, s, sid, dist,
       drive: Math.max(3, Math.round(dist / 22 * 60 + 3)),
       walk: Math.max(2, Math.round(dist / 4.5 * 60)),
       price: s.price === undefined ? null : s.price,
       priceMin: priceMin(s.price === undefined ? null : s.price),
-      wait: s.wait == null ? null : s.wait,
+      wait: waitVal,
       avail: availability(f, sid, date)
     };
   }
@@ -364,7 +385,7 @@
       (!F.maxWait || (r.wait != null && r.wait <= F.maxWait)) &&
       F.access.every((k) => { const af = ACCESS_FILTERS.find((a) => a[0] === k); return af ? af[2](r.f.access) : true; }) &&
       (!F.types.length || F.types.some((g) => { const tg = TYPE_GROUPS.find((t) => t[0] === g); return tg && tg[2].includes(r.f.type); })) &&
-      (!F.insurance || r.f.payment.some((p) => p.startsWith('Insurance'))) &&
+      (!F.insurance || (r.f.payment && r.f.payment.some((p) => /insurance|tpa|ayushman/i.test(p)))) &&
       (!F.fresh || r.f.updated <= 1440)
     );
     return { res: rank(res), total: all.length };
@@ -585,10 +606,16 @@
 
       if (bounds.length > 1) {
         map.fitBounds(bounds, { padding: [35, 35], maxZoom: 14 });
+      } else if (bounds.length === 1) {
+        map.setView(bounds[0], 13);
       }
-      setTimeout(() => { if (activeLeafletMap) activeLeafletMap.invalidateSize(); }, 200);
+      setTimeout(() => { if (activeLeafletMap) activeLeafletMap.invalidateSize(); }, 150);
+      setTimeout(() => { if (activeLeafletMap) activeLeafletMap.invalidateSize(); }, 600);
     } catch (e) {
       console.warn('Map init fallback:', e);
+      try {
+        el.innerHTML = `<div class="map-fallback" style="height:100%; display:block;">${mapSVG(list, opts)}</div>`;
+      } catch (err) {}
     }
   }
 
@@ -896,7 +923,7 @@
       <div class="rcard__head">
         <span class="pin-no pin-no--${r.avail.tone}">${i + 1}</span>
         <div class="rcard__title">
-          <div class="rcard__type">${TYPE_LABEL[f.type]}</div>
+          <div class="rcard__type">${typeLabel(f.type)}</div>
           <h3><a href="#/facility/${f.id}" class="stretched">${esc(f.name)}</a></h3>
           <div class="rcard__meta"><span>${icon('pin')}${esc(f.area)}</span><span class="sep"></span><strong>${r.dist} km</strong><span>~${r.drive} min by road</span><span class="sep"></span>${ratingText(f)}</div>
         </div>
@@ -939,7 +966,7 @@
         <a class="back" href="${sid ? '#/results?s=' + sid : '#/'}">${icon('arrowL')}${sid ? 'Back to results' : 'Home'}</a>
         <div class="fac-hero__top">
           <div class="fac-hero__id">
-            <div class="rcard__type">${TYPE_LABEL[f.type]}</div>
+            <div class="rcard__type">${typeLabel(f.type)}</div>
             <h1>${esc(f.name)}</h1>
             <div class="rcard__meta"><span>${icon('pin')}${esc(f.address)}</span><span class="sep"></span><strong>${anyR.dist} km</strong><span>~${anyR.drive} min by road</span><span class="sep"></span>${ratingText(f)}</div>
             <div class="fac-hero__badges">${freshPill(f, true)}${f.open24 ? `<span class="fresh fresh--info">${icon('clock')}Open 24 × 7</span>` : ''}</div>
@@ -1037,7 +1064,7 @@
 
   function viewCompare() {
     const svc = state.service && D.serviceMap[state.service];
-    const ids = state.compare.filter((id) => svc && D.facilityMap[id].services[state.service]);
+    const ids = state.compare.filter((id) => svc && D.facilityMap[id] && D.facilityMap[id].services && D.facilityMap[id].services[state.service]);
     if (!svc || ids.length < 2) {
       return `<section class="page-head"><div class="container">
         <a class="back" href="${svc ? '#/results?s=' + svc.id : '#/'}">${icon('arrowL')}${svc ? 'Back to results' : 'Home'}</a>
@@ -1080,8 +1107,8 @@
         best: bestBool(rows.map((r) => r.f.access[k] === true)), bestLabel: ''
       })) },
       { title: 'Practical', rows: [
-        { label: 'Payment', ic: 'card', cells: rows.map((r) => cell(esc(r.f.payment.filter((p) => !p.startsWith('Insurance')).join(', ')))) },
-        { label: 'Health insurance', ic: 'shield', cells: rows.map((r) => { const ins = r.f.payment.find((p) => p.startsWith('Insurance')); return cell(ins ? esc(ins.replace('Insurance ', '').replace(/[()]/g, '').replace(/^./, (c) => c.toUpperCase())) : 'Not accepted', '', ins ? 'good' : 'muted'); }), best: bestBool(rows.map((r) => r.f.payment.some((p) => p.startsWith('Insurance')))), bestLabel: '' },
+        { label: 'Payment', ic: 'card', cells: rows.map((r) => cell(esc(r.f.payment.filter((p) => !/insurance|tpa|ayushman/i.test(p)).join(', ')))) },
+        { label: 'Health insurance', ic: 'shield', cells: rows.map((r) => { const ins = r.f.payment.find((p) => /insurance|tpa|ayushman/i.test(p)); return cell(ins ? esc(ins) : 'Not accepted / Check', '', ins ? 'good' : 'muted'); }), best: bestBool(rows.map((r) => r.f.payment.some((p) => /insurance|tpa|ayushman/i.test(p)))), bestLabel: '' },
         { label: 'Languages', ic: 'globe', cells: rows.map((r) => cell(esc(r.f.languages.join(', ')))) },
         { label: 'Phone', ic: 'phone', cells: rows.map((r) => cell(`<a class="link" href="tel:${r.f.phone.replace(/\s/g, '')}">${esc(r.f.phone)}</a>`)) }
       ] },
@@ -1129,7 +1156,7 @@
           <thead><tr><th class="cmp__corner"><span>${esc(shortName(svc.name))}</span></th>
             ${rows.map((r) => `<th class="cmp__fac">
               <button class="icon-btn cmp__rm" data-act="toggle-compare" data-id="${r.f.id}" aria-label="Remove ${esc(r.f.name)}">${icon('x')}</button>
-              <div class="rcard__type">${TYPE_LABEL[r.f.type]}</div>
+              <div class="rcard__type">${typeLabel(r.f.type)}</div>
               <a href="#/facility/${r.f.id}" class="cmp__name">${esc(r.f.name)}</a>
               <a class="btn btn--primary btn--sm btn--block" href="#/plan/${r.f.id}">Choose${icon('arrowR')}</a>
             </th>`).join('')}

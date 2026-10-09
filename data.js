@@ -155,7 +155,12 @@
           ]
         ],
         "waitMin": 45,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 45,
+        "time": [
+          540,
+          780
+        ]
       },
       "gyn": {
         "price": 20,
@@ -180,7 +185,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "cbc": {
         "price": 62,
@@ -189,7 +199,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 112,
@@ -198,7 +209,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 100,
@@ -207,7 +219,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 100,
@@ -216,7 +229,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 80,
@@ -228,7 +242,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 250,
@@ -240,7 +259,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 0,
@@ -252,7 +276,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 20,
@@ -264,7 +293,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 0,
@@ -276,7 +310,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -369,7 +408,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -394,7 +438,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -419,7 +468,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -441,7 +495,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -464,7 +523,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -473,7 +537,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -482,7 +547,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -491,7 +557,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -500,7 +567,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -512,7 +580,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -524,7 +597,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -536,7 +614,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -548,7 +631,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -573,7 +661,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -585,7 +678,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -678,7 +776,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -703,7 +806,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -728,7 +836,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -750,7 +863,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 450,
@@ -772,7 +890,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -781,7 +904,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -790,7 +914,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -799,7 +924,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -808,7 +934,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -820,7 +947,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -832,7 +964,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 2800,
@@ -844,7 +981,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 6500,
@@ -856,7 +998,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -881,7 +1028,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -905,7 +1057,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -929,7 +1086,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -941,7 +1103,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -953,7 +1120,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -965,7 +1137,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -1058,7 +1235,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 900,
@@ -1083,7 +1265,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 900,
@@ -1108,7 +1295,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 900,
@@ -1130,7 +1322,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 900,
@@ -1153,7 +1350,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -1162,7 +1364,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -1171,7 +1374,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -1180,7 +1384,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -1189,7 +1394,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -1201,7 +1407,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -1213,7 +1424,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -1225,7 +1441,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -1237,7 +1458,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 500,
@@ -1249,7 +1475,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -1261,7 +1492,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 750,
@@ -1286,7 +1522,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -1298,7 +1539,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       },
       "eye": {
         "price": 600,
@@ -1323,7 +1569,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       }
     }
   },
@@ -1416,7 +1667,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 950,
@@ -1441,7 +1697,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 950,
@@ -1466,7 +1727,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 950,
@@ -1488,7 +1754,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 950,
@@ -1510,7 +1781,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 950,
@@ -1533,7 +1809,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -1542,7 +1823,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -1551,7 +1833,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -1560,7 +1843,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -1569,7 +1853,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -1581,7 +1866,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -1593,7 +1883,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -1605,7 +1900,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -1617,7 +1917,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 500,
@@ -1629,7 +1934,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -1641,7 +1951,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -1653,7 +1968,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -1746,7 +2066,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 1000,
@@ -1771,7 +2096,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 1000,
@@ -1796,7 +2126,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 1000,
@@ -1818,7 +2153,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -1827,7 +2167,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -1836,7 +2177,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -1845,7 +2187,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -1854,7 +2197,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -1866,7 +2210,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -1878,7 +2227,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -1890,7 +2244,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -1902,7 +2261,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dentcheck": {
         "price": 450,
@@ -1927,7 +2291,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1800,
@@ -1951,7 +2320,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 5000,
@@ -1975,7 +2349,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 500,
@@ -1987,7 +2366,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -1999,7 +2383,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 750,
@@ -2024,7 +2413,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -2036,7 +2430,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -2129,7 +2528,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 1050,
@@ -2154,7 +2558,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 1050,
@@ -2179,7 +2588,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 1050,
@@ -2201,7 +2615,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 1050,
@@ -2223,7 +2642,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 1050,
@@ -2246,7 +2670,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -2255,7 +2684,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -2264,7 +2694,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -2273,7 +2704,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -2282,7 +2714,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -2294,7 +2727,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -2306,7 +2744,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -2318,7 +2761,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -2330,7 +2778,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 500,
@@ -2342,7 +2795,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -2354,7 +2812,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -2366,7 +2829,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       },
       "eye": {
         "price": 600,
@@ -2391,7 +2859,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       }
     }
   },
@@ -2484,7 +2957,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 850,
@@ -2509,7 +2987,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 850,
@@ -2534,7 +3017,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 850,
@@ -2556,7 +3044,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 850,
@@ -2579,7 +3072,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -2588,7 +3086,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -2597,7 +3096,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -2606,7 +3106,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -2615,7 +3116,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -2627,7 +3129,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -2639,7 +3146,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -2651,7 +3163,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -2663,7 +3180,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 500,
@@ -2675,7 +3197,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -2687,7 +3214,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 750,
@@ -2712,7 +3244,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -2724,7 +3261,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -2817,7 +3359,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -2842,7 +3389,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -2867,7 +3419,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -2889,7 +3446,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 450,
@@ -2911,7 +3473,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -2920,7 +3487,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -2929,7 +3497,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -2938,7 +3507,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -2947,7 +3517,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -2959,7 +3530,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -2971,7 +3547,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -2996,7 +3577,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -3020,7 +3606,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -3044,7 +3635,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -3056,7 +3652,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -3068,7 +3669,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -3080,7 +3686,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -3173,7 +3784,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 950,
@@ -3198,7 +3814,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 950,
@@ -3223,7 +3844,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 950,
@@ -3245,7 +3871,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 950,
@@ -3268,7 +3899,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -3277,7 +3913,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -3286,7 +3923,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -3295,7 +3933,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -3304,7 +3943,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -3316,7 +3956,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -3328,7 +3973,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -3340,7 +3990,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -3352,7 +4007,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 500,
@@ -3364,7 +4024,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -3376,7 +4041,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 750,
@@ -3401,7 +4071,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -3413,7 +4088,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       },
       "eye": {
         "price": 600,
@@ -3438,7 +4118,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       }
     }
   },
@@ -3530,7 +4215,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -3555,7 +4245,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -3580,7 +4275,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -3602,7 +4302,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -3624,7 +4329,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -3647,7 +4357,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -3656,7 +4371,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -3665,7 +4381,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -3674,7 +4391,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -3683,7 +4401,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -3695,7 +4414,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -3707,7 +4431,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       }
     }
   },
@@ -3800,7 +4529,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -3825,7 +4559,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -3850,7 +4589,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -3872,7 +4616,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -3881,7 +4630,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -3890,7 +4640,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -3899,7 +4650,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -3908,7 +4660,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -3920,7 +4673,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -3932,7 +4690,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -3957,7 +4720,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -3981,7 +4749,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -4005,7 +4778,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -4017,7 +4795,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -4029,7 +4812,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -4054,7 +4842,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -4066,7 +4859,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -4159,7 +4957,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 850,
@@ -4184,7 +4987,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 850,
@@ -4209,7 +5017,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 850,
@@ -4231,7 +5044,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 850,
@@ -4253,7 +5071,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 850,
@@ -4276,7 +5099,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -4285,7 +5113,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -4294,7 +5123,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -4303,7 +5133,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -4312,7 +5143,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -4324,7 +5156,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -4336,7 +5173,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -4348,7 +5190,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -4360,7 +5207,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 500,
@@ -4372,7 +5224,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -4384,7 +5241,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -4396,7 +5258,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       },
       "eye": {
         "price": 600,
@@ -4421,7 +5288,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       }
     }
   },
@@ -4514,7 +5386,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -4539,7 +5416,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -4564,7 +5446,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -4586,7 +5473,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -4609,7 +5501,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -4618,7 +5515,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -4627,7 +5525,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -4636,7 +5535,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -4645,7 +5545,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -4657,7 +5558,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -4669,7 +5575,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -4681,7 +5592,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -4693,7 +5609,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -4718,7 +5639,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -4730,7 +5656,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -4823,7 +5754,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 950,
@@ -4848,7 +5784,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 950,
@@ -4873,7 +5814,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 950,
@@ -4895,7 +5841,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 950,
@@ -4917,7 +5868,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -4926,7 +5882,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -4935,7 +5892,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -4944,7 +5902,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -4953,7 +5912,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -4965,7 +5925,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -4977,7 +5942,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -4989,7 +5959,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -5001,7 +5976,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dentcheck": {
         "price": 450,
@@ -5026,7 +6006,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1800,
@@ -5050,7 +6035,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 5000,
@@ -5074,7 +6064,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 500,
@@ -5086,7 +6081,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -5098,7 +6098,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -5110,7 +6115,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -5203,7 +6213,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -5228,7 +6243,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -5253,7 +6273,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -5275,7 +6300,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -5298,7 +6328,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -5307,7 +6342,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -5316,7 +6352,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -5325,7 +6362,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -5334,7 +6372,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -5346,7 +6385,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -5358,7 +6402,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -5370,7 +6419,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -5382,7 +6436,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -5407,7 +6466,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -5419,7 +6483,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -5512,7 +6581,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 1050,
@@ -5537,7 +6611,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 1050,
@@ -5562,7 +6641,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 1050,
@@ -5584,7 +6668,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 1050,
@@ -5606,7 +6695,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 1050,
@@ -5629,7 +6723,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -5638,7 +6737,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -5647,7 +6747,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -5656,7 +6757,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -5665,7 +6767,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -5677,7 +6780,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -5689,7 +6797,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -5701,7 +6814,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -5713,7 +6831,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 500,
@@ -5725,7 +6848,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -5737,7 +6865,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -5749,7 +6882,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -5842,7 +6980,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 850,
@@ -5867,7 +7010,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 850,
@@ -5892,7 +7040,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 850,
@@ -5914,7 +7067,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -5923,7 +7081,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -5932,7 +7091,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -5941,7 +7101,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -5950,7 +7111,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -5962,7 +7124,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -5974,7 +7141,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -5986,7 +7158,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -5998,7 +7175,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dentcheck": {
         "price": 450,
@@ -6023,7 +7205,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1800,
@@ -6047,7 +7234,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 5000,
@@ -6071,7 +7263,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 500,
@@ -6083,7 +7280,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -6095,7 +7297,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 750,
@@ -6120,7 +7327,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -6132,7 +7344,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -6225,7 +7442,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -6250,7 +7472,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -6275,7 +7502,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -6297,7 +7529,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -6319,7 +7556,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -6342,7 +7584,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -6351,7 +7598,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -6360,7 +7608,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -6369,7 +7618,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -6378,7 +7628,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -6390,7 +7641,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -6402,7 +7658,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -6414,7 +7675,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -6426,7 +7692,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -6438,7 +7709,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -6531,7 +7807,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 950,
@@ -6556,7 +7837,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 950,
@@ -6581,7 +7867,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 950,
@@ -6603,7 +7894,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 950,
@@ -6626,7 +7922,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -6635,7 +7936,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -6644,7 +7946,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -6653,7 +7956,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -6662,7 +7966,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -6674,7 +7979,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -6686,7 +7996,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -6698,7 +8013,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -6710,7 +8030,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 500,
@@ -6722,7 +8047,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -6734,7 +8064,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 750,
@@ -6759,7 +8094,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -6771,7 +8111,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -6863,7 +8208,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 650,
@@ -6888,7 +8238,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 650,
@@ -6913,7 +8268,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 650,
@@ -6935,7 +8295,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 650,
@@ -6957,7 +8322,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -6966,7 +8336,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -6975,7 +8346,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -6984,7 +8356,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -6993,7 +8366,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -7005,7 +8379,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -7017,7 +8396,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       }
     }
   },
@@ -7110,7 +8494,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -7135,7 +8524,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -7160,7 +8554,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -7182,7 +8581,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -7205,7 +8609,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -7214,7 +8623,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -7223,7 +8633,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -7232,7 +8643,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -7241,7 +8653,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -7253,7 +8666,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -7265,7 +8683,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -7277,7 +8700,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -7289,7 +8717,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -7314,7 +8747,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -7326,7 +8764,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -7418,7 +8861,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -7443,7 +8891,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -7468,7 +8921,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -7477,7 +8935,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -7486,7 +8945,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -7495,7 +8955,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -7504,7 +8965,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "vacc": {
         "price": 100,
@@ -7516,7 +8978,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -7609,7 +9076,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -7634,7 +9106,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -7659,7 +9136,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -7681,7 +9163,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -7690,7 +9177,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -7699,7 +9187,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -7708,7 +9197,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -7717,7 +9207,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -7729,7 +9220,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -7741,7 +9237,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -7766,7 +9267,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -7790,7 +9296,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -7814,7 +9325,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -7826,7 +9342,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -7838,7 +9359,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -7863,7 +9389,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -7875,7 +9406,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -7968,7 +9504,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -7993,7 +9534,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -8018,7 +9564,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -8040,7 +9591,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -8062,7 +9618,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -8085,7 +9646,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -8094,7 +9660,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -8103,7 +9670,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -8112,7 +9680,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -8121,7 +9690,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -8133,7 +9703,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -8145,7 +9720,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -8157,7 +9737,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -8169,7 +9754,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -8181,7 +9771,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -8274,7 +9869,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 1000,
@@ -8299,7 +9899,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 1000,
@@ -8324,7 +9929,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 1000,
@@ -8346,7 +9956,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 1000,
@@ -8369,7 +9984,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -8378,7 +9998,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -8387,7 +10008,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -8396,7 +10018,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -8405,7 +10028,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -8417,7 +10041,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -8429,7 +10058,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -8441,7 +10075,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -8453,7 +10092,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 500,
@@ -8465,7 +10109,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -8477,7 +10126,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 750,
@@ -8502,7 +10156,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -8514,7 +10173,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -8607,7 +10271,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 1050,
@@ -8632,7 +10301,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 1050,
@@ -8657,7 +10331,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 1050,
@@ -8679,7 +10358,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 1050,
@@ -8701,7 +10385,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -8710,7 +10399,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -8719,7 +10409,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -8728,7 +10419,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -8737,7 +10429,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -8749,7 +10442,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -8761,7 +10459,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -8773,7 +10476,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -8785,7 +10493,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dentcheck": {
         "price": 450,
@@ -8810,7 +10523,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1800,
@@ -8834,7 +10552,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 5000,
@@ -8858,7 +10581,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 500,
@@ -8870,7 +10598,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -8882,7 +10615,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -8894,7 +10632,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -8987,7 +10730,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -9012,7 +10760,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -9037,7 +10790,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -9059,7 +10817,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -9082,7 +10845,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -9091,7 +10859,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -9100,7 +10869,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -9109,7 +10879,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -9118,7 +10889,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -9130,7 +10902,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -9142,7 +10919,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -9154,7 +10936,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -9166,7 +10953,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -9191,7 +10983,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -9203,7 +11000,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -9296,7 +11098,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 900,
@@ -9321,7 +11128,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 900,
@@ -9346,7 +11158,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 900,
@@ -9368,7 +11185,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 900,
@@ -9390,7 +11212,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 900,
@@ -9413,7 +11240,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -9422,7 +11254,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -9431,7 +11264,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -9440,7 +11274,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -9449,7 +11284,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -9461,7 +11297,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -9473,7 +11314,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -9485,7 +11331,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -9497,7 +11348,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 500,
@@ -9509,7 +11365,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -9521,7 +11382,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -9533,7 +11399,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -9626,7 +11497,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -9651,7 +11527,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -9676,7 +11557,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -9698,7 +11584,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -9707,7 +11598,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -9716,7 +11608,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -9725,7 +11618,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -9734,7 +11628,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -9746,7 +11641,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -9758,7 +11658,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -9783,7 +11688,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -9807,7 +11717,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -9831,7 +11746,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -9843,7 +11763,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -9855,7 +11780,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -9880,7 +11810,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -9892,7 +11827,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -9985,7 +11925,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -10010,7 +11955,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -10035,7 +11985,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -10057,7 +12012,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -10079,7 +12039,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -10102,7 +12067,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -10111,7 +12081,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -10120,7 +12091,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -10129,7 +12101,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -10138,7 +12111,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -10150,7 +12124,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -10162,7 +12141,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -10174,7 +12158,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -10186,7 +12175,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -10198,7 +12192,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -10291,7 +12290,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 1050,
@@ -10316,7 +12320,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 1050,
@@ -10341,7 +12350,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 1050,
@@ -10363,7 +12377,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 1050,
@@ -10386,7 +12405,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -10395,7 +12419,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -10404,7 +12429,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -10413,7 +12439,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -10422,7 +12449,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -10434,7 +12462,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -10446,7 +12479,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -10458,7 +12496,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -10470,7 +12513,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 500,
@@ -10482,7 +12530,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -10494,7 +12547,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 750,
@@ -10519,7 +12577,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -10531,7 +12594,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -10624,7 +12692,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 850,
@@ -10649,7 +12722,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 850,
@@ -10674,7 +12752,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 850,
@@ -10696,7 +12779,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 850,
@@ -10718,7 +12806,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -10727,7 +12820,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -10736,7 +12830,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -10745,7 +12840,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -10754,7 +12850,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -10766,7 +12863,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -10778,7 +12880,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -10790,7 +12897,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -10802,7 +12914,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dentcheck": {
         "price": 450,
@@ -10827,7 +12944,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1800,
@@ -10851,7 +12973,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 5000,
@@ -10875,7 +13002,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 500,
@@ -10887,7 +13019,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -10899,7 +13036,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -10911,7 +13053,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -11003,7 +13150,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 700,
@@ -11028,7 +13180,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 700,
@@ -11053,7 +13210,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 700,
@@ -11075,7 +13237,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 700,
@@ -11098,7 +13265,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -11107,7 +13279,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -11116,7 +13289,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -11125,7 +13299,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -11134,7 +13309,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -11146,7 +13322,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -11158,7 +13339,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       }
     }
   },
@@ -11251,7 +13437,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 950,
@@ -11276,7 +13467,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 950,
@@ -11301,7 +13497,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 950,
@@ -11323,7 +13524,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 950,
@@ -11345,7 +13551,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 950,
@@ -11368,7 +13579,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -11377,7 +13593,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -11386,7 +13603,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -11395,7 +13613,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -11404,7 +13623,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -11416,7 +13636,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -11428,7 +13653,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -11440,7 +13670,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -11452,7 +13687,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 500,
@@ -11464,7 +13704,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -11476,7 +13721,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -11488,7 +13738,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -11580,7 +13835,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 600,
@@ -11605,7 +13865,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 600,
@@ -11630,7 +13895,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 600,
@@ -11652,7 +13922,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -11661,7 +13936,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -11670,7 +13946,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -11679,7 +13956,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -11688,7 +13966,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -11700,7 +13979,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -11712,7 +13996,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       }
     }
   },
@@ -11804,7 +14093,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 650,
@@ -11829,7 +14123,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 650,
@@ -11854,7 +14153,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 650,
@@ -11876,7 +14180,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 650,
@@ -11898,7 +14207,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 650,
@@ -11921,7 +14235,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -11930,7 +14249,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -11939,7 +14259,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -11948,7 +14269,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -11957,7 +14279,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -11969,7 +14292,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -11981,7 +14309,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       }
     }
   },
@@ -12074,7 +14407,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -12099,7 +14437,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -12124,7 +14467,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -12146,7 +14494,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -12169,7 +14522,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -12178,7 +14536,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -12187,7 +14546,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -12196,7 +14556,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -12205,7 +14566,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -12217,7 +14579,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -12229,7 +14596,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -12241,7 +14613,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -12253,7 +14630,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -12278,7 +14660,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -12290,7 +14677,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -12383,7 +14775,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -12408,7 +14805,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -12433,7 +14835,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -12455,7 +14862,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 450,
@@ -12477,7 +14889,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -12486,7 +14903,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -12495,7 +14913,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -12504,7 +14923,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -12513,7 +14933,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -12525,7 +14946,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -12537,7 +14963,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -12562,7 +14993,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -12586,7 +15022,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -12610,7 +15051,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -12622,7 +15068,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -12634,7 +15085,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -12646,7 +15102,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -12739,7 +15200,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -12764,7 +15230,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -12789,7 +15260,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -12811,7 +15287,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -12834,7 +15315,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -12843,7 +15329,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -12852,7 +15339,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -12861,7 +15349,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -12870,7 +15359,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -12882,7 +15372,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -12894,7 +15389,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -12906,7 +15406,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -12918,7 +15423,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -12943,7 +15453,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -12955,7 +15470,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -13048,7 +15568,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -13073,7 +15598,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -13098,7 +15628,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -13120,7 +15655,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -13142,7 +15682,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -13165,7 +15710,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -13174,7 +15724,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -13183,7 +15734,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -13192,7 +15744,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -13201,7 +15754,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -13213,7 +15767,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -13225,7 +15784,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -13237,7 +15801,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -13249,7 +15818,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -13261,7 +15835,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -13353,7 +15932,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 700,
@@ -13378,7 +15962,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 700,
@@ -13403,7 +15992,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 700,
@@ -13425,7 +16019,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -13434,7 +16033,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -13443,7 +16043,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -13452,7 +16053,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -13461,7 +16063,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -13473,7 +16076,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -13485,7 +16093,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       }
     }
   },
@@ -13578,7 +16191,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -13603,7 +16221,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -13628,7 +16251,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -13650,7 +16278,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -13672,7 +16305,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -13695,7 +16333,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -13704,7 +16347,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -13713,7 +16357,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -13722,7 +16367,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -13731,7 +16377,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -13743,7 +16390,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -13755,7 +16407,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -13767,7 +16424,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -13779,7 +16441,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -13791,7 +16458,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -13884,7 +16556,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -13909,7 +16586,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -13934,7 +16616,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -13956,7 +16643,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -13979,7 +16671,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -13988,7 +16685,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -13997,7 +16695,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -14006,7 +16705,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -14015,7 +16715,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -14027,7 +16728,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -14039,7 +16745,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -14051,7 +16762,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -14063,7 +16779,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -14088,7 +16809,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -14100,7 +16826,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -14193,7 +16924,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 950,
@@ -14218,7 +16954,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 950,
@@ -14243,7 +16984,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 950,
@@ -14265,7 +17011,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 950,
@@ -14287,7 +17038,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -14296,7 +17052,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -14305,7 +17062,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -14314,7 +17072,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -14323,7 +17082,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -14335,7 +17095,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -14347,7 +17112,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -14359,7 +17129,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -14371,7 +17146,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dentcheck": {
         "price": 450,
@@ -14396,7 +17176,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1800,
@@ -14420,7 +17205,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 5000,
@@ -14444,7 +17234,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 500,
@@ -14456,7 +17251,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -14468,7 +17268,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -14480,7 +17285,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -14568,7 +17378,12 @@
           ]
         ],
         "waitMin": 45,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 45,
+        "time": [
+          540,
+          780
+        ]
       },
       "gyn": {
         "price": 20,
@@ -14593,7 +17408,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "cbc": {
         "price": 62,
@@ -14602,7 +17422,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 112,
@@ -14611,7 +17432,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 100,
@@ -14620,7 +17442,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 100,
@@ -14629,7 +17452,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 80,
@@ -14641,7 +17465,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 250,
@@ -14653,7 +17482,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 0,
@@ -14665,7 +17499,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 20,
@@ -14677,7 +17516,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 0,
@@ -14689,7 +17533,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -14782,7 +17631,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 1050,
@@ -14807,7 +17661,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 1050,
@@ -14832,7 +17691,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 1050,
@@ -14854,7 +17718,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 1050,
@@ -14876,7 +17745,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 1050,
@@ -14899,7 +17773,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -14908,7 +17787,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -14917,7 +17797,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -14926,7 +17807,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -14935,7 +17817,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -14947,7 +17830,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -14959,7 +17847,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -14971,7 +17864,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -14983,7 +17881,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 500,
@@ -14995,7 +17898,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -15007,7 +17915,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -15019,7 +17932,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -15112,7 +18030,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -15137,7 +18060,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -15162,7 +18090,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -15184,7 +18117,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -15193,7 +18131,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -15202,7 +18141,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -15211,7 +18151,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -15220,7 +18161,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -15232,7 +18174,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -15244,7 +18191,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -15269,7 +18221,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -15293,7 +18250,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -15317,7 +18279,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -15329,7 +18296,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -15341,7 +18313,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -15366,7 +18343,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -15378,7 +18360,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -15471,7 +18458,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -15496,7 +18488,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -15521,7 +18518,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -15543,7 +18545,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -15565,7 +18572,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -15588,7 +18600,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -15597,7 +18614,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -15606,7 +18624,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -15615,7 +18634,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -15624,7 +18644,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -15636,7 +18657,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -15648,7 +18674,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -15660,7 +18691,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -15672,7 +18708,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -15684,7 +18725,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -15777,7 +18823,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 950,
@@ -15802,7 +18853,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 950,
@@ -15827,7 +18883,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 950,
@@ -15849,7 +18910,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 950,
@@ -15872,7 +18938,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -15881,7 +18952,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -15890,7 +18962,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -15899,7 +18972,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -15908,7 +18982,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -15920,7 +18995,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -15932,7 +19012,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -15944,7 +19029,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -15956,7 +19046,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 500,
@@ -15968,7 +19063,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -15980,7 +19080,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 750,
@@ -16005,7 +19110,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -16017,7 +19127,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -16110,7 +19225,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -16135,7 +19255,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -16160,7 +19285,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -16182,7 +19312,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 450,
@@ -16204,7 +19339,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -16213,7 +19353,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -16222,7 +19363,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -16231,7 +19373,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -16240,7 +19383,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -16252,7 +19396,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -16264,7 +19413,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -16289,7 +19443,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -16313,7 +19472,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -16337,7 +19501,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -16349,7 +19518,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -16361,7 +19535,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -16373,7 +19552,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -16465,7 +19649,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 1050,
@@ -16490,7 +19679,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 1050,
@@ -16515,7 +19709,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -16524,7 +19723,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -16533,7 +19733,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -16542,7 +19743,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -16551,7 +19753,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "emerg": {
         "price": 500,
@@ -16563,7 +19766,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -16575,7 +19783,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -16587,7 +19800,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -16680,7 +19898,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 850,
@@ -16705,7 +19928,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 850,
@@ -16730,7 +19958,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 850,
@@ -16752,7 +19985,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 850,
@@ -16774,7 +20012,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 850,
@@ -16797,7 +20040,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -16806,7 +20054,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -16815,7 +20064,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -16824,7 +20074,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -16833,7 +20084,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -16845,7 +20097,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -16857,7 +20114,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -16869,7 +20131,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -16881,7 +20148,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 500,
@@ -16893,7 +20165,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -16905,7 +20182,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -16917,7 +20199,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -17010,7 +20297,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 900,
@@ -17035,7 +20327,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 900,
@@ -17060,7 +20357,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 900,
@@ -17082,7 +20384,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -17091,7 +20398,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -17100,7 +20408,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -17109,7 +20418,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -17118,7 +20428,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -17130,7 +20441,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -17142,7 +20458,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -17154,7 +20475,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -17166,7 +20492,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dentcheck": {
         "price": 450,
@@ -17191,7 +20522,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1800,
@@ -17215,7 +20551,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 5000,
@@ -17239,7 +20580,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 500,
@@ -17251,7 +20597,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -17263,7 +20614,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 750,
@@ -17288,7 +20644,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -17300,7 +20661,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -17393,7 +20759,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -17418,7 +20789,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -17443,7 +20819,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -17465,7 +20846,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -17487,7 +20873,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -17510,7 +20901,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -17519,7 +20915,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -17528,7 +20925,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -17537,7 +20935,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -17546,7 +20945,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -17558,7 +20958,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -17570,7 +20975,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -17582,7 +20992,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -17594,7 +21009,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -17606,7 +21026,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -17699,7 +21124,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -17724,7 +21154,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -17749,7 +21184,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -17771,7 +21211,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -17794,7 +21239,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -17803,7 +21253,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -17812,7 +21263,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -17821,7 +21273,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -17830,7 +21283,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -17842,7 +21296,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -17854,7 +21313,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -17866,7 +21330,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -17878,7 +21347,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -17903,7 +21377,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -17915,7 +21394,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -18007,7 +21491,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 650,
@@ -18032,7 +21521,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 650,
@@ -18057,7 +21551,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 650,
@@ -18079,7 +21578,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 650,
@@ -18101,7 +21605,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -18110,7 +21619,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -18119,7 +21629,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -18128,7 +21639,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -18137,7 +21649,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -18149,7 +21662,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -18161,7 +21679,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       }
     }
   },
@@ -18254,7 +21777,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -18279,7 +21807,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -18304,7 +21837,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -18326,7 +21864,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -18349,7 +21892,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -18358,7 +21906,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -18367,7 +21916,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -18376,7 +21926,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -18385,7 +21936,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -18397,7 +21949,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -18409,7 +21966,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -18421,7 +21983,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -18433,7 +22000,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -18458,7 +22030,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -18470,7 +22047,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -18563,7 +22145,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -18588,7 +22175,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -18613,7 +22205,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -18635,7 +22232,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -18657,7 +22259,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -18680,7 +22287,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -18689,7 +22301,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -18698,7 +22311,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -18707,7 +22321,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -18716,7 +22331,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -18728,7 +22344,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -18740,7 +22361,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -18752,7 +22378,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -18764,7 +22395,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -18776,7 +22412,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -18868,7 +22509,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 600,
@@ -18893,7 +22539,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 600,
@@ -18918,7 +22569,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 600,
@@ -18940,7 +22596,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -18949,7 +22610,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -18958,7 +22620,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -18967,7 +22630,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -18976,7 +22640,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -18988,7 +22653,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -19000,7 +22670,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       }
     }
   },
@@ -19093,7 +22768,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -19118,7 +22798,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -19143,7 +22828,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -19165,7 +22855,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -19187,7 +22882,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -19210,7 +22910,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -19219,7 +22924,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -19228,7 +22934,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -19237,7 +22944,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -19246,7 +22954,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -19258,7 +22967,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -19270,7 +22984,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -19282,7 +23001,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -19294,7 +23018,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -19306,7 +23035,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -19399,7 +23133,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -19424,7 +23163,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -19449,7 +23193,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -19471,7 +23220,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -19494,7 +23248,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -19503,7 +23262,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -19512,7 +23272,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -19521,7 +23282,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -19530,7 +23292,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -19542,7 +23305,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -19554,7 +23322,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -19566,7 +23339,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -19578,7 +23356,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -19603,7 +23386,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -19615,7 +23403,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -19708,7 +23501,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -19733,7 +23531,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -19758,7 +23561,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -19780,7 +23588,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 450,
@@ -19802,7 +23615,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -19811,7 +23629,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -19820,7 +23639,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -19829,7 +23649,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -19838,7 +23659,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -19850,7 +23672,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -19862,7 +23689,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -19887,7 +23719,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -19911,7 +23748,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -19935,7 +23777,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -19947,7 +23794,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -19959,7 +23811,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -19971,7 +23828,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -20064,7 +23926,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -20089,7 +23956,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -20114,7 +23986,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -20136,7 +24013,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -20159,7 +24041,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -20168,7 +24055,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -20177,7 +24065,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -20186,7 +24075,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -20195,7 +24085,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -20207,7 +24098,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -20219,7 +24115,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -20231,7 +24132,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -20243,7 +24149,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -20268,7 +24179,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -20280,7 +24196,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -20373,7 +24294,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -20398,7 +24324,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -20423,7 +24354,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -20445,7 +24381,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -20467,7 +24408,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -20490,7 +24436,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -20499,7 +24450,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -20508,7 +24460,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -20517,7 +24470,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -20526,7 +24480,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -20538,7 +24493,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -20550,7 +24510,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -20562,7 +24527,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -20574,7 +24544,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -20586,7 +24561,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -20679,7 +24659,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -20704,7 +24689,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -20729,7 +24719,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -20751,7 +24746,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -20760,7 +24760,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -20769,7 +24770,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -20778,7 +24780,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -20787,7 +24790,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -20799,7 +24803,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -20811,7 +24820,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -20836,7 +24850,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -20860,7 +24879,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -20884,7 +24908,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -20896,7 +24925,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -20908,7 +24942,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -20933,7 +24972,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -20945,7 +24989,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -21038,7 +25087,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -21063,7 +25117,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -21088,7 +25147,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -21110,7 +25174,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -21132,7 +25201,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -21155,7 +25229,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -21164,7 +25243,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -21173,7 +25253,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -21182,7 +25263,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -21191,7 +25273,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -21203,7 +25286,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -21215,7 +25303,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -21227,7 +25320,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -21239,7 +25337,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -21251,7 +25354,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -21343,7 +25451,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 600,
@@ -21368,7 +25481,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 600,
@@ -21393,7 +25511,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 600,
@@ -21415,7 +25538,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 600,
@@ -21438,7 +25566,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -21447,7 +25580,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -21456,7 +25590,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -21465,7 +25600,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -21474,7 +25610,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -21486,7 +25623,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -21498,7 +25640,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       }
     }
   },
@@ -21591,7 +25738,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 900,
@@ -21616,7 +25768,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 900,
@@ -21641,7 +25798,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 900,
@@ -21663,7 +25825,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 900,
@@ -21685,7 +25852,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -21694,7 +25866,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -21703,7 +25876,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -21712,7 +25886,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -21721,7 +25896,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -21733,7 +25909,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -21745,7 +25926,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -21757,7 +25943,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -21769,7 +25960,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dentcheck": {
         "price": 450,
@@ -21794,7 +25990,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1800,
@@ -21818,7 +26019,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 5000,
@@ -21842,7 +26048,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 500,
@@ -21854,7 +26065,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -21866,7 +26082,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -21878,7 +26099,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -21971,7 +26197,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -21996,7 +26227,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -22021,7 +26257,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -22043,7 +26284,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -22066,7 +26312,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -22075,7 +26326,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -22084,7 +26336,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -22093,7 +26346,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -22102,7 +26356,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -22114,7 +26369,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -22126,7 +26386,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -22138,7 +26403,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -22150,7 +26420,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -22175,7 +26450,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -22187,7 +26467,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -22280,7 +26565,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -22305,7 +26595,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -22330,7 +26625,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -22352,7 +26652,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -22374,7 +26679,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -22397,7 +26707,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -22406,7 +26721,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -22415,7 +26731,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -22424,7 +26741,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -22433,7 +26751,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -22445,7 +26764,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -22457,7 +26781,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -22469,7 +26798,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -22481,7 +26815,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -22493,7 +26832,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -22586,7 +26930,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -22611,7 +26960,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -22636,7 +26990,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -22658,7 +27017,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -22667,7 +27031,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -22676,7 +27041,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -22685,7 +27051,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -22694,7 +27061,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -22706,7 +27074,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -22718,7 +27091,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 2800,
@@ -22730,7 +27108,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 6500,
@@ -22742,7 +27125,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -22767,7 +27155,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -22791,7 +27184,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -22815,7 +27213,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -22827,7 +27230,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -22839,7 +27247,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -22864,7 +27277,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -22876,7 +27294,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -22969,7 +27392,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -22994,7 +27422,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -23019,7 +27452,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -23041,7 +27479,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -23063,7 +27506,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -23086,7 +27534,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -23095,7 +27548,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -23104,7 +27558,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -23113,7 +27568,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -23122,7 +27578,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -23134,7 +27591,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -23146,7 +27608,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -23158,7 +27625,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -23170,7 +27642,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -23182,7 +27659,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -23275,7 +27757,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -23300,7 +27787,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -23325,7 +27817,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -23347,7 +27844,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -23370,7 +27872,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -23379,7 +27886,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -23388,7 +27896,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -23397,7 +27906,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -23406,7 +27916,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -23418,7 +27929,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -23430,7 +27946,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -23442,7 +27963,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -23454,7 +27980,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -23479,7 +28010,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -23491,7 +28027,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -23584,7 +28125,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -23609,7 +28155,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -23634,7 +28185,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -23656,7 +28212,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 450,
@@ -23678,7 +28239,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -23687,7 +28253,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -23696,7 +28263,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -23705,7 +28273,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -23714,7 +28283,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -23726,7 +28296,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -23738,7 +28313,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -23763,7 +28343,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -23787,7 +28372,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -23811,7 +28401,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -23823,7 +28418,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -23835,7 +28435,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -23847,7 +28452,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -23940,7 +28550,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 1000,
@@ -23965,7 +28580,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 1000,
@@ -23990,7 +28610,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 1000,
@@ -24012,7 +28637,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 1000,
@@ -24035,7 +28665,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -24044,7 +28679,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -24053,7 +28689,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -24062,7 +28699,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -24071,7 +28709,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -24083,7 +28722,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -24095,7 +28739,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -24107,7 +28756,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -24119,7 +28773,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 500,
@@ -24131,7 +28790,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -24143,7 +28807,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 750,
@@ -24168,7 +28837,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -24180,7 +28854,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       },
       "eye": {
         "price": 600,
@@ -24205,7 +28884,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       }
     }
   },
@@ -24298,7 +28982,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 1050,
@@ -24323,7 +29012,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 1050,
@@ -24348,7 +29042,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 1050,
@@ -24370,7 +29069,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 1050,
@@ -24392,7 +29096,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 1050,
@@ -24415,7 +29124,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -24424,7 +29138,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -24433,7 +29148,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -24442,7 +29158,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -24451,7 +29168,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -24463,7 +29181,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -24475,7 +29198,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -24487,7 +29215,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -24499,7 +29232,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 500,
@@ -24511,7 +29249,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -24523,7 +29266,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -24535,7 +29283,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -24628,7 +29381,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -24653,7 +29411,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -24678,7 +29441,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -24700,7 +29468,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -24709,7 +29482,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -24718,7 +29492,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -24727,7 +29502,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -24736,7 +29512,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -24748,7 +29525,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -24760,7 +29542,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -24785,7 +29572,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -24809,7 +29601,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -24833,7 +29630,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -24845,7 +29647,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -24857,7 +29664,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -24882,7 +29694,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -24894,7 +29711,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -24982,7 +29804,12 @@
           ]
         ],
         "waitMin": 45,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 45,
+        "time": [
+          540,
+          780
+        ]
       },
       "gyn": {
         "price": 20,
@@ -25007,7 +29834,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "cbc": {
         "price": 62,
@@ -25016,7 +29848,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 112,
@@ -25025,7 +29858,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 100,
@@ -25034,7 +29868,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 100,
@@ -25043,7 +29878,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 80,
@@ -25055,7 +29891,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 250,
@@ -25067,7 +29908,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 0,
@@ -25079,7 +29925,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 20,
@@ -25091,7 +29942,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 0,
@@ -25103,7 +29959,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -25196,7 +30057,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -25221,7 +30087,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -25246,7 +30117,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -25268,7 +30144,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -25291,7 +30172,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -25300,7 +30186,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -25309,7 +30196,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -25318,7 +30206,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -25327,7 +30216,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -25339,7 +30229,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -25351,7 +30246,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -25363,7 +30263,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -25375,7 +30280,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -25400,7 +30310,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -25412,7 +30327,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -25505,7 +30425,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -25530,7 +30455,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -25555,7 +30485,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -25577,7 +30512,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 450,
@@ -25599,7 +30539,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -25608,7 +30553,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -25617,7 +30563,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -25626,7 +30573,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -25635,7 +30583,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -25647,7 +30596,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -25659,7 +30613,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -25684,7 +30643,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -25708,7 +30672,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -25732,7 +30701,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -25744,7 +30718,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -25756,7 +30735,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -25768,7 +30752,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -25861,7 +30850,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -25886,7 +30880,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -25911,7 +30910,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -25933,7 +30937,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -25956,7 +30965,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -25965,7 +30979,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -25974,7 +30989,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -25983,7 +30999,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -25992,7 +31009,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -26004,7 +31022,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -26016,7 +31039,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -26028,7 +31056,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -26040,7 +31073,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -26065,7 +31103,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -26077,7 +31120,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -26170,7 +31218,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -26195,7 +31248,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -26220,7 +31278,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -26242,7 +31305,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -26264,7 +31332,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -26287,7 +31360,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -26296,7 +31374,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -26305,7 +31384,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -26314,7 +31394,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -26323,7 +31404,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -26335,7 +31417,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -26347,7 +31434,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -26359,7 +31451,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -26371,7 +31468,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -26383,7 +31485,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -26476,7 +31583,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -26501,7 +31613,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -26526,7 +31643,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -26548,7 +31670,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -26557,7 +31684,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -26566,7 +31694,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -26575,7 +31704,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -26584,7 +31714,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -26596,7 +31727,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -26608,7 +31744,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -26633,7 +31774,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -26657,7 +31803,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -26681,7 +31832,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -26693,7 +31849,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -26705,7 +31866,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -26730,7 +31896,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -26742,7 +31913,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -26835,7 +32011,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -26860,7 +32041,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -26885,7 +32071,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -26907,7 +32098,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -26929,7 +32125,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -26952,7 +32153,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -26961,7 +32167,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -26970,7 +32177,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -26979,7 +32187,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -26988,7 +32197,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -27000,7 +32210,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -27012,7 +32227,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -27024,7 +32244,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -27036,7 +32261,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -27048,7 +32278,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -27141,7 +32376,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -27166,7 +32406,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -27191,7 +32436,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -27213,7 +32463,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -27236,7 +32491,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -27245,7 +32505,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -27254,7 +32515,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -27263,7 +32525,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -27272,7 +32535,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -27284,7 +32548,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -27296,7 +32565,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -27308,7 +32582,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -27320,7 +32599,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -27345,7 +32629,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -27357,7 +32646,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -27450,7 +32744,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -27475,7 +32774,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -27500,7 +32804,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -27522,7 +32831,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 450,
@@ -27544,7 +32858,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -27553,7 +32872,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -27562,7 +32882,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -27571,7 +32892,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -27580,7 +32902,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -27592,7 +32915,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -27604,7 +32932,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -27629,7 +32962,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -27653,7 +32991,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -27677,7 +33020,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -27689,7 +33037,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -27701,7 +33054,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -27713,7 +33071,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -27806,7 +33169,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -27831,7 +33199,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -27856,7 +33229,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -27878,7 +33256,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -27901,7 +33284,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -27910,7 +33298,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -27919,7 +33308,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -27928,7 +33318,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -27937,7 +33328,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -27949,7 +33341,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -27961,7 +33358,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -27973,7 +33375,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -27985,7 +33392,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -28010,7 +33422,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -28022,7 +33439,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -28114,7 +33536,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 650,
@@ -28139,7 +33566,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 650,
@@ -28164,7 +33596,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 650,
@@ -28186,7 +33623,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 650,
@@ -28208,7 +33650,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 650,
@@ -28231,7 +33678,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -28240,7 +33692,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -28249,7 +33702,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -28258,7 +33712,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -28267,7 +33722,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -28279,7 +33735,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -28291,7 +33752,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       }
     }
   },
@@ -28384,7 +33850,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -28409,7 +33880,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -28434,7 +33910,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -28456,7 +33937,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -28465,7 +33951,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -28474,7 +33961,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -28483,7 +33971,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -28492,7 +33981,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -28504,7 +33994,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -28516,7 +34011,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -28541,7 +34041,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -28565,7 +34070,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -28589,7 +34099,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -28601,7 +34116,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -28613,7 +34133,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -28638,7 +34163,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -28650,7 +34180,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -28738,7 +34273,12 @@
           ]
         ],
         "waitMin": 45,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 45,
+        "time": [
+          540,
+          780
+        ]
       },
       "gyn": {
         "price": 20,
@@ -28763,7 +34303,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "cbc": {
         "price": 62,
@@ -28772,7 +34317,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 112,
@@ -28781,7 +34327,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 100,
@@ -28790,7 +34337,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 100,
@@ -28799,7 +34347,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 80,
@@ -28811,7 +34360,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 250,
@@ -28823,7 +34377,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 0,
@@ -28835,7 +34394,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 20,
@@ -28847,7 +34411,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 0,
@@ -28859,7 +34428,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -28952,7 +34526,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -28977,7 +34556,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -29002,7 +34586,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -29024,7 +34613,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -29047,7 +34641,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -29056,7 +34655,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -29065,7 +34665,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -29074,7 +34675,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -29083,7 +34685,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -29095,7 +34698,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -29107,7 +34715,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -29119,7 +34732,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -29131,7 +34749,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -29156,7 +34779,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -29168,7 +34796,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -29261,7 +34894,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -29286,7 +34924,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -29311,7 +34954,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -29333,7 +34981,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 450,
@@ -29355,7 +35008,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -29364,7 +35022,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -29373,7 +35032,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -29382,7 +35042,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -29391,7 +35052,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -29403,7 +35065,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -29415,7 +35082,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -29440,7 +35112,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -29464,7 +35141,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -29488,7 +35170,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -29500,7 +35187,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -29512,7 +35204,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -29524,7 +35221,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -29617,7 +35319,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 900,
@@ -29642,7 +35349,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 900,
@@ -29667,7 +35379,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 900,
@@ -29689,7 +35406,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 900,
@@ -29712,7 +35434,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -29721,7 +35448,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -29730,7 +35458,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -29739,7 +35468,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -29748,7 +35478,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -29760,7 +35491,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -29772,7 +35508,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -29784,7 +35525,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -29796,7 +35542,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 500,
@@ -29808,7 +35559,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -29820,7 +35576,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 750,
@@ -29845,7 +35606,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -29857,7 +35623,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       },
       "eye": {
         "price": 600,
@@ -29882,7 +35653,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       }
     }
   },
@@ -29975,7 +35751,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -30000,7 +35781,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -30025,7 +35811,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -30047,7 +35838,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -30069,7 +35865,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -30092,7 +35893,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -30101,7 +35907,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -30110,7 +35917,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -30119,7 +35927,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -30128,7 +35937,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -30140,7 +35950,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -30152,7 +35967,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -30164,7 +35984,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -30176,7 +36001,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -30188,7 +36018,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -30281,7 +36116,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -30306,7 +36146,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -30331,7 +36176,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -30353,7 +36203,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -30362,7 +36217,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -30371,7 +36227,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -30380,7 +36237,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -30389,7 +36247,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -30401,7 +36260,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -30413,7 +36277,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -30438,7 +36307,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -30462,7 +36336,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -30486,7 +36365,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -30498,7 +36382,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -30510,7 +36399,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -30535,7 +36429,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -30547,7 +36446,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -30640,7 +36544,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -30665,7 +36574,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -30690,7 +36604,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -30712,7 +36631,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -30734,7 +36658,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -30757,7 +36686,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -30766,7 +36700,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -30775,7 +36710,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -30784,7 +36720,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -30793,7 +36730,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -30805,7 +36743,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -30817,7 +36760,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -30829,7 +36777,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -30841,7 +36794,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -30853,7 +36811,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -30945,7 +36908,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 700,
@@ -30970,7 +36938,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 700,
@@ -30995,7 +36968,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 700,
@@ -31017,7 +36995,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 700,
@@ -31040,7 +37023,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -31049,7 +37037,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -31058,7 +37047,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -31067,7 +37057,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -31076,7 +37067,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -31088,7 +37080,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -31100,7 +37097,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       }
     }
   },
@@ -31193,7 +37195,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -31218,7 +37225,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -31243,7 +37255,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -31265,7 +37282,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 450,
@@ -31287,7 +37309,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -31296,7 +37323,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -31305,7 +37333,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -31314,7 +37343,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -31323,7 +37353,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -31335,7 +37366,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -31347,7 +37383,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -31372,7 +37413,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -31396,7 +37442,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -31420,7 +37471,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -31432,7 +37488,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -31444,7 +37505,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -31456,7 +37522,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -31549,7 +37620,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -31574,7 +37650,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -31599,7 +37680,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -31621,7 +37707,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -31644,7 +37735,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -31653,7 +37749,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -31662,7 +37759,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -31671,7 +37769,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -31680,7 +37779,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -31692,7 +37792,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -31704,7 +37809,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -31716,7 +37826,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -31728,7 +37843,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -31753,7 +37873,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -31765,7 +37890,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -31858,7 +37988,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -31883,7 +38018,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -31908,7 +38048,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -31930,7 +38075,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -31952,7 +38102,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -31975,7 +38130,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -31984,7 +38144,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -31993,7 +38154,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -32002,7 +38164,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -32011,7 +38174,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -32023,7 +38187,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -32035,7 +38204,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 2800,
@@ -32047,7 +38221,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 6500,
@@ -32059,7 +38238,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 200,
@@ -32071,7 +38255,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -32083,7 +38272,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -32095,7 +38289,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -32188,7 +38387,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -32213,7 +38417,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -32238,7 +38447,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -32260,7 +38474,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -32269,7 +38488,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -32278,7 +38498,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -32287,7 +38508,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -32296,7 +38518,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -32308,7 +38531,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -32320,7 +38548,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -32345,7 +38578,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -32369,7 +38607,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -32393,7 +38636,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -32405,7 +38653,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -32417,7 +38670,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -32442,7 +38700,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -32454,7 +38717,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -32542,7 +38810,12 @@
           ]
         ],
         "waitMin": 45,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 45,
+        "time": [
+          540,
+          780
+        ]
       },
       "gyn": {
         "price": 20,
@@ -32567,7 +38840,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "cbc": {
         "price": 62,
@@ -32576,7 +38854,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 112,
@@ -32585,7 +38864,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 100,
@@ -32594,7 +38874,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 100,
@@ -32603,7 +38884,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 80,
@@ -32615,7 +38897,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 250,
@@ -32627,7 +38914,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 0,
@@ -32639,7 +38931,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 20,
@@ -32651,7 +38948,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 0,
@@ -32663,7 +38965,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -32755,7 +39062,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 600,
@@ -32780,7 +39092,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 600,
@@ -32805,7 +39122,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 600,
@@ -32827,7 +39149,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 600,
@@ -32850,7 +39177,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -32859,7 +39191,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -32868,7 +39201,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -32877,7 +39211,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -32886,7 +39221,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -32898,7 +39234,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -32910,7 +39251,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       }
     }
   },
@@ -33003,7 +39349,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -33028,7 +39379,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -33053,7 +39409,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -33075,7 +39436,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 450,
@@ -33097,7 +39463,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -33106,7 +39477,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -33115,7 +39487,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -33124,7 +39497,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -33133,7 +39507,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -33145,7 +39520,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -33157,7 +39537,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -33182,7 +39567,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -33206,7 +39596,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -33230,7 +39625,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -33242,7 +39642,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -33254,7 +39659,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -33266,7 +39676,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -33359,7 +39774,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -33384,7 +39804,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -33409,7 +39834,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -33431,7 +39861,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -33454,7 +39889,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -33463,7 +39903,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -33472,7 +39913,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -33481,7 +39923,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -33490,7 +39933,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -33502,7 +39946,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -33514,7 +39963,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -33526,7 +39980,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -33538,7 +39997,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -33563,7 +40027,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -33575,7 +40044,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -33667,7 +40141,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -33692,7 +40171,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -33717,7 +40201,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -33739,7 +40228,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -33761,7 +40255,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -33784,7 +40283,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -33793,7 +40297,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -33802,7 +40307,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -33811,7 +40317,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -33820,7 +40327,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -33832,7 +40340,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -33844,7 +40357,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       }
     }
   },
@@ -33937,7 +40455,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -33962,7 +40485,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -33987,7 +40515,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -34009,7 +40542,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -34018,7 +40556,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -34027,7 +40566,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -34036,7 +40576,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -34045,7 +40586,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -34057,7 +40599,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -34069,7 +40616,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -34094,7 +40646,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -34118,7 +40675,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -34142,7 +40704,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -34154,7 +40721,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -34166,7 +40738,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -34191,7 +40768,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -34203,7 +40785,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -34296,7 +40883,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -34321,7 +40913,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -34346,7 +40943,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -34368,7 +40970,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -34390,7 +40997,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -34413,7 +41025,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -34422,7 +41039,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -34431,7 +41049,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -34440,7 +41059,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -34449,7 +41069,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -34461,7 +41082,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -34473,7 +41099,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -34485,7 +41116,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -34497,7 +41133,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -34509,7 +41150,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -34602,7 +41248,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -34627,7 +41278,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -34652,7 +41308,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -34674,7 +41335,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -34697,7 +41363,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -34706,7 +41377,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -34715,7 +41387,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -34724,7 +41397,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -34733,7 +41407,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -34745,7 +41420,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -34757,7 +41437,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -34769,7 +41454,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -34781,7 +41471,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -34806,7 +41501,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -34818,7 +41518,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -34911,7 +41616,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -34936,7 +41646,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -34961,7 +41676,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -34983,7 +41703,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 450,
@@ -35005,7 +41730,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -35014,7 +41744,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -35023,7 +41754,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -35032,7 +41764,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -35041,7 +41774,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -35053,7 +41787,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -35065,7 +41804,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -35090,7 +41834,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -35114,7 +41863,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -35138,7 +41892,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -35150,7 +41909,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -35162,7 +41926,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -35174,7 +41943,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -35267,7 +42041,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -35292,7 +42071,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -35317,7 +42101,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -35339,7 +42128,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -35362,7 +42156,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -35371,7 +42170,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -35380,7 +42180,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -35389,7 +42190,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -35398,7 +42200,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -35410,7 +42213,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -35422,7 +42230,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -35434,7 +42247,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -35446,7 +42264,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -35471,7 +42294,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -35483,7 +42311,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -35576,7 +42409,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -35601,7 +42439,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -35626,7 +42469,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -35648,7 +42496,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -35670,7 +42523,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -35693,7 +42551,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -35702,7 +42565,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -35711,7 +42575,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -35720,7 +42585,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -35729,7 +42595,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -35741,7 +42608,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -35753,7 +42625,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -35765,7 +42642,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -35777,7 +42659,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -35789,7 +42676,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -35882,7 +42774,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -35907,7 +42804,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -35932,7 +42834,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -35954,7 +42861,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -35963,7 +42875,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -35972,7 +42885,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -35981,7 +42895,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -35990,7 +42905,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -36002,7 +42918,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -36014,7 +42935,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -36039,7 +42965,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -36063,7 +42994,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -36087,7 +43023,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -36099,7 +43040,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -36111,7 +43057,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -36136,7 +43087,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -36148,7 +43104,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -36240,7 +43201,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -36265,7 +43231,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -36290,7 +43261,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -36312,7 +43288,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -36334,7 +43315,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -36357,7 +43343,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -36366,7 +43357,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -36375,7 +43367,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -36384,7 +43377,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -36393,7 +43387,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -36405,7 +43400,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -36417,7 +43417,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       }
     }
   },
@@ -36510,7 +43515,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -36535,7 +43545,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -36560,7 +43575,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -36582,7 +43602,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -36605,7 +43630,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -36614,7 +43644,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -36623,7 +43654,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -36632,7 +43664,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -36641,7 +43674,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -36653,7 +43687,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -36665,7 +43704,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -36677,7 +43721,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -36689,7 +43738,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -36714,7 +43768,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -36726,7 +43785,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -36819,7 +43883,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -36844,7 +43913,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -36869,7 +43943,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -36891,7 +43970,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 450,
@@ -36913,7 +43997,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -36922,7 +44011,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -36931,7 +44021,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -36940,7 +44031,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -36949,7 +44041,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -36961,7 +44054,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -36973,7 +44071,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -36998,7 +44101,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -37022,7 +44130,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -37046,7 +44159,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -37058,7 +44176,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -37070,7 +44193,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -37082,7 +44210,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -37175,7 +44308,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -37200,7 +44338,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -37225,7 +44368,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -37247,7 +44395,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -37270,7 +44423,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -37279,7 +44437,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -37288,7 +44447,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -37297,7 +44457,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -37306,7 +44467,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -37318,7 +44480,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -37330,7 +44497,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -37342,7 +44514,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -37354,7 +44531,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -37379,7 +44561,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -37391,7 +44578,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -37484,7 +44676,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -37509,7 +44706,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -37534,7 +44736,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -37556,7 +44763,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -37578,7 +44790,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -37601,7 +44818,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -37610,7 +44832,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -37619,7 +44842,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -37628,7 +44852,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -37637,7 +44862,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -37649,7 +44875,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -37661,7 +44892,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -37673,7 +44909,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -37685,7 +44926,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -37697,7 +44943,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -37790,7 +45041,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -37815,7 +45071,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -37840,7 +45101,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -37862,7 +45128,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -37871,7 +45142,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -37880,7 +45152,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -37889,7 +45162,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -37898,7 +45172,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -37910,7 +45185,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -37922,7 +45202,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -37947,7 +45232,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -37971,7 +45261,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -37995,7 +45290,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -38007,7 +45307,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -38019,7 +45324,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -38044,7 +45354,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -38056,7 +45371,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -38149,7 +45469,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -38174,7 +45499,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -38199,7 +45529,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -38221,7 +45556,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -38243,7 +45583,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -38266,7 +45611,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -38275,7 +45625,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -38284,7 +45635,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -38293,7 +45645,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -38302,7 +45655,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -38314,7 +45668,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -38326,7 +45685,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -38338,7 +45702,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -38350,7 +45719,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -38362,7 +45736,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -38455,7 +45834,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -38480,7 +45864,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -38505,7 +45894,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -38527,7 +45921,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -38550,7 +45949,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -38559,7 +45963,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -38568,7 +45973,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -38577,7 +45983,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -38586,7 +45993,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -38598,7 +46006,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -38610,7 +46023,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -38622,7 +46040,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -38634,7 +46057,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -38659,7 +46087,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -38671,7 +46104,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -38764,7 +46202,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -38789,7 +46232,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -38814,7 +46262,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -38836,7 +46289,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 450,
@@ -38858,7 +46316,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -38867,7 +46330,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -38876,7 +46340,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -38885,7 +46350,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -38894,7 +46360,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -38906,7 +46373,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -38918,7 +46390,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -38943,7 +46420,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -38967,7 +46449,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -38991,7 +46478,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -39003,7 +46495,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -39015,7 +46512,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -39027,7 +46529,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -39120,7 +46627,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -39145,7 +46657,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -39170,7 +46687,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -39192,7 +46714,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -39215,7 +46742,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -39224,7 +46756,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -39233,7 +46766,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -39242,7 +46776,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -39251,7 +46786,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -39263,7 +46799,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -39275,7 +46816,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -39287,7 +46833,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -39299,7 +46850,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -39324,7 +46880,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -39336,7 +46897,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -39429,7 +46995,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -39454,7 +47025,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -39479,7 +47055,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -39501,7 +47082,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -39523,7 +47109,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -39546,7 +47137,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -39555,7 +47151,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -39564,7 +47161,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -39573,7 +47171,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -39582,7 +47181,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -39594,7 +47194,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -39606,7 +47211,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -39618,7 +47228,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -39630,7 +47245,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -39642,7 +47262,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -39735,7 +47360,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -39760,7 +47390,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -39785,7 +47420,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -39807,7 +47447,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -39816,7 +47461,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -39825,7 +47471,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -39834,7 +47481,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -39843,7 +47491,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -39855,7 +47504,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -39867,7 +47521,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -39892,7 +47551,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -39916,7 +47580,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -39940,7 +47609,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -39952,7 +47626,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -39964,7 +47643,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -39989,7 +47673,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -40001,7 +47690,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -40094,7 +47788,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -40119,7 +47818,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -40144,7 +47848,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -40166,7 +47875,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -40188,7 +47902,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -40211,7 +47930,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -40220,7 +47944,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -40229,7 +47954,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -40238,7 +47964,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -40247,7 +47974,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -40259,7 +47987,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -40271,7 +48004,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -40283,7 +48021,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -40295,7 +48038,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -40307,7 +48055,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -40400,7 +48153,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -40425,7 +48183,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -40450,7 +48213,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -40472,7 +48240,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -40495,7 +48268,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -40504,7 +48282,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -40513,7 +48292,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -40522,7 +48302,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -40531,7 +48312,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -40543,7 +48325,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -40555,7 +48342,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -40567,7 +48359,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -40579,7 +48376,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -40604,7 +48406,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -40616,7 +48423,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -40708,7 +48520,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 650,
@@ -40733,7 +48550,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 650,
@@ -40758,7 +48580,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 650,
@@ -40780,7 +48607,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 650,
@@ -40802,7 +48634,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -40811,7 +48648,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -40820,7 +48658,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -40829,7 +48668,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -40838,7 +48678,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -40850,7 +48691,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -40862,7 +48708,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       }
     }
   },
@@ -40955,7 +48806,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -40980,7 +48836,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -41005,7 +48866,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -41027,7 +48893,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -41050,7 +48921,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -41059,7 +48935,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -41068,7 +48945,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -41077,7 +48955,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -41086,7 +48965,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -41098,7 +48978,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -41110,7 +48995,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -41122,7 +49012,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -41134,7 +49029,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -41159,7 +49059,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -41171,7 +49076,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -41264,7 +49174,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -41289,7 +49204,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -41314,7 +49234,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -41336,7 +49261,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -41358,7 +49288,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -41381,7 +49316,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -41390,7 +49330,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -41399,7 +49340,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -41408,7 +49350,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -41417,7 +49360,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -41429,7 +49373,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -41441,7 +49390,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -41453,7 +49407,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -41465,7 +49424,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -41477,7 +49441,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -41570,7 +49539,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -41595,7 +49569,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -41620,7 +49599,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -41642,7 +49626,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -41651,7 +49640,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -41660,7 +49650,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -41669,7 +49660,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -41678,7 +49670,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -41690,7 +49683,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -41702,7 +49700,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -41727,7 +49730,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -41751,7 +49759,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -41775,7 +49788,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -41787,7 +49805,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -41799,7 +49822,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -41824,7 +49852,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -41836,7 +49869,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -41929,7 +49967,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -41954,7 +49997,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -41979,7 +50027,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -42001,7 +50054,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -42023,7 +50081,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -42046,7 +50109,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -42055,7 +50123,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -42064,7 +50133,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -42073,7 +50143,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -42082,7 +50153,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -42094,7 +50166,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -42106,7 +50183,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 2800,
@@ -42118,7 +50200,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 6500,
@@ -42130,7 +50217,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 200,
@@ -42142,7 +50234,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -42154,7 +50251,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -42166,7 +50268,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -42259,7 +50366,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -42284,7 +50396,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -42309,7 +50426,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -42331,7 +50453,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -42354,7 +50481,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -42363,7 +50495,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -42372,7 +50505,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -42381,7 +50515,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -42390,7 +50525,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -42402,7 +50538,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -42414,7 +50555,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -42426,7 +50572,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -42438,7 +50589,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -42463,7 +50619,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -42475,7 +50636,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -42568,7 +50734,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -42593,7 +50764,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -42618,7 +50794,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -42640,7 +50821,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 450,
@@ -42662,7 +50848,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -42671,7 +50862,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -42680,7 +50872,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -42689,7 +50882,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -42698,7 +50892,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -42710,7 +50905,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -42722,7 +50922,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -42747,7 +50952,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -42771,7 +50981,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -42795,7 +51010,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -42807,7 +51027,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -42819,7 +51044,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -42831,7 +51061,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -42924,7 +51159,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -42949,7 +51189,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -42974,7 +51219,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -42996,7 +51246,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -43019,7 +51274,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -43028,7 +51288,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -43037,7 +51298,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -43046,7 +51308,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -43055,7 +51318,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -43067,7 +51331,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -43079,7 +51348,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -43091,7 +51365,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -43103,7 +51382,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -43128,7 +51412,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -43140,7 +51429,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -43233,7 +51527,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -43258,7 +51557,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -43283,7 +51587,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -43305,7 +51614,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -43327,7 +51641,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -43350,7 +51669,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -43359,7 +51683,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -43368,7 +51693,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -43377,7 +51703,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -43386,7 +51713,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -43398,7 +51726,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -43410,7 +51743,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -43422,7 +51760,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -43434,7 +51777,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -43446,7 +51794,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -43539,7 +51892,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -43564,7 +51922,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -43589,7 +51952,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -43611,7 +51979,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -43620,7 +51993,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -43629,7 +52003,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -43638,7 +52013,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -43647,7 +52023,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -43659,7 +52036,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -43671,7 +52053,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -43696,7 +52083,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -43720,7 +52112,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -43744,7 +52141,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -43756,7 +52158,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -43768,7 +52175,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -43793,7 +52205,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -43805,7 +52222,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -43898,7 +52320,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -43923,7 +52350,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -43948,7 +52380,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -43970,7 +52407,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -43992,7 +52434,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -44015,7 +52462,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -44024,7 +52476,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -44033,7 +52486,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -44042,7 +52496,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -44051,7 +52506,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -44063,7 +52519,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -44075,7 +52536,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 2800,
@@ -44087,7 +52553,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 6500,
@@ -44099,7 +52570,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 200,
@@ -44111,7 +52587,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -44123,7 +52604,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -44135,7 +52621,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -44228,7 +52719,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -44253,7 +52749,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -44278,7 +52779,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -44300,7 +52806,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -44323,7 +52834,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -44332,7 +52848,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -44341,7 +52858,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -44350,7 +52868,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -44359,7 +52878,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -44371,7 +52891,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -44383,7 +52908,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -44395,7 +52925,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -44407,7 +52942,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -44432,7 +52972,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -44444,7 +52989,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -44536,7 +53086,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 1000,
@@ -44561,7 +53116,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 1000,
@@ -44586,7 +53146,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -44595,7 +53160,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -44604,7 +53170,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -44613,7 +53180,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -44622,7 +53190,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "emerg": {
         "price": 500,
@@ -44634,7 +53203,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -44646,7 +53220,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -44658,7 +53237,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -44751,7 +53335,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 1050,
@@ -44776,7 +53365,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 1050,
@@ -44801,7 +53395,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 1050,
@@ -44823,7 +53422,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 1050,
@@ -44846,7 +53450,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -44855,7 +53464,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -44864,7 +53474,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -44873,7 +53484,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -44882,7 +53494,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -44894,7 +53507,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -44906,7 +53524,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -44918,7 +53541,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -44930,7 +53558,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 500,
@@ -44942,7 +53575,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -44954,7 +53592,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 750,
@@ -44979,7 +53622,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -44991,7 +53639,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       },
       "eye": {
         "price": 600,
@@ -45016,7 +53669,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       }
     }
   },
@@ -45108,7 +53766,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -45133,7 +53796,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -45158,7 +53826,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -45180,7 +53853,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -45202,7 +53880,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -45225,7 +53908,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -45234,7 +53922,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -45243,7 +53932,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -45252,7 +53942,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -45261,7 +53952,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -45273,7 +53965,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -45285,7 +53982,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       }
     }
   },
@@ -45378,7 +54080,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -45403,7 +54110,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -45428,7 +54140,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -45450,7 +54167,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -45459,7 +54181,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -45468,7 +54191,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -45477,7 +54201,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -45486,7 +54211,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -45498,7 +54224,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -45510,7 +54241,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -45535,7 +54271,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -45559,7 +54300,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -45583,7 +54329,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -45595,7 +54346,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -45607,7 +54363,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -45632,7 +54393,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -45644,7 +54410,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -45737,7 +54508,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -45762,7 +54538,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -45787,7 +54568,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -45809,7 +54595,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -45831,7 +54622,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -45854,7 +54650,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -45863,7 +54664,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -45872,7 +54674,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -45881,7 +54684,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -45890,7 +54694,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -45902,7 +54707,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -45914,7 +54724,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -45926,7 +54741,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -45938,7 +54758,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -45950,7 +54775,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -46043,7 +54873,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -46068,7 +54903,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -46093,7 +54933,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -46115,7 +54960,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -46138,7 +54988,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -46147,7 +55002,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -46156,7 +55012,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -46165,7 +55022,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -46174,7 +55032,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -46186,7 +55045,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -46198,7 +55062,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -46210,7 +55079,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -46222,7 +55096,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -46247,7 +55126,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -46259,7 +55143,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -46351,7 +55240,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -46376,7 +55270,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -46401,7 +55300,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -46410,7 +55314,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -46419,7 +55324,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -46428,7 +55334,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -46437,7 +55344,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "vacc": {
         "price": 100,
@@ -46449,7 +55357,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -46537,7 +55450,12 @@
           ]
         ],
         "waitMin": 45,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 45,
+        "time": [
+          540,
+          780
+        ]
       },
       "gyn": {
         "price": 20,
@@ -46562,7 +55480,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "cbc": {
         "price": 62,
@@ -46571,7 +55494,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 112,
@@ -46580,7 +55504,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 100,
@@ -46589,7 +55514,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 100,
@@ -46598,7 +55524,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 80,
@@ -46610,7 +55537,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 250,
@@ -46622,7 +55554,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 0,
@@ -46634,7 +55571,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 20,
@@ -46646,7 +55588,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 0,
@@ -46658,7 +55605,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -46751,7 +55703,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -46776,7 +55733,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -46801,7 +55763,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -46823,7 +55790,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -46845,7 +55817,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -46868,7 +55845,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -46877,7 +55859,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -46886,7 +55869,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -46895,7 +55879,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -46904,7 +55889,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -46916,7 +55902,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -46928,7 +55919,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -46940,7 +55936,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -46952,7 +55953,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -46964,7 +55970,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -47057,7 +56068,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -47082,7 +56098,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -47107,7 +56128,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -47129,7 +56155,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -47138,7 +56169,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -47147,7 +56179,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -47156,7 +56189,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -47165,7 +56199,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -47177,7 +56212,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -47189,7 +56229,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -47214,7 +56259,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -47238,7 +56288,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -47262,7 +56317,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -47274,7 +56334,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -47286,7 +56351,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -47311,7 +56381,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -47323,7 +56398,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -47415,7 +56495,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -47440,7 +56525,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -47465,7 +56555,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -47487,7 +56582,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -47509,7 +56609,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -47532,7 +56637,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -47541,7 +56651,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -47550,7 +56661,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -47559,7 +56671,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -47568,7 +56681,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -47580,7 +56694,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -47592,7 +56711,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       }
     }
   },
@@ -47685,7 +56809,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -47710,7 +56839,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -47735,7 +56869,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -47757,7 +56896,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -47780,7 +56924,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -47789,7 +56938,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -47798,7 +56948,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -47807,7 +56958,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -47816,7 +56968,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -47828,7 +56981,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -47840,7 +56998,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -47852,7 +57015,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -47864,7 +57032,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -47889,7 +57062,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -47901,7 +57079,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -47994,7 +57177,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -48019,7 +57207,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -48044,7 +57237,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -48066,7 +57264,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 450,
@@ -48088,7 +57291,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -48097,7 +57305,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -48106,7 +57315,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -48115,7 +57325,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -48124,7 +57335,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -48136,7 +57348,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -48148,7 +57365,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -48173,7 +57395,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -48197,7 +57424,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -48221,7 +57453,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -48233,7 +57470,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -48245,7 +57487,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -48257,7 +57504,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -48349,7 +57601,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -48374,7 +57631,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -48399,7 +57661,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -48408,7 +57675,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -48417,7 +57685,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -48426,7 +57695,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -48435,7 +57705,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "vacc": {
         "price": 100,
@@ -48447,7 +57718,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -48540,7 +57816,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -48565,7 +57846,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -48590,7 +57876,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -48612,7 +57903,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -48634,7 +57930,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -48657,7 +57958,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -48666,7 +57972,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -48675,7 +57982,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -48684,7 +57992,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -48693,7 +58002,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -48705,7 +58015,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -48717,7 +58032,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -48729,7 +58049,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -48741,7 +58066,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -48753,7 +58083,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -48846,7 +58181,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -48871,7 +58211,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -48896,7 +58241,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -48918,7 +58268,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -48927,7 +58282,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -48936,7 +58292,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -48945,7 +58302,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -48954,7 +58312,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -48966,7 +58325,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -48978,7 +58342,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -49003,7 +58372,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -49027,7 +58401,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -49051,7 +58430,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -49063,7 +58447,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -49075,7 +58464,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -49100,7 +58494,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -49112,7 +58511,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -49200,7 +58604,12 @@
           ]
         ],
         "waitMin": 45,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 45,
+        "time": [
+          540,
+          780
+        ]
       },
       "paed": {
         "price": 30,
@@ -49225,7 +58634,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 20,
@@ -49250,7 +58664,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "cbc": {
         "price": 62,
@@ -49259,7 +58678,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 112,
@@ -49268,7 +58688,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 100,
@@ -49277,7 +58698,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 100,
@@ -49286,7 +58708,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "vacc": {
         "price": 0,
@@ -49298,7 +58721,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -49391,7 +58819,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 850,
@@ -49416,7 +58849,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 850,
@@ -49441,7 +58879,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 850,
@@ -49463,7 +58906,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 850,
@@ -49486,7 +58934,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -49495,7 +58948,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -49504,7 +58958,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -49513,7 +58968,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -49522,7 +58978,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -49534,7 +58991,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -49546,7 +59008,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -49558,7 +59025,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -49570,7 +59042,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 500,
@@ -49582,7 +59059,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -49594,7 +59076,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 750,
@@ -49619,7 +59106,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -49631,7 +59123,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -49724,7 +59221,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -49749,7 +59251,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -49774,7 +59281,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -49796,7 +59308,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 450,
@@ -49818,7 +59335,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -49827,7 +59349,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -49836,7 +59359,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -49845,7 +59369,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -49854,7 +59379,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -49866,7 +59392,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -49878,7 +59409,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -49903,7 +59439,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -49927,7 +59468,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -49951,7 +59497,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -49963,7 +59514,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -49975,7 +59531,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -49987,7 +59548,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -50080,7 +59646,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -50105,7 +59676,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -50130,7 +59706,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -50152,7 +59733,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -50175,7 +59761,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -50184,7 +59775,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -50193,7 +59785,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -50202,7 +59795,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -50211,7 +59805,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -50223,7 +59818,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -50235,7 +59835,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -50247,7 +59852,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -50259,7 +59869,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -50284,7 +59899,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -50296,7 +59916,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -50389,7 +60014,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -50414,7 +60044,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -50439,7 +60074,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -50461,7 +60101,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -50483,7 +60128,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -50506,7 +60156,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -50515,7 +60170,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -50524,7 +60180,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -50533,7 +60190,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -50542,7 +60200,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -50554,7 +60213,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -50566,7 +60230,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -50578,7 +60247,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -50590,7 +60264,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -50602,7 +60281,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -50694,7 +60378,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 700,
@@ -50719,7 +60408,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 700,
@@ -50744,7 +60438,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 700,
@@ -50766,7 +60465,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -50775,7 +60479,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -50784,7 +60489,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -50793,7 +60499,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -50802,7 +60509,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -50814,7 +60522,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -50826,7 +60539,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       }
     }
   },
@@ -50919,7 +60637,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -50944,7 +60667,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -50969,7 +60697,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -50991,7 +60724,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -51013,7 +60751,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -51036,7 +60779,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -51045,7 +60793,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -51054,7 +60803,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -51063,7 +60813,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -51072,7 +60823,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -51084,7 +60836,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -51096,7 +60853,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 2800,
@@ -51108,7 +60870,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 6500,
@@ -51120,7 +60887,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 200,
@@ -51132,7 +60904,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -51144,7 +60921,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -51156,7 +60938,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -51249,7 +61036,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -51274,7 +61066,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -51299,7 +61096,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -51321,7 +61123,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -51344,7 +61151,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -51353,7 +61165,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -51362,7 +61175,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -51371,7 +61185,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -51380,7 +61195,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -51392,7 +61208,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -51404,7 +61225,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -51416,7 +61242,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -51428,7 +61259,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -51453,7 +61289,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -51465,7 +61306,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -51558,7 +61404,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -51583,7 +61434,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -51608,7 +61464,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -51630,7 +61491,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 450,
@@ -51652,7 +61518,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -51661,7 +61532,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -51670,7 +61542,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -51679,7 +61552,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -51688,7 +61562,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -51700,7 +61575,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -51712,7 +61592,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 2800,
@@ -51724,7 +61609,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 6500,
@@ -51736,7 +61626,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -51761,7 +61656,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -51785,7 +61685,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -51809,7 +61714,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -51821,7 +61731,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -51833,7 +61748,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -51845,7 +61765,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -51938,7 +61863,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 1000,
@@ -51963,7 +61893,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 1000,
@@ -51988,7 +61923,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 1000,
@@ -52010,7 +61950,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 1000,
@@ -52033,7 +61978,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -52042,7 +61992,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -52051,7 +62002,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -52060,7 +62012,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -52069,7 +62022,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -52081,7 +62035,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -52093,7 +62052,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -52105,7 +62069,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -52117,7 +62086,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 500,
@@ -52129,7 +62103,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -52141,7 +62120,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 750,
@@ -52166,7 +62150,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -52178,7 +62167,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       },
       "eye": {
         "price": 600,
@@ -52203,7 +62197,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       }
     }
   },
@@ -52296,7 +62295,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -52321,7 +62325,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -52346,7 +62355,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -52368,7 +62382,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -52390,7 +62409,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -52413,7 +62437,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -52422,7 +62451,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -52431,7 +62461,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -52440,7 +62471,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -52449,7 +62481,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -52461,7 +62494,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -52473,7 +62511,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -52485,7 +62528,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -52497,7 +62545,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -52509,7 +62562,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -52597,7 +62655,12 @@
           ]
         ],
         "waitMin": 45,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 45,
+        "time": [
+          540,
+          780
+        ]
       },
       "paed": {
         "price": 30,
@@ -52622,7 +62685,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 20,
@@ -52647,7 +62715,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "cbc": {
         "price": 62,
@@ -52656,7 +62729,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 112,
@@ -52665,7 +62739,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 100,
@@ -52674,7 +62749,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 100,
@@ -52683,7 +62759,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "vacc": {
         "price": 0,
@@ -52695,7 +62772,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -52787,7 +62869,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -52812,7 +62899,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -52837,7 +62929,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -52846,7 +62943,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -52855,7 +62953,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -52864,7 +62963,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -52873,7 +62973,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "vacc": {
         "price": 100,
@@ -52885,7 +62986,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -52978,7 +63084,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -53003,7 +63114,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -53028,7 +63144,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -53050,7 +63171,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -53073,7 +63199,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -53082,7 +63213,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -53091,7 +63223,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -53100,7 +63233,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -53109,7 +63243,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -53121,7 +63256,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -53133,7 +63273,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -53145,7 +63290,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -53157,7 +63307,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -53182,7 +63337,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -53194,7 +63354,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -53287,7 +63452,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 1000,
@@ -53312,7 +63482,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 1000,
@@ -53337,7 +63512,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 1000,
@@ -53359,7 +63539,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 1000,
@@ -53381,7 +63566,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -53390,7 +63580,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -53399,7 +63590,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -53408,7 +63600,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -53417,7 +63610,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -53429,7 +63623,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -53441,7 +63640,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -53453,7 +63657,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -53465,7 +63674,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dentcheck": {
         "price": 450,
@@ -53490,7 +63704,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1800,
@@ -53514,7 +63733,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 5000,
@@ -53538,7 +63762,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 500,
@@ -53550,7 +63779,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -53562,7 +63796,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -53574,7 +63813,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -53662,7 +63906,12 @@
           ]
         ],
         "waitMin": 45,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 45,
+        "time": [
+          540,
+          780
+        ]
       },
       "gyn": {
         "price": 20,
@@ -53687,7 +63936,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "cbc": {
         "price": 62,
@@ -53696,7 +63950,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 112,
@@ -53705,7 +63960,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 100,
@@ -53714,7 +63970,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 100,
@@ -53723,7 +63980,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 80,
@@ -53735,7 +63993,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 250,
@@ -53747,7 +64010,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 0,
@@ -53759,7 +64027,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 20,
@@ -53771,7 +64044,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 0,
@@ -53783,7 +64061,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -53871,7 +64154,12 @@
           ]
         ],
         "waitMin": 45,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 45,
+        "time": [
+          540,
+          780
+        ]
       },
       "gyn": {
         "price": 20,
@@ -53896,7 +64184,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "cbc": {
         "price": 62,
@@ -53905,7 +64198,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 112,
@@ -53914,7 +64208,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 100,
@@ -53923,7 +64218,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 100,
@@ -53932,7 +64228,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 80,
@@ -53944,7 +64241,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 250,
@@ -53956,7 +64258,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 0,
@@ -53968,7 +64275,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 20,
@@ -53980,7 +64292,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 0,
@@ -53992,7 +64309,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -54085,7 +64407,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 900,
@@ -54110,7 +64437,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 900,
@@ -54135,7 +64467,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 900,
@@ -54157,7 +64494,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -54166,7 +64508,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -54175,7 +64518,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -54184,7 +64528,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -54193,7 +64538,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -54205,7 +64551,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -54217,7 +64568,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -54229,7 +64585,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -54241,7 +64602,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dentcheck": {
         "price": 450,
@@ -54266,7 +64632,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1800,
@@ -54290,7 +64661,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 5000,
@@ -54314,7 +64690,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 500,
@@ -54326,7 +64707,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -54338,7 +64724,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 750,
@@ -54363,7 +64754,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -54375,7 +64771,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -54468,7 +64869,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -54493,7 +64899,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -54518,7 +64929,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -54540,7 +64956,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -54562,7 +64983,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -54585,7 +65011,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -54594,7 +65025,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -54603,7 +65035,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -54612,7 +65045,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -54621,7 +65055,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -54633,7 +65068,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -54645,7 +65085,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 2800,
@@ -54657,7 +65102,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 6500,
@@ -54669,7 +65119,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 200,
@@ -54681,7 +65136,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -54693,7 +65153,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -54705,7 +65170,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -54798,7 +65268,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -54823,7 +65298,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -54848,7 +65328,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -54870,7 +65355,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -54893,7 +65383,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -54902,7 +65397,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -54911,7 +65407,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -54920,7 +65417,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -54929,7 +65427,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -54941,7 +65440,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -54953,7 +65457,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -54965,7 +65474,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -54977,7 +65491,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -55002,7 +65521,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -55014,7 +65538,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -55107,7 +65636,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -55132,7 +65666,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -55157,7 +65696,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -55179,7 +65723,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 450,
@@ -55201,7 +65750,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -55210,7 +65764,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -55219,7 +65774,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -55228,7 +65784,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -55237,7 +65794,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -55249,7 +65807,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -55261,7 +65824,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -55286,7 +65854,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -55310,7 +65883,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -55334,7 +65912,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -55346,7 +65929,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -55358,7 +65946,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -55370,7 +65963,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -55463,7 +66061,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 850,
@@ -55488,7 +66091,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 850,
@@ -55513,7 +66121,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 850,
@@ -55535,7 +66148,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 850,
@@ -55558,7 +66176,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -55567,7 +66190,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -55576,7 +66200,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -55585,7 +66210,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -55594,7 +66220,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -55606,7 +66233,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -55618,7 +66250,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -55630,7 +66267,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -55642,7 +66284,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "emerg": {
         "price": 500,
@@ -55654,7 +66301,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -55666,7 +66318,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 750,
@@ -55691,7 +66348,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -55703,7 +66365,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       },
       "eye": {
         "price": 600,
@@ -55728,7 +66395,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       }
     }
   },
@@ -55820,7 +66492,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -55845,7 +66522,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -55870,7 +66552,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -55879,7 +66566,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -55888,7 +66576,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -55897,7 +66586,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -55906,7 +66596,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "vacc": {
         "price": 100,
@@ -55918,7 +66609,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -56010,7 +66706,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 600,
@@ -56035,7 +66736,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 600,
@@ -56060,7 +66766,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 600,
@@ -56082,7 +66793,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -56091,7 +66807,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -56100,7 +66817,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -56109,7 +66827,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -56118,7 +66837,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -56130,7 +66850,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -56142,7 +66867,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       }
     }
   },
@@ -56235,7 +66965,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -56260,7 +66995,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -56285,7 +67025,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -56307,7 +67052,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -56329,7 +67079,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -56352,7 +67107,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -56361,7 +67121,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -56370,7 +67131,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -56379,7 +67141,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -56388,7 +67151,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -56400,7 +67164,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -56412,7 +67181,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -56424,7 +67198,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -56436,7 +67215,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -56448,7 +67232,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -56541,7 +67330,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -56566,7 +67360,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -56591,7 +67390,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -56613,7 +67417,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -56636,7 +67445,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -56645,7 +67459,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -56654,7 +67469,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -56663,7 +67479,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -56672,7 +67489,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -56684,7 +67502,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -56696,7 +67519,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -56708,7 +67536,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -56720,7 +67553,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -56745,7 +67583,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -56757,7 +67600,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -56850,7 +67698,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -56875,7 +67728,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -56900,7 +67758,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -56922,7 +67785,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 450,
@@ -56944,7 +67812,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -56953,7 +67826,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -56962,7 +67836,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -56971,7 +67846,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -56980,7 +67856,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -56992,7 +67869,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -57004,7 +67886,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -57029,7 +67916,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -57053,7 +67945,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -57077,7 +67974,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -57089,7 +67991,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -57101,7 +68008,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -57113,7 +68025,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -57206,7 +68123,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -57231,7 +68153,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -57256,7 +68183,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -57278,7 +68210,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -57301,7 +68238,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -57310,7 +68252,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -57319,7 +68262,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -57328,7 +68272,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -57337,7 +68282,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -57349,7 +68295,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -57361,7 +68312,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -57373,7 +68329,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -57385,7 +68346,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -57410,7 +68376,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -57422,7 +68393,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       },
       "eye": {
         "price": 350,
@@ -57447,7 +68423,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       }
     }
   },
@@ -57539,7 +68520,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 650,
@@ -57564,7 +68550,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 650,
@@ -57589,7 +68580,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 650,
@@ -57611,7 +68607,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 650,
@@ -57633,7 +68634,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 650,
@@ -57656,7 +68662,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -57665,7 +68676,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -57674,7 +68686,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -57683,7 +68696,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -57692,7 +68706,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -57704,7 +68719,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -57716,7 +68736,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       }
     }
   },
@@ -57809,7 +68834,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -57834,7 +68864,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -57859,7 +68894,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -57881,7 +68921,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -57890,7 +68935,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -57899,7 +68945,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -57908,7 +68955,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -57917,7 +68965,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -57929,7 +68978,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -57941,7 +68995,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -57966,7 +69025,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -57990,7 +69054,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -58014,7 +69083,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -58026,7 +69100,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -58038,7 +69117,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -58063,7 +69147,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -58075,7 +69164,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -58168,7 +69262,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -58193,7 +69292,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -58218,7 +69322,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -58240,7 +69349,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -58262,7 +69376,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -58285,7 +69404,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -58294,7 +69418,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -58303,7 +69428,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -58312,7 +69438,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -58321,7 +69448,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -58333,7 +69461,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -58345,7 +69478,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -58357,7 +69495,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -58369,7 +69512,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -58381,7 +69529,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -58474,7 +69627,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -58499,7 +69657,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -58524,7 +69687,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -58546,7 +69714,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -58569,7 +69742,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -58578,7 +69756,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -58587,7 +69766,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -58596,7 +69776,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -58605,7 +69786,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -58617,7 +69799,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -58629,7 +69816,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -58641,7 +69833,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -58653,7 +69850,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -58678,7 +69880,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -58690,7 +69897,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -58778,7 +69990,12 @@
           ]
         ],
         "waitMin": 45,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 45,
+        "time": [
+          540,
+          780
+        ]
       },
       "gyn": {
         "price": 20,
@@ -58803,7 +70020,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "cbc": {
         "price": 62,
@@ -58812,7 +70034,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 112,
@@ -58821,7 +70044,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 100,
@@ -58830,7 +70054,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 100,
@@ -58839,7 +70064,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 80,
@@ -58851,7 +70077,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 250,
@@ -58863,7 +70094,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 0,
@@ -58875,7 +70111,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 20,
@@ -58887,7 +70128,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 0,
@@ -58899,7 +70145,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -58992,7 +70243,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -59017,7 +70273,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -59042,7 +70303,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -59064,7 +70330,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -59087,7 +70358,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -59096,7 +70372,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -59105,7 +70382,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -59114,7 +70392,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -59123,7 +70402,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -59135,7 +70415,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -59147,7 +70432,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -59159,7 +70449,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -59171,7 +70466,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -59196,7 +70496,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -59208,7 +70513,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -59301,7 +70611,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -59326,7 +70641,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -59351,7 +70671,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -59373,7 +70698,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -59395,7 +70725,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -59418,7 +70753,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -59427,7 +70767,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -59436,7 +70777,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -59445,7 +70787,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -59454,7 +70797,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -59466,7 +70810,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -59478,7 +70827,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -59490,7 +70844,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -59502,7 +70861,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -59514,7 +70878,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -59607,7 +70976,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -59632,7 +71006,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -59657,7 +71036,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -59679,7 +71063,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -59688,7 +71077,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -59697,7 +71087,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -59706,7 +71097,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -59715,7 +71107,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -59727,7 +71120,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -59739,7 +71137,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -59764,7 +71167,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -59788,7 +71196,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -59812,7 +71225,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -59824,7 +71242,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -59836,7 +71259,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -59861,7 +71289,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -59873,7 +71306,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -59966,7 +71404,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -59991,7 +71434,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -60016,7 +71464,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -60038,7 +71491,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -60060,7 +71518,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -60083,7 +71546,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -60092,7 +71560,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -60101,7 +71570,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -60110,7 +71580,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -60119,7 +71590,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -60131,7 +71603,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -60143,7 +71620,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -60155,7 +71637,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -60167,7 +71654,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -60179,7 +71671,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -60271,7 +71768,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "cbc": {
         "price": 250,
@@ -60280,7 +71782,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -60289,7 +71792,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -60298,7 +71802,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -60307,7 +71812,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       }
     }
   },
@@ -60400,7 +71906,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 950,
@@ -60425,7 +71936,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 950,
@@ -60450,7 +71966,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 950,
@@ -60472,7 +71993,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 950,
@@ -60494,7 +72020,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 338,
@@ -60503,7 +72034,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 608,
@@ -60512,7 +72044,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 540,
@@ -60521,7 +72054,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 540,
@@ -60530,7 +72064,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 473,
@@ -60542,7 +72077,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 1282,
@@ -60554,7 +72094,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "ct": {
         "price": 3780,
@@ -60566,7 +72111,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 30,
+        "time": [
+          0,
+          1440
+        ]
       },
       "mri": {
         "price": 8775,
@@ -60578,7 +72128,12 @@
           ]
         ],
         "waitMin": 35,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 35,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dentcheck": {
         "price": 450,
@@ -60603,7 +72158,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1800,
@@ -60627,7 +72187,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 5000,
@@ -60651,7 +72216,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 500,
@@ -60663,7 +72233,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -60675,7 +72250,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -60687,7 +72267,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -60780,7 +72365,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -60805,7 +72395,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -60830,7 +72425,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -60852,7 +72452,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -60875,7 +72480,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -60884,7 +72494,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -60893,7 +72504,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -60902,7 +72514,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -60911,7 +72524,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -60923,7 +72537,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -60935,7 +72554,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -60947,7 +72571,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -60959,7 +72588,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -60984,7 +72618,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -60996,7 +72635,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -61089,7 +72733,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -61114,7 +72763,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -61139,7 +72793,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -61161,7 +72820,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -61183,7 +72847,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -61206,7 +72875,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -61215,7 +72889,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -61224,7 +72899,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -61233,7 +72909,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -61242,7 +72919,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -61254,7 +72932,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -61266,7 +72949,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -61278,7 +72966,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -61290,7 +72983,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -61302,7 +73000,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -61395,7 +73098,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -61420,7 +73128,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -61445,7 +73158,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -61467,7 +73185,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -61476,7 +73199,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -61485,7 +73209,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -61494,7 +73219,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -61503,7 +73229,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -61515,7 +73242,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -61527,7 +73259,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -61552,7 +73289,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -61576,7 +73318,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -61600,7 +73347,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -61612,7 +73364,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -61624,7 +73381,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -61649,7 +73411,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -61661,7 +73428,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -61754,7 +73526,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -61779,7 +73556,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -61804,7 +73586,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -61826,7 +73613,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -61848,7 +73640,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -61871,7 +73668,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -61880,7 +73682,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -61889,7 +73692,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -61898,7 +73702,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -61907,7 +73712,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -61919,7 +73725,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -61931,7 +73742,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -61943,7 +73759,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -61955,7 +73776,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -61967,7 +73793,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -62060,7 +73891,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -62085,7 +73921,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -62110,7 +73951,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -62132,7 +73978,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -62155,7 +74006,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -62164,7 +74020,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -62173,7 +74030,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -62182,7 +74040,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -62191,7 +74050,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -62203,7 +74063,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -62215,7 +74080,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -62227,7 +74097,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -62239,7 +74114,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -62264,7 +74144,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -62276,7 +74161,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -62364,7 +74254,12 @@
           ]
         ],
         "waitMin": 45,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 45,
+        "time": [
+          540,
+          780
+        ]
       },
       "gyn": {
         "price": 20,
@@ -62389,7 +74284,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "cbc": {
         "price": 62,
@@ -62398,7 +74298,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 112,
@@ -62407,7 +74308,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 100,
@@ -62416,7 +74318,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 100,
@@ -62425,7 +74328,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 80,
@@ -62437,7 +74341,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 250,
@@ -62449,7 +74358,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 0,
@@ -62461,7 +74375,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 20,
@@ -62473,7 +74392,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 0,
@@ -62485,7 +74409,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -62577,7 +74506,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "cbc": {
         "price": 250,
@@ -62586,7 +74520,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -62595,7 +74530,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -62604,7 +74540,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -62613,7 +74550,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "eye": {
         "price": 350,
@@ -62638,7 +74576,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       }
     }
   },
@@ -62731,7 +74674,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -62756,7 +74704,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -62781,7 +74734,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -62803,7 +74761,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -62825,7 +74788,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -62848,7 +74816,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -62857,7 +74830,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -62866,7 +74840,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -62875,7 +74850,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -62884,7 +74860,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -62896,7 +74873,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -62908,7 +74890,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -62920,7 +74907,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -62932,7 +74924,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -62944,7 +74941,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -63037,7 +75039,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -63062,7 +75069,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -63087,7 +75099,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -63109,7 +75126,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -63118,7 +75140,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -63127,7 +75150,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -63136,7 +75160,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -63145,7 +75170,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -63157,7 +75183,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -63169,7 +75200,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -63194,7 +75230,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -63218,7 +75259,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -63242,7 +75288,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -63254,7 +75305,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -63266,7 +75322,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -63291,7 +75352,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -63303,7 +75369,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -63396,7 +75467,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -63421,7 +75497,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -63446,7 +75527,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -63468,7 +75554,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -63490,7 +75581,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -63513,7 +75609,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -63522,7 +75623,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -63531,7 +75633,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -63540,7 +75643,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -63549,7 +75653,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -63561,7 +75666,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -63573,7 +75683,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -63585,7 +75700,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -63597,7 +75717,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -63609,7 +75734,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -63702,7 +75832,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -63727,7 +75862,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -63752,7 +75892,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -63774,7 +75919,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -63797,7 +75947,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -63806,7 +75961,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -63815,7 +75971,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -63824,7 +75981,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -63833,7 +75991,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -63845,7 +76004,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -63857,7 +76021,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -63869,7 +76038,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -63881,7 +76055,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -63906,7 +76085,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -63918,7 +76102,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -64011,7 +76200,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -64036,7 +76230,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -64061,7 +76260,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -64083,7 +76287,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 450,
@@ -64105,7 +76314,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -64114,7 +76328,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -64123,7 +76338,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -64132,7 +76348,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -64141,7 +76358,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -64153,7 +76371,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -64165,7 +76388,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -64190,7 +76418,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -64214,7 +76447,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -64238,7 +76476,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -64250,7 +76493,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -64262,7 +76510,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -64274,7 +76527,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -64367,7 +76625,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -64392,7 +76655,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -64417,7 +76685,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -64439,7 +76712,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -64462,7 +76740,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -64471,7 +76754,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -64480,7 +76764,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -64489,7 +76774,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -64498,7 +76784,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -64510,7 +76797,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -64522,7 +76814,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -64534,7 +76831,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -64546,7 +76848,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -64571,7 +76878,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -64583,7 +76895,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -64676,7 +76993,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -64701,7 +77023,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -64726,7 +77053,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -64748,7 +77080,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -64770,7 +77107,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -64793,7 +77135,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -64802,7 +77149,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -64811,7 +77159,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -64820,7 +77169,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -64829,7 +77179,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -64841,7 +77192,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -64853,7 +77209,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -64865,7 +77226,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -64877,7 +77243,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -64889,7 +77260,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -64982,7 +77358,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -65007,7 +77388,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -65032,7 +77418,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -65054,7 +77445,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -65063,7 +77459,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -65072,7 +77469,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -65081,7 +77479,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -65090,7 +77489,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -65102,7 +77502,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -65114,7 +77519,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -65139,7 +77549,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -65163,7 +77578,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -65187,7 +77607,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -65199,7 +77624,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -65211,7 +77641,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "physio": {
         "price": 500,
@@ -65236,7 +77671,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
       },
       "vacc": {
         "price": 100,
@@ -65248,7 +77688,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -65341,7 +77786,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 500,
@@ -65366,7 +77816,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 500,
@@ -65391,7 +77846,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 500,
@@ -65413,7 +77873,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 500,
@@ -65435,7 +77900,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 500,
@@ -65458,7 +77928,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -65467,7 +77942,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -65476,7 +77952,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -65485,7 +77962,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -65494,7 +77972,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -65506,7 +77985,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -65518,7 +78002,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -65530,7 +78019,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -65542,7 +78036,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -65554,7 +78053,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -65646,7 +78150,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -65671,7 +78180,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -65696,7 +78210,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -65705,7 +78224,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -65714,7 +78234,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -65723,7 +78244,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -65732,7 +78254,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "vacc": {
         "price": 100,
@@ -65744,7 +78267,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -65837,7 +78365,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 450,
@@ -65862,7 +78395,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 450,
@@ -65887,7 +78425,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 450,
@@ -65909,7 +78452,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 450,
@@ -65931,7 +78479,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -65940,7 +78493,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -65949,7 +78503,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -65958,7 +78513,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -65967,7 +78523,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -65979,7 +78536,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -65991,7 +78553,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "dentcheck": {
         "price": 250,
@@ -66016,7 +78583,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 15,
+        "time": [
+          600,
+          1200
+        ]
       },
       "scaling": {
         "price": 1200,
@@ -66040,7 +78612,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "rct": {
         "price": 3500,
@@ -66064,7 +78641,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "emerg": {
         "price": 200,
@@ -66076,7 +78658,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -66088,7 +78675,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -66100,7 +78692,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   },
@@ -66192,7 +78789,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 700,
@@ -66217,7 +78819,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 700,
@@ -66242,7 +78849,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 700,
@@ -66264,7 +78876,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 700,
@@ -66287,7 +78904,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -66296,7 +78918,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -66305,7 +78928,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -66314,7 +78938,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -66323,7 +78948,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -66335,7 +78961,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -66347,7 +78978,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       }
     }
   },
@@ -66440,7 +79076,12 @@
           ]
         ],
         "waitMin": 30,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
       },
       "paed": {
         "price": 550,
@@ -66465,7 +79106,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "gyn": {
         "price": 550,
@@ -66490,7 +79136,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
       },
       "ortho": {
         "price": 550,
@@ -66512,7 +79163,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
       },
       "derm": {
         "price": 550,
@@ -66534,7 +79190,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "ent": {
         "price": 550,
@@ -66557,7 +79218,12 @@
           ]
         ],
         "waitMin": 20,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
       },
       "cbc": {
         "price": 250,
@@ -66566,7 +79232,8 @@
         "fasting": false,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "thyroid": {
         "price": 450,
@@ -66575,7 +79242,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.7
+        "rating": 4.7,
+        "wait": 10
       },
       "lipid": {
         "price": 400,
@@ -66584,7 +79252,8 @@
         "fasting": true,
         "tatHours": 6,
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10
       },
       "hba1c": {
         "price": 400,
@@ -66593,7 +79262,8 @@
         "fasting": false,
         "tatHours": 4,
         "waitMin": 10,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 10
       },
       "xray": {
         "price": 350,
@@ -66605,7 +79275,12 @@
           ]
         ],
         "waitMin": 15,
-        "rating": 4.5
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
       },
       "usg": {
         "price": 950,
@@ -66617,7 +79292,12 @@
           ]
         ],
         "waitMin": 25,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
       },
       "emerg": {
         "price": 200,
@@ -66629,7 +79309,12 @@
           ]
         ],
         "waitMin": 5,
-        "rating": 4.8
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
       },
       "dressing": {
         "price": 150,
@@ -66641,7 +79326,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.6
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
       },
       "vacc": {
         "price": 100,
@@ -66653,7 +79343,12 @@
           ]
         ],
         "waitMin": 10,
-        "rating": 4.9
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
       }
     }
   }

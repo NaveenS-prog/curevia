@@ -653,6 +653,12 @@ def generate_services(h_type, name, base_seed):
             'rating': 4.8
         }
 
+    for sid, sdata in srv.items():
+        if 'waitMin' in sdata and 'wait' not in sdata:
+            sdata['wait'] = sdata['waitMin']
+        if 'slots' in sdata and sdata['slots'] and 'time' not in sdata:
+            sdata['time'] = [sdata['slots'][0][0], sdata['slots'][-1][1]]
+
     return srv
 
 def parse_rating(raw_rating):
