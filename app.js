@@ -552,7 +552,11 @@
       const centerLat = (opts.focusFacility && opts.focusFacility.lat) ? opts.focusFacility.lat : (loc.lat || 12.6518);
       const centerLon = (opts.focusFacility && opts.focusFacility.lon) ? opts.focusFacility.lon : (loc.lon || 77.4422);
 
-      const map = L.map(el, { scrollWheelZoom: false }).setView([centerLat, centerLon], 11);
+      const map = L.map(el, {
+        scrollWheelZoom: true,
+        touchZoom: true,
+        doubleClickZoom: true
+      }).setView([centerLat, centerLon], 11);
       activeLeafletMap = map;
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
