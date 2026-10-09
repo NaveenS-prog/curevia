@@ -779,6 +779,27 @@ def run():
     # Add Harohalli & Jain Global Campus Primary Facilities to maintain hyper-local campus utility
     campus_facilities = [
         {
+            'id': 'cdsimer',
+            'name': 'CDSIMER Hospital (Dr. Chandramma Dayananda Sagar Hospital)',
+            'type': 'hospital',
+            'area': 'Harohalli / Kanakapura Road (Devarakaggalahalli)',
+            'address': 'Devarakaggalahalli, Kanakapura Road, Near Harohalli, Ramanagara District - 562112',
+            'lat': 12.6610,
+            'lon': 77.4490,
+            'open24': True,
+            'hours': [[0, 1440]] * 7,
+            'phone': '+91 80 2608 6500',
+            'rating': 4.5,
+            'reviews': 820,
+            'reviewSnippet': '650-bed multi-speciality tertiary teaching hospital with 24x7 emergency & trauma care on Kanakapura Road, right next to Jain Global Campus.',
+            'access': {'wheelchair': True, 'ramp': True, 'lift': True, 'toilet': True, 'parking': True, 'ground': True, 'assist': True},
+            'languages': ['Kannada', 'English', 'Hindi'],
+            'payment': ['Cash', 'UPI', 'Debit/Credit Cards', 'Ayushman Bharat (AB-PMJAY)', 'TPA Insurance'],
+            'updated': 3,
+            'source': 'NABH & NABL Accredited Teaching Hospital',
+            'services': generate_services('hospital', 'CDSIMER Hospital', 77)
+        },
+        {
             'id': 'harohalligovt',
             'name': 'Government General Hospital Harohalli',
             'type': 'government',

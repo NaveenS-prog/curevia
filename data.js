@@ -72,6 +72,375 @@
 
   const facilities = [
   {
+    "id": "cdsimer",
+    "name": "CDSIMER Hospital (Dr. Chandramma Dayananda Sagar Hospital)",
+    "type": "hospital",
+    "area": "Harohalli / Kanakapura Road (Devarakaggalahalli)",
+    "address": "Devarakaggalahalli, Kanakapura Road, Near Harohalli, Ramanagara District - 562112",
+    "lat": 12.661,
+    "lon": 77.449,
+    "open24": true,
+    "hours": [
+      [
+        0,
+        1440
+      ],
+      [
+        0,
+        1440
+      ],
+      [
+        0,
+        1440
+      ],
+      [
+        0,
+        1440
+      ],
+      [
+        0,
+        1440
+      ],
+      [
+        0,
+        1440
+      ],
+      [
+        0,
+        1440
+      ]
+    ],
+    "phone": "+91 80 2608 6500",
+    "rating": 4.5,
+    "reviews": 820,
+    "reviewSnippet": "650-bed multi-speciality tertiary teaching hospital with 24x7 emergency & trauma care on Kanakapura Road, right next to Jain Global Campus.",
+    "access": {
+      "wheelchair": true,
+      "ramp": true,
+      "lift": true,
+      "toilet": true,
+      "parking": true,
+      "ground": true,
+      "assist": true
+    },
+    "languages": [
+      "Kannada",
+      "English",
+      "Hindi"
+    ],
+    "payment": [
+      "Cash",
+      "UPI",
+      "Debit/Credit Cards",
+      "Ayushman Bharat (AB-PMJAY)",
+      "TPA Insurance"
+    ],
+    "updated": 3,
+    "source": "NABH & NABL Accredited Teaching Hospital",
+    "services": {
+      "gp": {
+        "price": 400,
+        "priceNote": "Hospital OPD consultation",
+        "doctor": "Dr. Available (Duty Physician)",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "slots": [
+          [
+            540,
+            840
+          ],
+          [
+            1020,
+            1260
+          ]
+        ],
+        "waitMin": 30,
+        "rating": 4.5,
+        "wait": 30,
+        "time": [
+          540,
+          1260
+        ]
+      },
+      "paed": {
+        "price": 550,
+        "priceNote": "Consultant Paediatrician",
+        "doctor": "Senior Paediatric Specialist",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "slots": [
+          [
+            600,
+            780
+          ],
+          [
+            1080,
+            1200
+          ]
+        ],
+        "waitMin": 20,
+        "rating": 4.7,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
+      },
+      "gyn": {
+        "price": 550,
+        "priceNote": "Obstetrics & Gynaecology OPD",
+        "doctor": "OB-GYN Specialist",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "slots": [
+          [
+            570,
+            780
+          ],
+          [
+            1020,
+            1200
+          ]
+        ],
+        "waitMin": 25,
+        "rating": 4.8,
+        "wait": 25,
+        "time": [
+          570,
+          1200
+        ]
+      },
+      "ortho": {
+        "price": 550,
+        "priceNote": "Orthopaedic Surgeon",
+        "doctor": "Consultant Orthopaedist",
+        "days": [
+          1,
+          3,
+          5
+        ],
+        "slots": [
+          [
+            600,
+            780
+          ],
+          [
+            1080,
+            1200
+          ]
+        ],
+        "waitMin": 25,
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          600,
+          1200
+        ]
+      },
+      "ent": {
+        "price": 550,
+        "priceNote": "ENT Specialist",
+        "doctor": "Consultant ENT Surgeon",
+        "days": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "slots": [
+          [
+            600,
+            780
+          ],
+          [
+            1020,
+            1200
+          ]
+        ],
+        "waitMin": 20,
+        "rating": 4.5,
+        "wait": 20,
+        "time": [
+          600,
+          1200
+        ]
+      },
+      "cbc": {
+        "price": 250,
+        "priceNote": "Complete Blood Count (Automated)",
+        "homeSample": true,
+        "fasting": false,
+        "tatHours": 6,
+        "waitMin": 10,
+        "rating": 4.6,
+        "wait": 10
+      },
+      "thyroid": {
+        "price": 450,
+        "priceNote": "Total T3, T4, TSH (CLIA method)",
+        "homeSample": true,
+        "fasting": true,
+        "tatHours": 6,
+        "waitMin": 10,
+        "rating": 4.7,
+        "wait": 10
+      },
+      "lipid": {
+        "price": 400,
+        "priceNote": "Cholesterol profile (10-12 hr fasting)",
+        "homeSample": true,
+        "fasting": true,
+        "tatHours": 6,
+        "waitMin": 10,
+        "rating": 4.6,
+        "wait": 10
+      },
+      "hba1c": {
+        "price": 400,
+        "priceNote": "Glycated Haemoglobin (HPLC method)",
+        "homeSample": true,
+        "fasting": false,
+        "tatHours": 4,
+        "waitMin": 10,
+        "rating": 4.8,
+        "wait": 10
+      },
+      "xray": {
+        "price": 350,
+        "priceNote": "Digital Chest X-ray (PA view)",
+        "slots": [
+          [
+            480,
+            1200
+          ]
+        ],
+        "waitMin": 15,
+        "rating": 4.5,
+        "wait": 15,
+        "time": [
+          480,
+          1200
+        ]
+      },
+      "usg": {
+        "price": 950,
+        "priceNote": "Ultrasound Whole Abdomen (Sonologist)",
+        "slots": [
+          [
+            540,
+            840
+          ]
+        ],
+        "waitMin": 25,
+        "rating": 4.6,
+        "wait": 25,
+        "time": [
+          540,
+          840
+        ]
+      },
+      "emerg": {
+        "price": 200,
+        "priceNote": "24x7 Emergency Casualty Triage & Medical Officer",
+        "slots": [
+          [
+            0,
+            1440
+          ]
+        ],
+        "waitMin": 5,
+        "rating": 4.8,
+        "wait": 5,
+        "time": [
+          0,
+          1440
+        ]
+      },
+      "dressing": {
+        "price": 150,
+        "priceNote": "Aseptic Wound Dressing & Suture Care",
+        "slots": [
+          [
+            0,
+            1440
+          ]
+        ],
+        "waitMin": 10,
+        "rating": 4.6,
+        "wait": 10,
+        "time": [
+          0,
+          1440
+        ]
+      },
+      "physio": {
+        "price": 500,
+        "priceNote": "Musculoskeletal & Ortho Rehabilitation (45 min)",
+        "doctor": "Senior Physiotherapist",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "slots": [
+          [
+            540,
+            780
+          ],
+          [
+            1020,
+            1200
+          ]
+        ],
+        "waitMin": 15,
+        "rating": 4.8,
+        "wait": 15,
+        "time": [
+          540,
+          1200
+        ]
+      },
+      "vacc": {
+        "price": 100,
+        "priceNote": "Vaccination Administration (plus vaccine MRP)",
+        "slots": [
+          [
+            540,
+            960
+          ]
+        ],
+        "waitMin": 10,
+        "rating": 4.9,
+        "wait": 10,
+        "time": [
+          540,
+          960
+        ]
+      }
+    }
+  },
+  {
     "id": "harohalligovt",
     "name": "Government General Hospital Harohalli",
     "type": "government",
