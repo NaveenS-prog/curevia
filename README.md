@@ -54,11 +54,13 @@ Then open `http://localhost:8080` in your web browser.
 
 ## 🗺️ Real Healthcare Data Coverage
 
-Sourced via OpenStreetMap Nominatim API across:
-- **Jain Global Campus Vicinity & Harohalli:** Harohalli Government Hospital (Taluk CHC), CD Simer Hospital, Paduvanagare Primary Health Centre.
-- **Kanakapura Road Corridor:** Sanjeevani Clinic, Anand Clinic & Diagnostics, Saptha Giri Clinic, St. John's Health Centre (Kaggalipura), Sri Sri Ayurveda Hospital.
-- **Konanakunte Cross & South Bengaluru:** Cloudnine Hospital, Dhee Hospital, Sri Sai Ram Hospital, Vasan Eye Care, Netradhama Super Speciality Eye Hospital.
-- **Jayanagar & JP Nagar:** Jayanagar General Hospital, ESI Hospital, Sanjay Gandhi Hospital, JP Nagar Diagnostic Centre, Bangalore Dental Clinic.
+Sourced directly from the authentic Bengaluru Healthcare Registry dataset (`hospital_data_bangalore.csv`):
+- **215 Real Healthcare Facilities:** Comprehensive coverage across Greater Bengaluru and Kanakapura Road corridor.
+- **Major Tertiary & Super-Speciality Centers:** Manipal Hospitals (Yeshwanthpur, Jayanagar, Hebbal, Millers Rd, Whitefield, Old Airport Rd), Fortis Hospitals (Bannerghatta, Richmond Rd, Cunningham Rd, Rajajinagar), Apollo Hospitals (Bannerghatta, Jayanagar, Apollo Spectra), SPARSH Hospitals (Infantry Rd, Yeshwanthpur), Sakra World Hospital, Aster RV & Aster CMI, Narayana Health City, St. Martha's, St. Philomena's, St. John's Medical College Hospital, MS Ramaiah Memorial Hospital, HCG Cancer Center, etc.
+- **Public & Government Infrastructure:** Victoria Hospital, Bowring & Lady Curzon Hospital, KC General Hospital, Jayanagar General Hospital, Vanivilas Children's Hospital, ESI Hospitals, Harohalli Government General Hospital.
+- **Maternity, Women & Child Centers:** Cloudnine, Motherhood, Cambridge Fertility, Gosha Maternity Hospital, Ayaansh Hospital.
+- **Specialty Eye & Dental Centers:** Narayana Nethralaya, Sankara Eye Hospital, Shekar Eye Hospital, Bangalore Institute of Oncology.
+- **Corridor & Jain Global Campus Proximity:** Harohalli Taluk Government Hospital, Dhee Hospitals (Kaggalipura), Konanakunte Cross Metro centers.
 
 ---
 
