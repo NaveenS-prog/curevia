@@ -861,6 +861,9 @@
       <button type="button" class="btn btn--ghost btn--sm mobile-action-bar__btn" data-act="open-filters">
         ${icon('sliders')}<span>Filters</span><span class="badge" id="m-fcount"></span>
       </button>
+      <button type="button" class="btn btn--ghost btn--sm mobile-action-bar__btn" data-act="go-compare">
+        ${icon('columns')}<span>Compare</span><span class="badge" id="m-cmp-count">${state.compare.length || ''}</span>
+      </button>
       <button type="button" class="btn btn--ghost btn--sm mobile-action-bar__btn map-toggle" data-act="toggle-map">
         ${icon('map')}<span>Map</span>
       </button>
@@ -1077,7 +1080,7 @@
           <div class="fac-actions">
             ${cleanPhone ? `<a class="btn btn--ghost" href="tel:${cleanPhone}">${icon('phone')}Call</a>` : ''}
             ${mapUrl ? `<a class="btn btn--ghost" href="${mapUrl}" target="_blank" rel="noopener noreferrer">${icon('nav')}Directions</a>` : ''}
-            ${sid ? `<button type="button" class="btn btn--ghost ${inCmp ? 'is-on' : ''}" data-act="toggle-compare" data-id="${f.id}">${icon(inCmp ? 'check' : 'columns')}${inCmp ? 'In comparison' : 'Compare'}</button>` : ''}
+            <button type="button" class="btn btn--ghost ${inCmp ? 'is-on' : ''}" data-act="toggle-compare" data-id="${f.id}">${icon(inCmp ? 'check' : 'columns')}<span>${inCmp ? 'In comparison' : 'Compare'}</span></button>
             <a class="btn btn--primary" href="#/plan/${f.id}">Choose this option${icon('arrowR')}</a>
           </div>
         </div>
@@ -1213,21 +1216,22 @@
   }
 
   function viewCompare() {
-    const svc = state.service && D.serviceMap[state.service];
-    const ids = state.compare.filter((id) => svc && D.facilityMap[id] && D.facilityMap[id].services && D.facilityMap[id].services[state.service]);
-    if (!svc || ids.length < 2) {
+    const sid = state.service || 'gp';
+    const svc = D.serviceMap[sid] || D.services[0];
+    const ids = state.compare.filter((id) => D.facilityMap[id]);
+    if (ids.length < 2) {
       return `<section class="page-head"><div class="container">
-        <a class="back" href="${svc ? '#/results?s=' + svc.id : '#/'}">${icon('arrowL')}${svc ? 'Back to results' : 'Home'}</a>
+        <a class="back" href="${state.service ? '#/results?s=' + state.service : '#/'}">${icon('arrowL')}${state.service ? 'Back to results' : 'Home'}</a>
         <h1>Compare options</h1></div></section>
         <div class="container section--tight"><div class="empty">
           <span class="empty__ic">${icon('columns')}</span>
           <h3>${ids.length === 1 ? 'Add one more option to compare' : 'Nothing to compare yet'}</h3>
-          <p>${svc ? `Choose “Compare” on two or three results for <strong>${esc(svc.name)}</strong> to see them side by side.` : 'Search for a healthcare service, then choose “Compare” on two or three options to see them side by side.'}</p>
-          <div class="empty__actions"><a class="btn btn--primary" href="${svc ? '#/results?s=' + svc.id : '#/'}">${svc ? 'Back to results' : 'Find a service'}</a></div>
+          <p>${ids.length === 1 ? `You have selected <strong>${esc(D.facilityMap[ids[0]].name)}</strong>. Pick at least one more facility to compare them side-by-side.` : 'Search for a healthcare service and choose “Compare” on two or three options to see them side by side.'}</p>
+          <div class="empty__actions"><a class="btn btn--primary" href="${state.service ? '#/results?s=' + state.service : '#/'}">${state.service ? 'Back to results' : 'Find a service'}</a></div>
         </div></div>`;
     }
     const date = visitDate(), day = date.getDay();
-    const rows = ids.map((id) => enrich(D.facilityMap[id], state.service, date));
+    const rows = ids.map((id) => enrich(D.facilityMap[id], svc.id, date));
     const n = rows.length;
 
     const bestMin = (vals) => {
@@ -1292,7 +1296,7 @@
         <div class="verdicts">
           ${verdict.map(([ic, label, names, k]) => `<div class="verdict verdict--${k}">
             <span class="verdict__ic">${icon(ic)}</span>
-            <div><span class="verdict__label">${label}</span><strong>${names.length ? esc(names.length > 1 ? names.map((x) => x.split(' ')[0]).join(' & ') + (names.length === n ? '' : '') : names[0]) : label === 'Lowest cost' || label === 'Shortest wait' || label === 'Closest' ? 'About the same' : allAvail ? 'All of them' : noneAvail ? 'None at this time' : 'About the same'}</strong></div>
+            <div><span class="verdict__label">${label}</span><strong>${names.length ? esc(names.length > 1 ? names.map((x) => x.split(' ')[0]).join(' & ') : names[0]) : 'About the same'}</strong></div>
           </div>`).join('')}
         </div>
       </div>
@@ -1575,7 +1579,9 @@
 
   function updateHeader(r0) {
     $$('.nav__link[data-nav]').forEach((a) => a.classList.toggle('is-active', (a.dataset.nav === 'compare' && r0 === 'compare') || (a.dataset.nav === 'home' && ['', 'category', 'results'].includes(r0))));
-    $('#nav-cmp').textContent = state.compare.length || '';
+    const count = state.compare.length || '';
+    const badge = $('#nav-cmp'); if (badge) badge.textContent = count;
+    const mBadge = $('#m-cmp-count'); if (mBadge) mBadge.textContent = count;
     const tb = $('#text-btn'); if (tb) { tb.setAttribute('aria-pressed', state.textLg); tb.classList.toggle('is-active', state.textLg); }
   }
 
@@ -1639,8 +1645,8 @@
       }).join('')}</div>
       <div class="tray__actions">
         <button type="button" class="link tray__clear" data-act="clear-compare">Clear all</button>
-        <button type="button" class="btn btn--primary btn--sm" data-act="go-compare" ${n < 2 ? 'disabled' : ''}>
-          Compare options${icon('arrowR')}
+        <button type="button" class="btn btn--primary btn--sm" data-act="go-compare">
+          ${n >= 2 ? `Compare options ${icon('arrowR')}` : `Compare (${n}/2 selected)`}
         </button>
       </div>
     </div>`;
@@ -2029,16 +2035,77 @@
         e.preventDefault(); e.stopPropagation();
         const id = el.dataset.id;
         const i = state.compare.indexOf(id);
-        if (i >= 0) state.compare.splice(i, 1);
-        else if (state.compare.length >= 3) { toast('You can compare up to 3 options. Remove one first.'); return; }
-        else { state.compare.push(id); if (state.compare.length === 1) toast('Added. Pick one or two more to compare.'); }
+        if (i >= 0) {
+          state.compare.splice(i, 1);
+          toast('Removed from comparison.');
+        } else if (state.compare.length >= 3) {
+          toast('You can compare up to 3 options. Remove one first.');
+          return;
+        } else {
+          state.compare.push(id);
+          toast(state.compare.length === 1 ? '1 facility added. Pick another to compare!' : `${state.compare.length} facilities selected for comparison!`, 'good');
+        }
         saveState();
         const r0 = parseHash().parts[0] || '';
-        if (r0 === 'results') { updateResults(); renderTray(r0); updateHeader(r0); } else render();
+        const inCmp = state.compare.includes(id);
+
+        // Update cards in-place smoothly
+        const cards = document.querySelectorAll(`.rcard[data-fid="${id}"]`);
+        cards.forEach((card) => {
+          card.classList.toggle('is-selected', inCmp);
+          const btn = card.querySelector('.cmp-toggle');
+          if (btn) {
+            btn.classList.toggle('is-on', inCmp);
+            btn.setAttribute('aria-pressed', inCmp);
+            btn.innerHTML = `${icon(inCmp ? 'check' : 'plus')}<span>${inCmp ? 'Added' : 'Compare'}</span>`;
+          }
+        });
+
+        // Update any facility detail page buttons
+        const facBtns = document.querySelectorAll(`button[data-act="toggle-compare"][data-id="${id}"]`);
+        facBtns.forEach((btn) => {
+          btn.classList.toggle('is-on', inCmp);
+          btn.setAttribute('aria-pressed', inCmp);
+          if (btn.classList.contains('cmp-toggle')) {
+            btn.innerHTML = `${icon(inCmp ? 'check' : 'plus')}<span>${inCmp ? 'Added' : 'Compare'}</span>`;
+          } else if (btn.classList.contains('btn')) {
+            btn.innerHTML = `${icon(inCmp ? 'check' : 'columns')}<span>${inCmp ? 'In comparison' : 'Compare'}</span>`;
+          }
+        });
+
+        renderTray(r0);
+        updateHeader(r0);
+        if (r0 === 'compare') render();
         break;
       }
-      case 'clear-compare': state.compare = []; saveState(); render(); break;
-      case 'go-compare': go('#/compare'); break;
+      case 'clear-compare': {
+        state.compare = [];
+        saveState();
+        toast('Comparison cleared.');
+        const r0 = parseHash().parts[0] || '';
+        document.querySelectorAll('.rcard.is-selected').forEach((c) => c.classList.remove('is-selected'));
+        document.querySelectorAll('.cmp-toggle.is-on').forEach((b) => {
+          b.classList.remove('is-on');
+          b.setAttribute('aria-pressed', 'false');
+          b.innerHTML = `${icon('plus')}<span>Compare</span>`;
+        });
+        document.querySelectorAll('.fac-actions button[data-act="toggle-compare"]').forEach((b) => {
+          b.classList.remove('is-on');
+          b.setAttribute('aria-pressed', 'false');
+          b.innerHTML = `${icon('columns')}<span>Compare</span>`;
+        });
+        renderTray(r0);
+        updateHeader(r0);
+        if (r0 === 'compare') render();
+        break;
+      }
+      case 'go-compare': {
+        if (state.compare.length < 2) {
+          toast('Select at least 2 facilities to compare side-by-side.');
+        }
+        go('#/compare');
+        break;
+      }
       case 'open-filters': document.body.classList.add('filters-open'); break;
       case 'load-more-results':
         state.pageLimit = (state.pageLimit || 30) + 30;
