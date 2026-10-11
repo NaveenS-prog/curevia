@@ -419,8 +419,8 @@
 
   function computeTags(list) {
     const tags = new Map(list.map((r) => [r.f.id, []]));
-    if (list.length < 2) return tags;
-    const add = (fn, tag) => {
+    if (!list.length) return tags;
+    const addMin = (fn, tag) => {
       const vals = list.map(fn).filter((v) => v != null);
       if (!vals.length) return;
       const m = Math.min(...vals);
@@ -428,10 +428,40 @@
       if (winners.length === list.length) return;
       winners.forEach((r) => tags.get(r.f.id).push(tag));
     };
-    add((r) => r.priceMin, { k: 'price', icon: 'rupee', label: 'Lowest cost' });
-    add((r) => r.wait, { k: 'wait', icon: 'hourglass', label: 'Shortest wait' });
-    add((r) => r.dist, { k: 'dist', icon: 'pin', label: 'Closest' });
-    if (state.sort === 'best') tags.get(list[0].f.id).unshift({ k: 'top', icon: 'sparkle', label: 'Best overall match' });
+
+    addMin((r) => r.priceMin, { k: 'price', icon: 'rupee', label: 'Lowest cost' });
+    addMin((r) => r.wait, { k: 'wait', icon: 'hourglass', label: 'Shortest wait' });
+    addMin((r) => r.dist, { k: 'dist', icon: 'pin', label: 'Best nearby' });
+
+    // Accessibility score
+    const accessScore = (f) => (f.access ? (f.access.wheelchair ? 2 : 0) + (f.access.ramp ? 1 : 0) + (f.access.lift || f.access.ground ? 2 : 0) + (f.access.toilet ? 1 : 0) + (f.access.parking ? 1 : 0) : 0);
+    const scores = list.map((r) => accessScore(r.f));
+    const maxAccess = Math.max(...scores, 0);
+    if (maxAccess >= 4) {
+      list.filter((r) => accessScore(r.f) === maxAccess).slice(0, 3).forEach((r) => {
+        if (!tags.get(r.f.id).some((t) => t.k === 'access')) {
+          tags.get(r.f.id).push({ k: 'access', icon: 'access', label: 'Best accessibility' });
+        }
+      });
+    }
+
+    // Open now
+    list.filter((r) => r.avail && r.avail.ok).forEach((r) => {
+      if (!tags.get(r.f.id).some((t) => t.k === 'open')) {
+        tags.get(r.f.id).push({ k: 'open', icon: 'clock', label: 'Open now' });
+      }
+    });
+
+    // Government / subsidised
+    list.filter((r) => r.f.type === 'government' || (r.f.payment && r.f.payment.some((p) => /ayushman|subsidised|free/i.test(p)))).forEach((r) => {
+      if (!tags.get(r.f.id).some((t) => t.k === 'govt')) {
+        tags.get(r.f.id).push({ k: 'govt', icon: 'building', label: 'Government / Subsidised' });
+      }
+    });
+
+    if (state.sort === 'best' && list[0] && !tags.get(list[0].f.id).some((t) => t.k === 'top')) {
+      tags.get(list[0].f.id).unshift({ k: 'top', icon: 'sparkle', label: 'Top match' });
+    }
     return tags;
   }
 
@@ -654,112 +684,100 @@
       return [c.id, { services: ids.length, places }];
     }));
     return `
-    <section class="hero">
+    <section class="hero hero--compact">
       <div class="container hero__inner">
-        <div class="hero__copy">
-          <span class="eyebrow">${icon('heartPulse')} Service-first healthcare discovery</span>
-          <h1>Know where to go for care, <em>before you travel.</em></h1>
-          <p class="hero__lead">Search for the service you need. CUREVIA puts cost, availability, waiting time and accessibility side by side, so you don’t have to call around.</p>
+        <div class="hero__header">
+          <span class="badge badge--brand">${icon('heartPulse')} Healthcare Decision Support</span>
+          <h1>Find and compare nearby care</h1>
+          <p class="hero__lead">Compare nearby care by cost, wait, availability, distance, and accessibility.</p>
+        </div>
+
+        <div class="finder-wrap">
           <form class="finder" data-form="home-search" autocomplete="off">
-            <div class="finder__label">What do you need?</div>
-            ${searchBox('q-home', false)}
-            <div class="finder__row">
-              <div class="field"><span class="field__label">Near</span>${selectField('loc')}</div>
-              <div class="field"><span class="field__label">When</span>${selectField('when')}</div>
-              <button class="btn btn--primary btn--lg finder__go" type="submit">Find care ${icon('arrowR')}</button>
+            <div class="finder__input-row">
+              <div class="field finder__search-field">
+                <span class="field__label">What care or symptom do you need?</span>
+                ${searchBox('q-home', false)}
+              </div>
+            </div>
+            <div class="finder__controls-row">
+              <div class="field">
+                <span class="field__label">${icon('pin')} Near Location</span>
+                ${selectField('loc')}
+              </div>
+              <div class="field">
+                <span class="field__label">${icon('clock')} Visit Time</span>
+                ${selectField('when')}
+              </div>
+              <button class="btn btn--primary btn--lg finder__go" type="submit">
+                ${icon('search')} Find care
+              </button>
             </div>
           </form>
-          <div class="popular"><span>Popular:</span>
-            ${D.popular.map((id) => `<button class="chip" data-act="pick-service" data-sid="${id}">${esc(shortName(D.serviceMap[id].name))}</button>`).join('')}
+
+          <div class="popular">
+            <span class="popular__title">Popular services:</span>
+            <div class="popular__chips">
+              ${D.popular.map((id) => {
+                const s = D.serviceMap[id];
+                const cat = D.catMap[s.cat];
+                return `<button type="button" class="chip chip--icon" data-act="pick-service" data-sid="${id}">
+                  ${icon(cat.icon)}<span>${esc(shortName(s.name))}</span>
+                </button>`;
+              }).join('')}
+            </div>
           </div>
         </div>
-        <div class="hero__visual" aria-hidden="true">${heroPreview()}</div>
       </div>
     </section>
 
-    <section class="section">
+    <!-- Secondary Categories -->
+    <section class="section section--tight-top">
       <div class="container">
         <div class="section__head">
-          <div><h2>Start with what you need</h2><p>Browse by type of care. Every option shows the facts that matter for your decision.</p></div>
+          <div>
+            <h2>Browse by care category</h2>
+            <p>Select a medical specialty or service type to compare verified options.</p>
+          </div>
         </div>
-        <div class="cat-grid">
+        <div class="cat-grid cat-grid--simple">
           ${D.categories.map((c) => `
-            <a class="cat" href="#/category/${c.id}" style="${catStyle(c.id)}">
-              <span class="cat__ic">${icon(c.icon)}</span>
-              <span class="cat__name">${esc(c.name)}</span>
+            <a class="cat cat--simple" href="#/category/${c.id}">
+              <div class="cat__head">
+                <span class="cat__ic">${icon(c.icon)}</span>
+                <div>
+                  <span class="cat__name">${esc(c.name)}</span>
+                  <span class="cat__meta">${stats[c.id].places} places nearby</span>
+                </div>
+              </div>
               <span class="cat__blurb">${esc(c.blurb)}</span>
-              <span class="cat__meta">${stats[c.id].places} places nearby ${icon('arrowR')}</span>
             </a>`).join('')}
         </div>
       </div>
     </section>
 
+    <!-- Calm Decision Pillars -->
     <section class="section section--tint">
       <div class="container">
         <div class="section__head section__head--center">
-          <div><h2>From “I need this” to “I know where to go”</h2><p>CUREVIA does the comparison work, so you don’t have to collect it from search results, maps, reviews and phone calls.</p></div>
-        </div>
-        <ol class="steps">
-          <li class="step"><span class="step__no">1</span>${icon('search', 'step__ic')}<h3>Tell us the service</h3><p>Search in plain words, like “child doctor” or “blood test”, and pick your area and time.</p></li>
-          <li class="step"><span class="step__no">2</span>${icon('columns', 'step__ic')}<h3>Compare nearby options</h3><p>See cost, availability, waiting time and access together, then put up to three side by side.</p></li>
-          <li class="step"><span class="step__no">3</span>${icon('nav', 'step__ic')}<h3>Decide and go</h3><p>Call, get directions, or share the plan with family. All from one screen.</p></li>
-        </ol>
-        <div class="facts">
-          <h3>Every option answers the same six questions</h3>
-          <div class="facts__grid">
-            ${[
-              ['stethoscope', 'Do they offer my service?', 'Results start from the exact service, not just the facility name.'],
-              ['pin', 'How far is it?', 'Distance and travel time from your area.'],
-              ['rupee', 'What will it cost?', 'A price, or a clearly labelled price range.'],
-              ['clock', 'Is it available when I go?', 'Timings and doctor availability for your visit time.'],
-              ['hourglass', 'How long will I wait?', 'Estimated waiting time, shown only where reported.'],
-              ['access', 'Can everyone get in?', 'Wheelchair, lift, toilet and parking details.']
-            ].map(([ic, t, d]) => `<div class="fact">${icon(ic)}<div><strong>${t}</strong><span>${d}</span></div></div>`).join('')}
+          <div>
+            <h2>Clear facts before you travel</h2>
+            <p>Standardized decision metrics so you don't have to call around or guess.</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container trust">
-        <div class="trust__item">${icon('shield')}<div><strong>Trust through transparency</strong><span>Each listing shows when it was last updated and who confirmed it.</span></div></div>
-        <div class="trust__item">${icon('info')}<div><strong>Estimates are labelled</strong><span>Price ranges and waiting times are marked as estimates. Missing data says “Not reported”.</span></div></div>
-        <div class="trust__item">${icon('users')}<div><strong>Built for caregivers too</strong><span>Accessibility and contact details sit right next to the decision.</span></div></div>
+        <div class="facts__grid facts__grid--calm">
+          ${[
+            ['rupee', 'Upfront pricing', 'Transparent consultation & test costs with subsidy details.'],
+            ['clock', 'Real-time availability', 'Doctor schedule and current open/closed status at your visit time.'],
+            ['hourglass', 'Estimated wait times', 'Verified crowd and typical waiting estimates.'],
+            ['access', 'Accessibility details', 'Wheelchair ramps, elevator access, parking, and accessible restrooms.']
+          ].map(([ic, t, d]) => `<div class="fact fact--calm">${icon(ic)}<div><strong>${t}</strong><span>${d}</span></div></div>`).join('')}
+        </div>
       </div>
     </section>`;
   }
 
   function shortName(n) { return n.replace(/\s*\(.*?\)\s*/g, ' ').replace(' consultation', '').trim(); }
-
-  function heroPreview() {
-    // Illustrative example using real OSM data at a fixed weekday time.
-    const demo = new Date(); demo.setDate(demo.getDate() + ((9 - demo.getDay()) % 7 || 7)); demo.setHours(11, 0, 0, 0);
-    const savedLoc = state.loc; state.loc = 'jain_campus';
-    const xrayFacilities = D.facilities.filter((f) => f.services && f.services.xray);
-    const rows = xrayFacilities.slice(0, 3).map((f) => {
-      const r = enrich(f, 'xray', demo);
-      r.avail = availability(r.f, 'xray', demo, true);
-      return r;
-    });
-    state.loc = savedLoc;
-    return `
-      <div class="pv">
-        <div class="pv__head"><span class="pv__dot"></span><div><div class="pv__k">Example comparison (Real OSM Data)</div><strong>Chest X-ray · near Jain Global Campus</strong></div></div>
-        <div class="pv__table">
-          <div class="pv__row pv__row--h"><span>Facility</span><span>Cost</span><span>Wait</span><span>Status</span></div>
-          ${rows.map((r, i) => `
-            <div class="pv__row ${i === 0 ? 'is-best' : ''}">
-              <span class="pv__name">${esc(r.f.name.split(' ').slice(0, 2).join(' '))}<small>${r.dist} km</small></span>
-              <span class="${r.priceMin === 100 ? 'pv__good' : ''}">${priceText(r.price)}</span>
-              <span class="pv__w pv__w--${waitTone(r.wait)}">${waitText(r.wait)}</span>
-              <span class="pv__st pv__st--${r.avail.tone}"><i></i>${r.avail.ok ? 'Open' : 'Later'}</span>
-            </div>`).join('')}
-        </div>
-        <div class="pv__foot">${icon('sparkle')} Best balance of wait, cost &amp; distance</div>
-      </div>
-      <div class="pv-float pv-float--a">${icon('access')}<div><strong>Wheelchair accessible</strong><span>Lift · Accessible toilet</span></div></div>
-      <div class="pv-float pv-float--b">${icon('shield')}<div><strong>Updated 45 min ago</strong><span>Confirmed by facility</span></div></div>`;
-  }
 
   function viewCategory(id) {
     const c = D.catMap[id];
@@ -770,8 +788,11 @@
       <div class="container">
         <a class="back" href="#/">${icon('arrowL')} Home</a>
         <div class="page-head__row">
-          <span class="cat__ic cat__ic--lg" style="${catStyle(id)}">${icon(c.icon)}</span>
-          <div><h1>${esc(c.name)}</h1><p>${esc(c.blurb)}. Choose a service to see and compare nearby options.</p></div>
+          <span class="cat__ic cat__ic--lg">${icon(c.icon)}</span>
+          <div>
+            <h1>${esc(c.name)}</h1>
+            <p>${esc(c.blurb)}. Compare nearby providers by cost, wait, and accessibility.</p>
+          </div>
         </div>
         <div class="page-head__controls">${selectField('loc', { prefix: true })}${selectField('when')}</div>
       </div>
@@ -780,14 +801,21 @@
       <ul class="svc-list">
         ${list.map((s) => {
           const st = serviceStats(s.id);
-          return `<li><button class="svc-row" data-act="pick-service" data-sid="${s.id}">
-            <div class="svc-row__main"><strong>${esc(s.name)}</strong><span>Priced ${esc(s.unit)}</span></div>
-            <div class="svc-row__stats">
-              <span>${icon('building')}${st.count} place${st.count === 1 ? '' : 's'}</span>
-              ${st.min != null ? `<span>${icon('rupee')}${fromPrice(st.min)}</span>` : ''}
-              <span class="${st.avail ? 'is-good' : 'is-muted'}">${icon('clock')}${st.avail} available ${isNow() ? 'now' : 'then'}</span>
+          const desc = s.unit ? `Standard fee ${esc(s.unit)}` : 'Routine healthcare service';
+          return `<li><button type="button" class="svc-row" data-act="pick-service" data-sid="${s.id}">
+            <span class="svc-row__ic">${icon(c.icon)}</span>
+            <div class="svc-row__main">
+              <strong>${esc(s.name)}</strong>
+              <span class="svc-row__desc">${desc}</span>
             </div>
-            <span class="svc-row__go">${icon('chevR')}</span>
+            <div class="svc-row__stats">
+              <span class="svc-pill">${icon('building')}${st.count} places nearby</span>
+              ${st.min != null ? `<span class="svc-pill svc-pill--price">${icon('rupee')}${fromPrice(st.min)}</span>` : ''}
+              <span class="svc-pill ${st.avail ? 'svc-pill--good' : 'svc-pill--muted'}">
+                ${icon('clock')}${st.avail} available ${isNow() ? 'now' : 'then'}
+              </span>
+            </div>
+            <span class="btn btn--sm btn--primary svc-row__cta">View options${icon('arrowR')}</span>
           </button></li>`;
         }).join('')}
       </ul>
@@ -805,7 +833,9 @@
           ${selectField('loc', { prefix: true })}
           ${selectField('when')}
           ${selectField('sort', { prefix: true })}
-          <button class="btn btn--ghost filters-btn" data-act="open-filters">${icon('sliders')}Filters<span class="badge" id="fcount"></span></button>
+          <button class="btn btn--ghost filters-btn" data-act="open-filters">
+            ${icon('sliders')}<span>Filters</span><span class="badge" id="fcount"></span>
+          </button>
         </div>
       </div>
     </section>
@@ -815,17 +845,25 @@
       <div class="res-main">
         <div class="res-head">
           <div>
-            <a class="crumb" href="#/category/${cat.id}" style="${catStyle(cat.id)}">${icon(cat.icon)}${esc(cat.name)}</a>
+            <a class="crumb" href="#/category/${cat.id}">${icon(cat.icon)}${esc(cat.name)}</a>
             <h1 class="res-title">${esc(svc.name)}</h1>
             <p class="res-sub" id="res-count"></p>
           </div>
           <button class="btn btn--ghost btn--sm map-toggle" data-act="toggle-map">${icon('map')}<span>Show map</span></button>
         </div>
-        ${state.service === 'emerg' ? `<div class="callout callout--bad">${icon('siren')}<div><strong>In a medical emergency, don’t wait to compare.</strong> Call <a href="tel:112">112</a> or <a href="tel:108">108</a> for an ambulance, or go to the nearest casualty.</div></div>` : ''}
+        ${state.service === 'emerg' ? `<div class="callout callout--bad">${icon('siren')}<div><strong>In a medical emergency, don’t wait to compare.</strong> Call <a href="tel:112">112</a> or <a href="tel:108">108</a> immediately for an ambulance.</div></div>` : ''}
         <div id="res-chips"></div>
         <div id="res-body"></div>
       </div>
       <aside class="res-map" id="res-map"></aside>
+    </div>
+    <div class="mobile-action-bar">
+      <button type="button" class="btn btn--ghost btn--sm mobile-action-bar__btn" data-act="open-filters">
+        ${icon('sliders')}<span>Filters</span><span class="badge" id="m-fcount"></span>
+      </button>
+      <button type="button" class="btn btn--ghost btn--sm mobile-action-bar__btn map-toggle" data-act="toggle-map">
+        ${icon('map')}<span>Map</span>
+      </button>
     </div>`;
   }
 
@@ -841,20 +879,24 @@
         <button type="button" class="icon-btn filters__close" data-act="close-filters" aria-label="Close filters">${icon('x')}</button>
       </div>
       <div class="fgroup">
-        ${sw('availableOnly', 'Available at my visit time', esc(whenLabel(state.when)))}
+        <div class="fgroup__label">${icon('clock')}Timing</div>
+        ${sw('availableOnly', 'Open / Available at visit time', esc(whenLabel(state.when)))}
       </div>
       <div class="fgroup">
-        <div class="fgroup__label">Distance <output id="o-dist">${F.maxDist >= 40 ? 'Any distance' : 'Within ' + F.maxDist + ' km'}</output></div>
+        <div class="fgroup__label">
+          <span>${icon('pin')}Distance</span>
+          <output id="o-dist">${F.maxDist >= 40 ? 'Any distance' : 'Within ' + F.maxDist + ' km'}</output>
+        </div>
+        ${seg('maxDist', [[2, '2 km'], [5, '5 km'], [15, '15 km'], [40, 'Any']])}
         <input type="range" class="range" min="2" max="40" step="2" value="${F.maxDist}" data-f="maxDist" aria-label="Maximum distance">
-        <div class="range__scale"><span>2 km</span><span>15 km</span><span>Any</span></div>
       </div>
       <div class="fgroup">
-        <div class="fgroup__label">Maximum cost</div>
-        ${seg('maxPrice', [[0, 'Any'], [500, '₹500'], [1000, '₹1k'], [2000, '₹2k'], [5000, '₹5k']])}
-        <p class="fhint">Uses the lowest listed price. Options without a price are hidden when a limit is set.</p>
+        <div class="fgroup__label">${icon('rupee')}Maximum cost</div>
+        ${seg('maxPrice', [[0, 'Any'], [100, '< ₹100'], [500, '< ₹500'], [1000, '< ₹1k'], [2000, '< ₹2k']])}
+        <p class="fhint">Shows options offering service at or below this limit.</p>
       </div>
       <div class="fgroup">
-        <div class="fgroup__label">Waiting time (up to)</div>
+        <div class="fgroup__label">${icon('hourglass')}Waiting time</div>
         ${seg('maxWait', [[0, 'Any'], [15, '15 min'], [30, '30 min'], [60, '1 hr']])}
       </div>
       <div class="fgroup">
@@ -862,13 +904,13 @@
         ${ACCESS_FILTERS.map(([v, l]) => check('access', v, l)).join('')}
       </div>
       <div class="fgroup">
-        <div class="fgroup__label">Type of facility</div>
+        <div class="fgroup__label">${icon('building')}Facility type</div>
         ${TYPE_GROUPS.map(([v, l]) => check('types', v, l)).join('')}
       </div>
       <div class="fgroup">
-        <div class="fgroup__label">More</div>
-        ${sw('insurance', 'Accepts health insurance')}
-        ${sw('fresh', 'Updated in the last 24 hours')}
+        <div class="fgroup__label">${icon('shield')}Payment &amp; Verification</div>
+        ${sw('insurance', 'Accepts health insurance / TPA')}
+        ${sw('fresh', 'Verified in last 24 hours')}
       </div>
       <div class="filters__foot"><button type="button" class="btn btn--primary btn--block" data-act="close-filters">Show <span id="fshow">results</span></button></div>`;
   }
@@ -880,29 +922,30 @@
     const tags = computeTags(res);
     const loc = locObj();
     $('#res-count').innerHTML = res.length
-      ? `<strong>${res.length}</strong> of ${total} nearby places offering this service near <strong>${esc(loc.name)}</strong> · ${esc(whenLabel(state.when))}`
+      ? `<strong>${res.length}</strong> of ${total} places offering this service near <strong>${esc(loc.name)}</strong> · ${esc(whenLabel(state.when))}`
       : `No places match your filters near <strong>${esc(loc.name)}</strong>`;
     const fc = activeFilterCount();
     const fcount = $('#fcount'); if (fcount) fcount.textContent = fc || '';
+    const mfcount = $('#m-fcount'); if (mfcount) mfcount.textContent = fc || '';
     const fshow = $('#fshow'); if (fshow) fshow.textContent = `${res.length} result${res.length === 1 ? '' : 's'}`;
 
     // Active filter chips
     const F = state.filters, chips = [];
-    if (F.availableOnly) chips.push(['availableOnly', '', 'Available at my time']);
+    if (F.availableOnly) chips.push(['availableOnly', '', 'Open / Available at visit time']);
     if (F.maxDist < 40) chips.push(['maxDist', '', `Within ${F.maxDist} km`]);
-    if (F.maxPrice) chips.push(['maxPrice', '', `Up to ₹${fmtN(F.maxPrice)}`]);
-    if (F.maxWait) chips.push(['maxWait', '', `Wait up to ${F.maxWait} min`]);
-    F.access.forEach((k) => chips.push(['access', k, ACCESS_FILTERS.find((a) => a[0] === k)[1]]));
-    F.types.forEach((k) => chips.push(['types', k, TYPE_GROUPS.find((a) => a[0] === k)[1]]));
+    if (F.maxPrice) chips.push(['maxPrice', '', `Under ₹${fmtN(F.maxPrice)}`]);
+    if (F.maxWait) chips.push(['maxWait', '', `Wait ≤ ${F.maxWait} min`]);
+    F.access.forEach((k) => { const af = ACCESS_FILTERS.find((a) => a[0] === k); if (af) chips.push(['access', k, af[1]]); });
+    F.types.forEach((k) => { const tg = TYPE_GROUPS.find((t) => t[0] === k); if (tg) chips.push(['types', k, tg[1]]); });
     if (F.insurance) chips.push(['insurance', '', 'Accepts insurance']);
-    if (F.fresh) chips.push(['fresh', '', 'Updated in 24 h']);
-    $('#res-chips').innerHTML = chips.length ? `<div class="fchips">${chips.map(([k, v, l]) => `<button class="fchip" data-act="rm-f" data-k="${k}" data-v="${v}">${esc(l)}${icon('x')}</button>`).join('')}<button class="link" data-act="clear-filters">Clear all</button></div>` : '';
+    if (F.fresh) chips.push(['fresh', '', 'Verified in 24 h']);
+    $('#res-chips').innerHTML = chips.length ? `<div class="fchips">${chips.map(([k, v, l]) => `<button class="fchip" data-act="rm-f" data-k="${k}" data-v="${v}">${esc(l)}${icon('x')}</button>`).join('')}<button class="link link--clear" data-act="clear-filters">Clear all</button></div>` : '';
 
     if (!res.length) {
       $('#res-body').innerHTML = `<div class="empty">
         <span class="empty__ic">${icon('search')}</span>
         <h3>No options match all of your filters</h3>
-        <p>${total} place${total === 1 ? '' : 's'} nearby offer ${esc(svc.name.toLowerCase())}. Try removing a filter, or choose a different visit time.</p>
+        <p>${total} place${total === 1 ? '' : 's'} nearby offer ${esc(svc.name.toLowerCase())}. Try widening your distance or clearing some filters.</p>
         <div class="empty__actions"><button class="btn btn--primary" data-act="clear-filters">Clear all filters</button>
         ${!isNow() ? '' : `<button class="btn btn--ghost" data-act="set-when" data-v="tmrw">Try tomorrow morning</button>`}</div>
       </div>`;
@@ -913,14 +956,10 @@
       const hasMore = res.length > visibleRes.length;
 
       $('#res-body').innerHTML = `
-        <details class="explain">
-          <summary>${icon('info')}How is this list ordered?<span>${icon('chevD')}</span></summary>
-          <p><strong>Best match</strong> ranks options available at your visit time first. It then weighs distance, cost and estimated waiting time equally, and gives recently updated information a small boost. You can change the order with “Sort”. Sourced from Bangalore & National Healthcare Registries with real spherical GPS coordinates.</p>
-        </details>
         <ol class="cards">${visibleRes.map((r, i) => `<li>${resultCard(r, i, tags.get(r.f.id))}</li>`).join('')}</ol>
         ${hasMore ? `<div class="res-load-more" style="text-align:center;margin:1.5rem 0 2rem;"><button type="button" class="btn btn--primary" data-act="load-more-results" style="padding:0.75rem 2rem;font-size:0.95rem;border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,0.1);cursor:pointer;">${icon('chevD')} Show 30 more places (${res.length - visibleRes.length} remaining)</button></div>` : ''}
         ${total > res.length ? `<p class="res-foot">${total - res.length} more place${total - res.length === 1 ? '' : 's'} offer this service but don’t match your filters. <button class="link" data-act="clear-filters">Show all</button></p>` : ''}
-        <p class="res-foot res-foot--muted">${icon('info')}Healthcare facility locations &amp; details sourced from Bangalore Health Registry and National Healthcare Directory. Always confirm critical emergency details directly with the facility.</p>`;
+        <p class="res-foot res-foot--muted">${icon('info')}Healthcare facility locations &amp; details sourced from State Healthcare Registry and National Directory. Always confirm critical emergency details directly with the facility.</p>`;
     }
     $('#res-map').innerHTML = mapCard(res);
     mountLeafletMap(res);
@@ -930,30 +969,76 @@
     const f = r.f;
     const ac = accessSummary(f.access);
     const inCmp = state.compare.includes(f.id);
+    const cleanPhone = (f.phone || '').replace(/\s+/g, '');
+    const mapUrl = (f.lat && f.lon) ? `https://www.google.com/maps/dir/?api=1&destination=${f.lat},${f.lon}` : null;
+
+    // Accessibility highlights
+    const accessFeatures = [];
+    if (f.access) {
+      if (f.access.wheelchair) accessFeatures.push('Wheelchair');
+      if (f.access.lift) accessFeatures.push('Elevator');
+      else if (f.access.ground) accessFeatures.push('Ground floor');
+      if (f.access.parking) accessFeatures.push('Parking');
+      if (f.access.toilet) accessFeatures.push('Restroom');
+    }
+    const accessHighlights = accessFeatures.length ? accessFeatures.slice(0, 3).join(' · ') : ac.title;
+
     return `<article class="card rcard ${inCmp ? 'is-selected' : ''}" data-fid="${f.id}">
       <div class="rcard__head">
         <span class="pin-no pin-no--${r.avail.tone}">${i + 1}</span>
         <div class="rcard__title">
-          <div class="rcard__type">${typeLabel(f.type)}</div>
+          <div class="rcard__meta-top">
+            <span class="rcard__type">${typeLabel(f.type)}</span>
+            ${tags && tags.length ? `<div class="tags">${tags.map((t) => `<span class="tag tag--${t.k}">${icon(t.icon)}${t.label}</span>`).join('')}</div>` : ''}
+          </div>
           <h3><a href="#/facility/${f.id}" class="stretched">${esc(f.name)}</a></h3>
-          <div class="rcard__meta"><span>${icon('pin')}${esc(f.area)}</span><span class="sep"></span><strong>${r.dist} km</strong><span>~${r.drive} min by road</span><span class="sep"></span>${ratingText(f)}</div>
+          <div class="rcard__meta">
+            <span>${icon('pin')}${esc(f.area)}</span>
+            <span class="sep"></span>
+            <strong>${r.dist} km</strong>
+            <span>~${r.drive} min drive</span>
+            <span class="sep"></span>
+            ${ratingText(f)}
+          </div>
         </div>
-        <button type="button" class="cmp-toggle ${inCmp ? 'is-on' : ''}" data-act="toggle-compare" data-id="${f.id}" aria-pressed="${inCmp}">${icon(inCmp ? 'check' : 'plus')}<span>${inCmp ? 'Added' : 'Compare'}</span></button>
-      </div>
-      ${tags && tags.length ? `<div class="tags">${tags.map((t) => `<span class="tag tag--${t.k}">${icon(t.icon)}${t.label}</span>`).join('')}</div>` : ''}
-      <div class="metrics">
-        ${metric('rupee', 'Cost', priceText(r.price), esc(priceSub(r)), r.price == null ? 'muted' : '')}
-        ${metric('clock', 'Availability', r.avail.title, r.avail.sub, r.avail.tone, true)}
-        ${metric('hourglass', 'Est. wait', waitText(r.wait), r.wait == null ? 'No reliable data' : 'Typical estimate', waitTone(r.wait))}
-        ${metric('access', 'Access', ac.title, ac.sub, ac.tone)}
-      </div>
-      <div class="rcard__foot">
-        ${freshPill(f)}
-        <button type="button" class="btn btn--xs btn--subtle" data-act="edit-facility" data-fid="${f.id}" title="Simulate field verification / change live wait time or fee">
-          ${icon('edit')} Field Verify
+        <button type="button" class="cmp-toggle ${inCmp ? 'is-on' : ''}" data-act="toggle-compare" data-id="${f.id}" aria-pressed="${inCmp}" title="Compare this facility">
+          ${icon(inCmp ? 'check' : 'plus')}<span>${inCmp ? 'Added' : 'Compare'}</span>
         </button>
-        ${r.s.doctor ? `<span class="rcard__by">${icon('stethoscope')}${esc(r.s.doctor)}</span>` : ''}
-        <a class="rcard__more" href="#/facility/${f.id}">View details${icon('chevR')}</a>
+      </div>
+
+      <div class="metrics">
+        <div class="metric metric--cost ${r.price == null ? 'metric--muted' : ''}">
+          <span class="metric__label">${icon('rupee')}Cost</span>
+          <span class="metric__value">${priceText(r.price)}</span>
+          <span class="metric__sub">${esc(priceSub(r))}</span>
+        </div>
+        <div class="metric metric--avail metric--${r.avail.tone}">
+          <span class="metric__label">${icon('clock')}Availability</span>
+          <span class="metric__value"><i class="dot"></i>${r.avail.title}</span>
+          <span class="metric__sub">${r.avail.sub}</span>
+        </div>
+        <div class="metric metric--wait metric--${waitTone(r.wait)}">
+          <span class="metric__label">${icon('hourglass')}Est. wait</span>
+          <span class="metric__value">${waitText(r.wait)}</span>
+          <span class="metric__sub">${r.wait == null ? 'Call facility' : 'Typical wait time'}</span>
+        </div>
+        <div class="metric metric--access metric--${ac.tone}">
+          <span class="metric__label">${icon('access')}Access</span>
+          <span class="metric__value">${accessHighlights}</span>
+          <span class="metric__sub">${ac.sub}</span>
+        </div>
+      </div>
+
+      <div class="rcard__foot">
+        <div class="rcard__foot-left">
+          ${freshPill(f)}
+          ${r.s.doctor ? `<span class="rcard__by">${icon('stethoscope')}${esc(r.s.doctor)}</span>` : ''}
+        </div>
+        <div class="rcard__actions">
+          ${cleanPhone ? `<a href="tel:${cleanPhone}" class="btn btn--ghost btn--sm rcard__btn" title="Call facility">${icon('phone')}<span>Call</span></a>` : ''}
+          ${mapUrl ? `<a href="${mapUrl}" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--sm rcard__btn" title="Open Google Maps directions">${icon('nav')}<span>Directions</span></a>` : ''}
+          <a class="btn btn--primary btn--sm rcard__btn rcard__btn--view" href="#/facility/${f.id}">View details${icon('chevR')}</a>
+        </div>
       </div>
     </article>`;
   }
@@ -970,6 +1055,8 @@
     const inCmp = state.compare.includes(f.id);
     const ac = accessSummary(f.access);
     const svcIds = D.services.map((s) => s.id).filter((s) => f.services[s]);
+    const cleanPhone = (f.phone || '').replace(/\s+/g, '');
+    const mapUrl = (f.lat && f.lon) ? `https://www.google.com/maps/dir/?api=1&destination=${f.lat},${f.lon}` : null;
 
     return `
     <section class="fac-hero">
@@ -979,85 +1066,141 @@
           <div class="fac-hero__id">
             <div class="rcard__type">${typeLabel(f.type)}</div>
             <h1>${esc(f.name)}</h1>
-            <div class="rcard__meta"><span>${icon('pin')}${esc(f.address)}</span><span class="sep"></span><strong>${anyR.dist} km</strong><span>~${anyR.drive} min by road</span><span class="sep"></span>${ratingText(f)}</div>
-            <div class="fac-hero__badges">${freshPill(f, true)}${f.open24 ? `<span class="fresh fresh--info">${icon('clock')}Open 24 × 7</span>` : ''}</div>
+            <div class="rcard__meta">
+              <span>${icon('pin')}${esc(f.address)}</span>
+              <span class="sep"></span>
+              <strong>${anyR.dist} km</strong>
+              <span>~${anyR.drive} min drive</span>
+              <span class="sep"></span>
+              ${ratingText(f)}
+            </div>
+            <div class="fac-hero__badges">
+              ${freshPill(f, true)}
+              ${f.open24 ? `<span class="fresh fresh--good">${icon('clock')}Open 24 × 7</span>` : ''}
+            </div>
           </div>
           <div class="fac-actions">
-            <a class="btn btn--ghost" href="tel:${f.phone.replace(/\s/g, '')}">${icon('phone')}Call</a>
-            <button type="button" class="btn btn--ghost" data-act="edit-facility" data-fid="${f.id}">${icon('edit')} Field Verify</button>
-            ${sid ? `<button class="btn btn--ghost ${inCmp ? 'is-on' : ''}" data-act="toggle-compare" data-id="${f.id}">${icon(inCmp ? 'check' : 'columns')}${inCmp ? 'In comparison' : 'Add to compare'}</button>` : ''}
-            <a class="btn btn--primary" href="#/plan/${f.id}">Choose this option${icon('arrowR')}</a>
+            ${cleanPhone ? `<a class="btn btn--ghost" href="tel:${cleanPhone}">${icon('phone')}Call now</a>` : ''}
+            ${mapUrl ? `<a class="btn btn--ghost" href="${mapUrl}" target="_blank" rel="noopener noreferrer">${icon('nav')}Directions</a>` : ''}
+            ${sid ? `<button type="button" class="btn btn--ghost ${inCmp ? 'is-on' : ''}" data-act="toggle-compare" data-id="${f.id}">${icon(inCmp ? 'check' : 'columns')}${inCmp ? 'In comparison' : 'Compare'}</button>` : ''}
+            <a class="btn btn--primary" href="#/plan/${f.id}">Plan visit${icon('arrowR')}</a>
           </div>
         </div>
+
         ${r ? `
+        <!-- Section: For your visit -->
         <div class="focus-panel">
-          <div class="focus-panel__head"><span>For your search</span><strong>${esc(D.serviceMap[sid].name)}</strong><span class="focus-panel__when">${icon('clock')}${esc(whenLabel(state.when))}</span></div>
+          <div class="focus-panel__head">
+            <span class="focus-panel__tag">For your visit</span>
+            <strong>${esc(D.serviceMap[sid].name)}</strong>
+            <span class="focus-panel__when">${icon('clock')}${esc(whenLabel(state.when))}</span>
+          </div>
           <div class="metrics metrics--lg">
             ${metric('rupee', 'Cost', priceText(r.price), esc(priceSub(r)), r.price == null ? 'muted' : '')}
             ${metric('clock', 'Availability', r.avail.title, r.avail.sub, r.avail.tone, true)}
-            ${metric('hourglass', 'Est. wait', waitText(r.wait), r.wait == null ? 'No reliable data' : 'Typical estimate', waitTone(r.wait))}
+            ${metric('hourglass', 'Est. wait', waitText(r.wait), r.wait == null ? 'Call facility' : 'Typical estimate', waitTone(r.wait))}
             ${metric('access', 'Access', ac.title, ac.sub, ac.tone)}
           </div>
           ${r.s.doctor ? `<div class="focus-panel__doc">${icon('stethoscope')}<span><strong>${esc(r.s.doctor)}</strong> · ${esc(serviceDaysText(f, sid))}</span></div>` : `<div class="focus-panel__doc">${icon('calendar')}<span>${esc(serviceDaysText(f, sid))}</span></div>`}
         </div>` : ''}
+
         ${f.note ? `<div class="callout callout--warn">${icon('info')}<div>${esc(f.note)}</div></div>` : ''}
       </div>
     </section>
 
     <div class="container fac-grid">
       <div class="fac-col">
+        <!-- Section: Services & prices -->
         <section class="panel">
-          <h2>${icon('stethoscope')}Services &amp; prices</h2>
-          <div class="table-wrap"><table class="tbl">
-            <thead><tr><th>Service</th><th>Cost</th><th>${isNow() ? 'Now' : 'At your time'}</th></tr></thead>
-            <tbody>
-              ${svcIds.map((s) => {
-                const rr = enrich(f, s, date);
-                return `<tr class="${s === sid ? 'is-current' : ''}">
-                  <td><strong>${esc(D.serviceMap[s].name)}</strong>${rr.s.doctor ? `<small>${esc(rr.s.doctor)}</small>` : ''}</td>
-                  <td><strong>${priceText(rr.price)}</strong><small>${esc(priceSub(rr))}</small></td>
-                  <td><span class="status status--${rr.avail.tone}"><i></i>${rr.avail.title}</span><small>${rr.avail.sub}</small></td>
-                </tr>`;
-              }).join('')}
-            </tbody>
-          </table></div>
+          <div class="panel__head-row">
+            <h2>${icon('stethoscope')}Services &amp; prices</h2>
+            <span class="panel__head-meta">${svcIds.length} available services</span>
+          </div>
+          <div class="fac-services-list">
+            ${svcIds.map((s) => {
+              const rr = enrich(f, s, date);
+              return `<div class="fac-svc-card ${s === sid ? 'is-current' : ''}">
+                <div class="fac-svc-card__main">
+                  <strong>${esc(D.serviceMap[s].name)}</strong>
+                  ${rr.s.doctor ? `<span class="fac-svc-card__doc">${icon('stethoscope')}${esc(rr.s.doctor)}</span>` : ''}
+                </div>
+                <div class="fac-svc-card__price">
+                  <strong>${priceText(rr.price)}</strong>
+                  <small>${esc(priceSub(rr))}</small>
+                </div>
+                <div class="fac-svc-card__avail">
+                  <span class="status status--${rr.avail.tone}"><i class="dot"></i>${rr.avail.title}</span>
+                  <small>${rr.avail.sub}</small>
+                </div>
+              </div>`;
+            }).join('')}
+          </div>
         </section>
+
+        <!-- Section: Hours today -->
         <section class="panel">
-          <h2>${icon('calendar')}Timings</h2>
-          <table class="tbl tbl--hours">
-            <thead><tr><th>Day</th><th>Facility open</th>${sid ? `<th>${esc(shortName(D.serviceMap[sid].name))}</th>` : ''}</tr></thead>
-            <tbody>
-              ${[1, 2, 3, 4, 5, 6, 0].map((d) => `<tr class="${d === day ? 'is-current' : ''}"><td>${DAYS[d]}${d === day ? ' <span class="pill-sm">Visit day</span>' : ''}</td><td>${fmtRange(f.hours[d])}</td>${sid ? `<td>${f.services[sid].byAppt ? 'By appointment' : fmtRange(svcSchedule(f, sid, d))}</td>` : ''}</tr>`).join('')}
-            </tbody>
-          </table>
+          <div class="panel__head-row">
+            <h2>${icon('calendar')}Hours today</h2>
+            <span class="badge badge--brand">${DAYS[day]}</span>
+          </div>
+          <div class="today-hours-card">
+            <div class="today-hours-card__now">
+              <span class="today-hours-card__label">Today's Operating Hours:</span>
+              <strong>${fmtRange(f.hours[day])}</strong>
+            </div>
+            ${sid && f.services[sid] ? `<div class="today-hours-card__svc">
+              <span class="today-hours-card__label">${esc(shortName(D.serviceMap[sid].name))}:</span>
+              <span>${f.services[sid].byAppt ? 'By appointment' : fmtRange(svcSchedule(f, sid, day))}</span>
+            </div>` : ''}
+          </div>
+          <details class="weekly-hours">
+            <summary class="weekly-hours__toggle">${icon('clock')}View full week schedule <span>${icon('chevD')}</span></summary>
+            <table class="tbl tbl--hours">
+              <thead><tr><th>Day</th><th>Facility hours</th>${sid ? `<th>${esc(shortName(D.serviceMap[sid].name))}</th>` : ''}</tr></thead>
+              <tbody>
+                ${[1, 2, 3, 4, 5, 6, 0].map((d) => `<tr class="${d === day ? 'is-current' : ''}">
+                  <td><strong>${DAYS[d]}</strong>${d === day ? ' <span class="pill-sm">Today</span>' : ''}</td>
+                  <td>${fmtRange(f.hours[d])}</td>
+                  ${sid ? `<td>${f.services[sid].byAppt ? 'By appointment' : fmtRange(svcSchedule(f, sid, d))}</td>` : ''}
+                </tr>`).join('')}
+              </tbody>
+            </table>
+          </details>
         </section>
       </div>
+
       <div class="fac-col">
+        <!-- Section: Accessibility -->
         <section class="panel">
           <h2>${icon('access')}Accessibility &amp; assistance</h2>
           <ul class="alist">
             ${ACCESS.map(([k, l, ic]) => `<li>${yn(f.access[k], l)}<span class="alist__l">${icon(ic)}${l}</span><span class="alist__v alist__v--${f.access[k] === true ? 'yes' : f.access[k] === false ? 'no' : 'unk'}">${f.access[k] === true ? 'Yes' : f.access[k] === false ? 'No' : 'Not confirmed'}</span></li>`).join('')}
           </ul>
-          <p class="fhint">“Not confirmed” means the facility hasn’t provided this detail. Please call to check before visiting.</p>
+          <p class="fhint">“Not confirmed” indicates detail pending direct audit. Call facility prior to visit.</p>
         </section>
+
+        <!-- Section: Contact & payment -->
         <section class="panel">
           <h2>${icon('phone')}Contact &amp; payment</h2>
           <dl class="dl">
-            <dt>Phone</dt><dd><a class="link" href="tel:${f.phone.replace(/\s/g, '')}">${esc(f.phone)}</a></dd>
+            <dt>Phone</dt><dd>${cleanPhone ? `<a class="link" href="tel:${cleanPhone}">${esc(f.phone)}</a>` : 'Not available'}</dd>
             <dt>Address</dt><dd>${esc(f.address)}, ${esc(f.area)}</dd>
-            <dt>Payment</dt><dd>${f.payment.map((p) => `<span class="pill-sm">${esc(p)}</span>`).join(' ')}</dd>
+            <dt>Payment</dt><dd><div class="payment-pills">${f.payment.map((p) => `<span class="pill-sm">${esc(p)}</span>`).join('')}</div></dd>
             <dt>Languages</dt><dd>${esc(f.languages.join(', '))}</dd>
           </dl>
           <div class="panel__actions">
-            <a class="btn btn--ghost btn--sm" href="#/plan/${f.id}">${icon('nav')}Directions</a>
-            <a class="btn btn--ghost btn--sm" href="tel:${f.phone.replace(/\s/g, '')}">${icon('phone')}Call now</a>
+            ${cleanPhone ? `<a class="btn btn--ghost btn--sm" href="tel:${cleanPhone}">${icon('phone')}Call now</a>` : ''}
+            ${mapUrl ? `<a class="btn btn--ghost btn--sm" href="${mapUrl}" target="_blank" rel="noopener noreferrer">${icon('nav')}Directions</a>` : ''}
+            <button type="button" class="btn btn--ghost btn--sm" data-act="edit-facility" data-fid="${f.id}" title="Simulate field update">${icon('edit')} Field Verify</button>
           </div>
         </section>
+
+        <!-- Section: Information quality -->
         <section class="panel panel--muted">
-          <h2>${icon('shield')}About this information</h2>
+          <h2>${icon('shield')}Information quality</h2>
           <p class="fresh-line fresh-line--${fr.tone}"><strong>${fr.title}.</strong> Last updated ${fr.ago} · ${fr.source}.</p>
-          <p class="fhint">CUREVIA shows where each piece of information came from, so you can judge how much to rely on it.</p>
-          <button class="btn btn--ghost btn--sm" data-act="report-info">${icon('flag')}Report incorrect information</button>
+          <p class="fhint">Verified with national directories and field reports to provide transparent healthcare decision support.</p>
+          <button type="button" class="btn btn--ghost btn--sm" data-act="report-info">${icon('flag')}Report incorrect information</button>
         </section>
       </div>
     </div>`;
@@ -1398,17 +1541,39 @@
   /* ------------------------------------------------------------------ */
   function renderHeader() {
     $('#header').innerHTML = `
-      <div class="proto-bar">${icon('info')}<span><strong>Live Prototype</strong> · Real OpenStreetMap healthcare facilities &amp; GPS coordinates (South Bengaluru &amp; Kanakapura Road Corridor). In an emergency, call <a href="tel:112">112</a>.</span></div>
-      <header class="site-header"><div class="container site-header__inner">
-        <a href="#/" class="brand" aria-label="CUREVIA home"><span class="brand__mark">${icon('heartPulse')}</span>
-          <span class="brand__text"><span class="brand__name">CUREVIA</span><span class="brand__tag">Nearby healthcare service finder</span></span></a>
-        <nav class="nav" aria-label="Main">
-          <a href="#/" class="nav__link" data-nav="home">${icon('search')}<span class="hide-xs">Find care</span></a>
-          <a href="#/compare" class="nav__link" data-nav="compare">${icon('columns')}<span class="hide-xs">Compare</span><span class="badge" id="nav-cmp"></span></a>
-          <button type="button" class="nav__link" data-act="toggle-text" id="text-btn" title="Larger text" aria-pressed="${state.textLg}">${icon('textSize')}<span class="hide-sm">Text size</span></button>
-          <button type="button" class="nav__link nav__link--test" data-act="open-test" title="Usability test mode (for facilitators)">${icon('clipboard')}<span class="hide-sm">Test mode</span></button>
-        </nav>
-      </div></header>`;
+      <div class="proto-bar">
+        <div class="container proto-bar__inner">
+          <span class="proto-bar__em">${icon('siren')} <strong>Emergency 24/7:</strong> Call <a href="tel:112">112</a> or <a href="tel:108">108</a></span>
+          <span class="proto-bar__sep">·</span>
+          <span class="proto-bar__meta">${icon('shield')} Healthcare Decision Support &amp; Verified Directory</span>
+        </div>
+      </div>
+      <header class="site-header">
+        <div class="container site-header__inner">
+          <a href="#/" class="brand" aria-label="CUREVIA home">
+            <span class="brand__mark">${icon('heartPulse')}</span>
+            <span class="brand__text">
+              <span class="brand__name">CUREVIA</span>
+              <span class="brand__tag">Healthcare Decision Support</span>
+            </span>
+          </a>
+          <nav class="nav" aria-label="Main">
+            <a href="#/" class="nav__link" data-nav="home">
+              ${icon('search')}<span>Find Care</span>
+            </a>
+            <a href="#/compare" class="nav__link" data-nav="compare">
+              ${icon('columns')}<span>Compare</span>
+              <span class="badge" id="nav-cmp"></span>
+            </a>
+            <button type="button" class="nav__link nav__icon-btn" data-act="toggle-text" id="text-btn" title="Toggle larger text" aria-pressed="${state.textLg}">
+              ${icon('textSize')}<span class="sr-only">Text size</span>
+            </button>
+            <button type="button" class="nav__link nav__icon-btn nav__link--subtle" data-act="open-test" title="Usability testing mode">
+              ${icon('clipboard')}<span class="sr-only">Test mode</span>
+            </button>
+          </nav>
+        </div>
+      </header>`;
   }
 
   function updateHeader(r0) {
@@ -1419,31 +1584,68 @@
 
   function renderFooter() {
     $('#footer').innerHTML = `<div class="container footer__inner">
-      <div class="footer__brand"><a href="#/" class="brand"><span class="brand__mark">${icon('heartPulse')}</span><span class="brand__text"><span class="brand__name">CUREVIA</span><span class="brand__tag">Cure + Via: a path towards care</span></span></a>
-        <p>A Design Thinking prototype (CA-2). CUREVIA helps people compare practical information about nearby healthcare services. It does not give medical advice.</p></div>
-      <div class="footer__note">${icon('alert')}<div><strong>Sample data only</strong><span>Facilities, doctors, prices, timings and phone numbers are fictional. They are shown only to demonstrate the user flow.</span></div></div>
-      <div class="footer__em">${icon('siren')}<div><strong>Emergency?</strong><span>Call <a href="tel:112">112</a> · Ambulance <a href="tel:108">108</a></span></div></div>
+      <div class="footer__brand">
+        <a href="#/" class="brand">
+          <span class="brand__mark">${icon('heartPulse')}</span>
+          <span class="brand__text">
+            <span class="brand__name">CUREVIA</span>
+            <span class="brand__tag">Healthcare Decision Support</span>
+          </span>
+        </a>
+        <p>Transparent healthcare discovery and decision support. Helping patients and caregivers compare cost, availability, waiting times, and accessibility before traveling.</p>
+      </div>
+      <div class="footer__note">
+        ${icon('shield')}
+        <div>
+          <strong>Verified Healthcare Data</strong>
+          <span>Facility coordinates &amp; services verified via State Registry &amp; OpenStreetMap. Always verify emergency availability directly.</span>
+        </div>
+      </div>
+      <div class="footer__em">
+        ${icon('siren')}
+        <div>
+          <strong>Medical Emergency?</strong>
+          <span>Call <a href="tel:112">112</a> or Ambulance <a href="tel:108">108</a> immediately.</span>
+        </div>
+      </div>
     </div>`;
   }
 
   function renderTray(r0) {
     const el = $('#tray');
     const svc = state.service && D.serviceMap[state.service];
-    const show = svc && state.compare.length > 0 && ['', 'results', 'facility', 'category'].includes(r0);
+    const n = state.compare.length;
+    const show = n > 0 && ['', 'results', 'facility', 'category'].includes(r0);
     document.body.classList.toggle('has-tray', !!show);
     if (!show) { el.hidden = true; el.innerHTML = ''; return; }
-    const n = state.compare.length;
+
+    const labelTxt = n === 1 ? '1 selected · Add 1 more to compare' : `${n} selected · Compare options`;
+    const svcTitle = svc ? shortName(svc.name) : 'Healthcare options';
+
     el.hidden = false;
     el.innerHTML = `<div class="tray__inner">
-      <div class="tray__label">${icon('columns')}<div><strong>Compare ${n}/3</strong><span>${esc(shortName(svc.name))}</span></div></div>
+      <div class="tray__label">
+        ${icon('columns')}
+        <div>
+          <strong>${labelTxt}</strong>
+          <span>${esc(svcTitle)}</span>
+        </div>
+      </div>
       <div class="tray__slots">${[0, 1, 2].map((i) => {
         const id = state.compare[i];
-        if (!id) return `<div class="tray__slot tray__slot--empty">${icon('plus')}Add option</div>`;
+        if (!id) return `<div class="tray__slot tray__slot--empty">${icon('plus')}<span>Add facility</span></div>`;
         const f = D.facilityMap[id];
-        return `<div class="tray__slot"><span>${esc(f.name)}</span><button type="button" data-act="toggle-compare" data-id="${id}" aria-label="Remove ${esc(f.name)}">${icon('x')}</button></div>`;
+        return `<div class="tray__slot" title="${esc(f.name)}">
+          <span>${esc(f.name)}</span>
+          <button type="button" data-act="toggle-compare" data-id="${id}" aria-label="Remove ${esc(f.name)}">${icon('x')}</button>
+        </div>`;
       }).join('')}</div>
-      <button type="button" class="link tray__clear" data-act="clear-compare">Clear</button>
-      <button type="button" class="btn btn--primary" data-act="go-compare" ${n < 2 ? 'disabled' : ''}>${n < 2 ? 'Add 1 more' : 'Compare now'}${icon('arrowR')}</button>
+      <div class="tray__actions">
+        <button type="button" class="link tray__clear" data-act="clear-compare">Clear all</button>
+        <button type="button" class="btn btn--primary btn--sm" data-act="go-compare" ${n < 2 ? 'disabled' : ''}>
+          Compare options${icon('arrowR')}
+        </button>
+      </div>
     </div>`;
   }
 
