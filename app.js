@@ -86,9 +86,9 @@
     `<svg class="ic ${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name] || ''}</svg>`;
 
   const CAT_COLOR = {
-    consult: ['#0f766e', '#dcf5f0'], lab: ['#7c3aed', '#efe9fe'], imaging: ['#1d4ed8', '#e6eeff'],
-    dental: ['#0e7490', '#dff4f9'], urgent: ['#b91c1c', '#fde8e8'], physio: ['#c2410c', '#ffeddc'],
-    vacc: ['#15803d', '#e3f6e9'], eye: ['#4338ca', '#e8e9fd']
+    consult: ['#0f766e', '#ecfdf5'], lab: ['#2563eb', '#eff6ff'], imaging: ['#7c3aed', '#f5f3ff'],
+    dental: ['#0d9488', '#f0fdfa'], urgent: ['#dc2626', '#fef2f2'], physio: ['#ea580c', '#fff7ed'],
+    vacc: ['#16a34a', '#f0fdf4'], eye: ['#4f46e5', '#eef2ff']
   };
   const catStyle = (id) => `--h:${CAT_COLOR[id][0]};--hb:${CAT_COLOR[id][1]}`;
 
@@ -460,7 +460,7 @@
     });
 
     if (state.sort === 'best' && list[0] && !tags.get(list[0].f.id).some((t) => t.k === 'top')) {
-      tags.get(list[0].f.id).unshift({ k: 'top', icon: 'sparkle', label: 'Top match' });
+      tags.get(list[0].f.id).unshift({ k: 'top', icon: 'sparkle', label: 'Best overall' });
     }
     return tags;
   }
@@ -742,9 +742,9 @@
         </div>
         <div class="cat-grid cat-grid--simple">
           ${D.categories.map((c) => `
-            <a class="cat cat--simple" href="#/category/${c.id}">
+            <a class="cat cat--simple" href="#/category/${c.id}" style="border-top: 3px solid ${CAT_COLOR[c.id][0]};">
               <div class="cat__head">
-                <span class="cat__ic">${icon(c.icon)}</span>
+                <span class="cat__ic" style="background: ${CAT_COLOR[c.id][1]}; color: ${CAT_COLOR[c.id][0]};">${icon(c.icon)}</span>
                 <div>
                   <span class="cat__name">${esc(c.name)}</span>
                   <span class="cat__meta">${stats[c.id].places} places nearby</span>
@@ -972,16 +972,16 @@
     const cleanPhone = (f.phone || '').replace(/\s+/g, '');
     const mapUrl = (f.lat && f.lon) ? `https://www.google.com/maps/dir/?api=1&destination=${f.lat},${f.lon}` : null;
 
-    // Accessibility highlights
-    const accessFeatures = [];
+    // Accessibility icon chips
+    const accessChips = [];
     if (f.access) {
-      if (f.access.wheelchair) accessFeatures.push('Wheelchair');
-      if (f.access.lift) accessFeatures.push('Elevator');
-      else if (f.access.ground) accessFeatures.push('Ground floor');
-      if (f.access.parking) accessFeatures.push('Parking');
-      if (f.access.toilet) accessFeatures.push('Restroom');
+      if (f.access.wheelchair) accessChips.push(`<span class="acc-chip" title="Wheelchair accessible">${icon('access')}<span>Wheelchair</span></span>`);
+      if (f.access.lift) accessChips.push(`<span class="acc-chip" title="Elevator / Lift available">${icon('lift')}<span>Elevator</span></span>`);
+      else if (f.access.ground) accessChips.push(`<span class="acc-chip" title="Ground floor">${icon('home')}<span>Ground floor</span></span>`);
+      if (f.access.ramp) accessChips.push(`<span class="acc-chip" title="Ramp available">${icon('ramp')}<span>Ramp</span></span>`);
+      if (f.access.parking) accessChips.push(`<span class="acc-chip" title="Accessible parking">${icon('parking')}<span>Parking</span></span>`);
+      if (f.access.toilet) accessChips.push(`<span class="acc-chip" title="Accessible restroom">${icon('toilet')}<span>Restroom</span></span>`);
     }
-    const accessHighlights = accessFeatures.length ? accessFeatures.slice(0, 3).join(' · ') : ac.title;
 
     return `<article class="card rcard ${inCmp ? 'is-selected' : ''}" data-fid="${f.id}">
       <div class="rcard__head">
@@ -989,16 +989,13 @@
         <div class="rcard__title">
           <div class="rcard__meta-top">
             <span class="rcard__type">${typeLabel(f.type)}</span>
+            <span class="rcard__dist-pill">${icon('pin')}${r.dist} km</span>
+            ${ratingText(f)}
             ${tags && tags.length ? `<div class="tags">${tags.map((t) => `<span class="tag tag--${t.k}">${icon(t.icon)}${t.label}</span>`).join('')}</div>` : ''}
           </div>
           <h3><a href="#/facility/${f.id}" class="stretched">${esc(f.name)}</a></h3>
           <div class="rcard__meta">
-            <span>${icon('pin')}${esc(f.area)}</span>
-            <span class="sep"></span>
-            <strong>${r.dist} km</strong>
-            <span>~${r.drive} min drive</span>
-            <span class="sep"></span>
-            ${ratingText(f)}
+            <span>${icon('pin')}${esc(f.area)}${f.city ? ' · ' + esc(f.city) : ''}</span>
           </div>
         </div>
         <button type="button" class="cmp-toggle ${inCmp ? 'is-on' : ''}" data-act="toggle-compare" data-id="${f.id}" aria-pressed="${inCmp}" title="Compare this facility">
@@ -1012,22 +1009,24 @@
           <span class="metric__value">${priceText(r.price)}</span>
           <span class="metric__sub">${esc(priceSub(r))}</span>
         </div>
+        <div class="metric metric--wait metric--${waitTone(r.wait)}">
+          <span class="metric__label">${icon('hourglass')}Wait</span>
+          <span class="metric__value">${waitText(r.wait)}</span>
+          <span class="metric__sub">${r.wait == null ? 'Call facility' : 'Typical wait'}</span>
+        </div>
         <div class="metric metric--avail metric--${r.avail.tone}">
           <span class="metric__label">${icon('clock')}Availability</span>
           <span class="metric__value"><i class="dot"></i>${r.avail.title}</span>
           <span class="metric__sub">${r.avail.sub}</span>
         </div>
-        <div class="metric metric--wait metric--${waitTone(r.wait)}">
-          <span class="metric__label">${icon('hourglass')}Est. wait</span>
-          <span class="metric__value">${waitText(r.wait)}</span>
-          <span class="metric__sub">${r.wait == null ? 'Call facility' : 'Typical wait time'}</span>
-        </div>
-        <div class="metric metric--access metric--${ac.tone}">
-          <span class="metric__label">${icon('access')}Access</span>
-          <span class="metric__value">${accessHighlights}</span>
-          <span class="metric__sub">${ac.sub}</span>
+        <div class="metric metric--dist">
+          <span class="metric__label">${icon('pin')}Distance</span>
+          <span class="metric__value">${r.dist} km</span>
+          <span class="metric__sub">~${r.drive} min drive</span>
         </div>
       </div>
+
+      ${accessChips.length ? `<div class="rcard__acc-chips">${accessChips.slice(0, 4).join('')}</div>` : ''}
 
       <div class="rcard__foot">
         <div class="rcard__foot-left">
@@ -1064,26 +1063,22 @@
         <a class="back" href="${sid ? '#/results?s=' + sid : '#/'}">${icon('arrowL')}${sid ? 'Back to results' : 'Home'}</a>
         <div class="fac-hero__top">
           <div class="fac-hero__id">
-            <div class="rcard__type">${typeLabel(f.type)}</div>
-            <h1>${esc(f.name)}</h1>
-            <div class="rcard__meta">
-              <span>${icon('pin')}${esc(f.address)}</span>
-              <span class="sep"></span>
-              <strong>${anyR.dist} km</strong>
-              <span>~${anyR.drive} min drive</span>
-              <span class="sep"></span>
+            <div class="fac-hero__meta-top">
+              <span class="rcard__type">${typeLabel(f.type)}</span>
+              <span class="status status--${anyR.avail.tone}"><i class="dot"></i>${anyR.avail.title}</span>
+              <span class="rcard__dist-pill">${icon('pin')}${anyR.dist} km (${anyR.drive}m drive)</span>
               ${ratingText(f)}
-            </div>
-            <div class="fac-hero__badges">
-              ${freshPill(f, true)}
               ${f.open24 ? `<span class="fresh fresh--good">${icon('clock')}Open 24 × 7</span>` : ''}
+              ${freshPill(f, true)}
             </div>
+            <h1>${esc(f.name)}</h1>
+            <p class="fac-hero__addr">${icon('pin')}${esc(f.address)}, ${esc(f.area)}${f.city ? ' · ' + esc(f.city) : ''}</p>
           </div>
           <div class="fac-actions">
-            ${cleanPhone ? `<a class="btn btn--ghost" href="tel:${cleanPhone}">${icon('phone')}Call now</a>` : ''}
+            ${cleanPhone ? `<a class="btn btn--ghost" href="tel:${cleanPhone}">${icon('phone')}Call</a>` : ''}
             ${mapUrl ? `<a class="btn btn--ghost" href="${mapUrl}" target="_blank" rel="noopener noreferrer">${icon('nav')}Directions</a>` : ''}
             ${sid ? `<button type="button" class="btn btn--ghost ${inCmp ? 'is-on' : ''}" data-act="toggle-compare" data-id="${f.id}">${icon(inCmp ? 'check' : 'columns')}${inCmp ? 'In comparison' : 'Compare'}</button>` : ''}
-            <a class="btn btn--primary" href="#/plan/${f.id}">Plan visit${icon('arrowR')}</a>
+            <a class="btn btn--primary" href="#/plan/${f.id}">Choose this option${icon('arrowR')}</a>
           </div>
         </div>
 
@@ -1182,11 +1177,12 @@
         <!-- Section: Contact & payment -->
         <section class="panel">
           <h2>${icon('phone')}Contact &amp; payment</h2>
-          <dl class="dl">
-            <dt>Phone</dt><dd>${cleanPhone ? `<a class="link" href="tel:${cleanPhone}">${esc(f.phone)}</a>` : 'Not available'}</dd>
-            <dt>Address</dt><dd>${esc(f.address)}, ${esc(f.area)}</dd>
-            <dt>Payment</dt><dd><div class="payment-pills">${f.payment.map((p) => `<span class="pill-sm">${esc(p)}</span>`).join('')}</div></dd>
-            <dt>Languages</dt><dd>${esc(f.languages.join(', '))}</dd>
+          <dl class="dl dl--icons">
+            <dt>${icon('phone')} Phone</dt><dd>${cleanPhone ? `<a class="link" href="tel:${cleanPhone}">${esc(f.phone)}</a>` : 'Not available'}</dd>
+            <dt>${icon('pin')} Address</dt><dd>${esc(f.address)}, ${esc(f.area)}${f.city ? ' · ' + esc(f.city) : ''}</dd>
+            <dt>${icon('card')} Payment</dt><dd><div class="payment-pills">${f.payment.map((p) => `<span class="pill-sm">${esc(p)}</span>`).join('')}</div></dd>
+            <dt>${icon('globe')} Languages</dt><dd>${esc(f.languages.join(', '))}</dd>
+            <dt>${icon('clock')} Hours</dt><dd>${f.open24 ? 'Open 24 hours daily' : fmtRange(f.hours[day])}</dd>
           </dl>
           <div class="panel__actions">
             ${cleanPhone ? `<a class="btn btn--ghost btn--sm" href="tel:${cleanPhone}">${icon('phone')}Call now</a>` : ''}
@@ -1274,13 +1270,14 @@
 
     // Verdict
     const pick = (set) => [...set].map((i) => rows[i].f.name);
+    const accessScore = (f) => (f.access ? (f.access.wheelchair ? 2 : 0) + (f.access.ramp ? 1 : 0) + (f.access.lift || f.access.ground ? 2 : 0) + (f.access.toilet ? 1 : 0) + (f.access.parking ? 1 : 0) : 0);
+    const bestAccess = bestMin(rows.map((r) => -accessScore(r.f)));
     const verdict = [
       ['rupee', 'Lowest cost', pick(groups[0].rows[0].best), 'price'],
-      ['clock', isNow() ? 'Available now' : 'Available at your time', pick(groups[0].rows[1].best), 'good'],
       ['hourglass', 'Shortest wait', pick(groups[0].rows[2].best), 'wait'],
-      ['pin', 'Closest', pick(groups[0].rows[3].best), 'dist']
+      ['pin', 'Closest', pick(groups[0].rows[3].best), 'dist'],
+      ['access', 'Best accessibility', pick(bestAccess), 'access']
     ];
-    const allAvail = rows.every((r) => r.avail.ok), noneAvail = rows.every((r) => !r.avail.ok);
 
     const isSame = (row) => { const vals = row.raw || row.cells.map((c) => c.v + '|' + (c.sub || '')); return vals.every((v) => v === vals[0]); };
 
