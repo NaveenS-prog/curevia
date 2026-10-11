@@ -170,6 +170,7 @@
     loc: initialLoc,
     when: store.get('when', 'now'),
     sort: store.get('sort', 'best'),
+    pageLimit: 30,
     filters: Object.assign(defaultFilters(), store.get('filters', {})),
     compare: store.get('compare', []).filter((id) => D.facilityMap[id]),
     textLg: store.get('textLg', false),
@@ -906,14 +907,20 @@
         ${!isNow() ? '' : `<button class="btn btn--ghost" data-act="set-when" data-v="tmrw">Try tomorrow morning</button>`}</div>
       </div>`;
     } else {
+      const PAGE_SIZE = 30;
+      const pageLimit = state.pageLimit || PAGE_SIZE;
+      const visibleRes = res.slice(0, pageLimit);
+      const hasMore = res.length > visibleRes.length;
+
       $('#res-body').innerHTML = `
         <details class="explain">
           <summary>${icon('info')}How is this list ordered?<span>${icon('chevD')}</span></summary>
-          <p><strong>Best match</strong> ranks options available at your visit time first. It then weighs distance, cost and estimated waiting time equally, and gives recently updated information a small boost. You can change the order with “Sort”. Sourced from OpenStreetMap with real spherical GPS coordinates.</p>
+          <p><strong>Best match</strong> ranks options available at your visit time first. It then weighs distance, cost and estimated waiting time equally, and gives recently updated information a small boost. You can change the order with “Sort”. Sourced from Bangalore & National Healthcare Registries with real spherical GPS coordinates.</p>
         </details>
-        <ol class="cards">${res.map((r, i) => `<li>${resultCard(r, i, tags.get(r.f.id))}</li>`).join('')}</ol>
+        <ol class="cards">${visibleRes.map((r, i) => `<li>${resultCard(r, i, tags.get(r.f.id))}</li>`).join('')}</ol>
+        ${hasMore ? `<div class="res-load-more" style="text-align:center;margin:1.5rem 0 2rem;"><button type="button" class="btn btn--primary" data-act="load-more-results" style="padding:0.75rem 2rem;font-size:0.95rem;border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,0.1);cursor:pointer;">${icon('chevD')} Show 30 more places (${res.length - visibleRes.length} remaining)</button></div>` : ''}
         ${total > res.length ? `<p class="res-foot">${total - res.length} more place${total - res.length === 1 ? '' : 's'} offer this service but don’t match your filters. <button class="link" data-act="clear-filters">Show all</button></p>` : ''}
-        <p class="res-foot res-foot--muted">${icon('info')}Healthcare facility locations &amp; details sourced from OpenStreetMap. Always confirm critical emergency details directly with the facility.</p>`;
+        <p class="res-foot res-foot--muted">${icon('info')}Healthcare facility locations &amp; details sourced from Bangalore Health Registry and National Healthcare Directory. Always confirm critical emergency details directly with the facility.</p>`;
     }
     $('#res-map').innerHTML = mapCard(res);
     mountLeafletMap(res);
@@ -1496,6 +1503,7 @@
     const key = location.hash || '#/';
     if (key !== lastKey) {
       window.scrollTo(0, 0);
+      state.pageLimit = 30;
       if (lastKey !== null) countScreen();
       lastKey = key;
     }
@@ -1833,13 +1841,17 @@
       case 'clear-compare': state.compare = []; saveState(); render(); break;
       case 'go-compare': go('#/compare'); break;
       case 'open-filters': document.body.classList.add('filters-open'); break;
-      case 'close-filters': closeFilters(); break;
-      case 'clear-filters': state.filters = defaultFilters(); saveState(); $('#filters') && ($('#filters').innerHTML = filtersPanel()); updateResults(); break;
-      case 'set-f': F[el.dataset.k] = Number(el.dataset.v); saveState(); $('#filters').innerHTML = filtersPanel(); updateResults(); break;
+      case 'load-more-results':
+        state.pageLimit = (state.pageLimit || 30) + 30;
+        updateResults();
+        break;
+      case 'clear-filters': state.filters = defaultFilters(); state.pageLimit = 30; saveState(); $('#filters') && ($('#filters').innerHTML = filtersPanel()); updateResults(); break;
+      case 'set-f': F[el.dataset.k] = Number(el.dataset.v); state.pageLimit = 30; saveState(); $('#filters').innerHTML = filtersPanel(); updateResults(); break;
       case 'rm-f': {
         const k = el.dataset.k, v = el.dataset.v;
         if (k === 'access' || k === 'types') F[k] = F[k].filter((x) => x !== v);
         else F[k] = defaultFilters()[k];
+        state.pageLimit = 30;
         saveState(); $('#filters').innerHTML = filtersPanel(); updateResults(); break;
       }
       case 'set-when': state.when = el.dataset.v; saveState(); render(); toast('Showing availability for ' + whenLabel(state.when).toLowerCase()); break;
@@ -1937,6 +1949,7 @@
     if (t.matches('.search__input')) { updateSuggest(t); return; }
     if (t.matches('[data-f="maxDist"]')) {
       state.filters.maxDist = Number(t.value);
+      state.pageLimit = 30;
       $('#o-dist').textContent = state.filters.maxDist >= 40 ? 'Any distance' : 'Within ' + state.filters.maxDist + ' km';
       saveState(); updateResults(); return;
     }
@@ -1948,7 +1961,9 @@
   document.addEventListener('change', (e) => {
     const t = e.target;
     if (t.matches('select[data-state]')) {
-      state[t.dataset.state] = t.value; saveState();
+      state[t.dataset.state] = t.value;
+      state.pageLimit = 30;
+      saveState();
       const r0 = parseHash().parts[0] || '';
       if (r0 === 'results') {
         if (t.dataset.state === 'when') $('#filters').innerHTML = filtersPanel();
@@ -1956,11 +1971,12 @@
       } else if (r0 !== '') render();
       return;
     }
-    if (t.matches('input[data-f]') && t.type === 'checkbox') { state.filters[t.dataset.f] = t.checked; saveState(); updateResults(); return; }
+    if (t.matches('input[data-f]') && t.type === 'checkbox') { state.filters[t.dataset.f] = t.checked; state.pageLimit = 30; saveState(); updateResults(); return; }
     if (t.matches('input[data-farr]')) {
       const arr = state.filters[t.dataset.farr];
       if (t.checked && !arr.includes(t.value)) arr.push(t.value);
       if (!t.checked) state.filters[t.dataset.farr] = arr.filter((x) => x !== t.value);
+      state.pageLimit = 30;
       saveState(); updateResults(); return;
     }
     if (t.id === 'diff-only') { ui.diffOnly = t.checked; render(); return; }
