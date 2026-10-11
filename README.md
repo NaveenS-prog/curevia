@@ -1,12 +1,11 @@
 # CUREVIA – Nearby Healthcare Service Finder
-**Design Thinking (25ESC105) – Unit-III Solutioning Prototype**  
-**Team Members:** Nanda Kishore, Naveen S, Nikil S, Nivin, Shwetha N (CSE - AIDE-B, Jain University)
+
 
 ---
 
 ## 🌟 Overview
 
-**CUREVIA** is a high-fidelity interactive web application and working prototype designed to solve the critical pre-visit healthcare decision gap identified in our Design Thinking CA-2 project report.
+**CUREVIA** is a high-fidelity interactive web application and working prototype designed to solve the critical pre-visit healthcare decision gap 
 
 Rather than acting as a generic hospital directory or advertising portal, CUREVIA is **service-first** and **transparency-focused**:
 1. **Specific Medical Services:** Users search for the exact clinical care or test they need (e.g., *Chest X-ray*, *Complete Blood Count (CBC)*, *General Physician*, *Paediatrician*, *Ultrasound*, *Dental Check-up*).
