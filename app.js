@@ -80,7 +80,10 @@
     globe: '<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>',
     map: '<path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/>',
     list: '<path d="M3 12h.01"/><path d="M3 18h.01"/><path d="M3 6h.01"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M8 6h13"/>',
-    minimize: '<path d="M8 3v3a2 2 0 0 1-2 2H3"/><path d="M21 8h-3a2 2 0 0 1-2-2V3"/><path d="M3 16h3a2 2 0 0 1 2 2v3"/><path d="M16 21v-3a2 2 0 0 1 2-2h3"/>'
+    minimize: '<path d="M8 3v3a2 2 0 0 1-2 2H3"/><path d="M21 8h-3a2 2 0 0 1-2-2V3"/><path d="M3 16h3a2 2 0 0 1 2 2v3"/><path d="M16 21v-3a2 2 0 0 1 2-2h3"/>',
+    send: '<path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/>',
+    messageSquare: '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>',
+    bot: '<path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/>'
   };
   const icon = (name, cls = '') =>
     `<svg class="ic ${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name] || ''}</svg>`;
@@ -727,6 +730,11 @@
               }).join('')}
             </div>
           </div>
+          <div style="text-align:center;margin-top:12px;">
+            <button type="button" class="hero-chat-prompt" data-act="open-chat">
+              ${icon('sparkle')}<span>Not sure what care you need? <strong>Ask Curevia Assistant</strong> for triage &amp; comparison &rarr;</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -866,6 +874,9 @@
       </button>
       <button type="button" class="btn btn--ghost btn--sm mobile-action-bar__btn map-toggle" data-act="toggle-map">
         ${icon('map')}<span>Map</span>
+      </button>
+      <button type="button" class="btn btn--primary btn--sm mobile-action-bar__btn mobile-action-bar__btn--chat" data-act="open-chat">
+        ${icon('sparkle')}<span>Curevia</span>
       </button>
     </div>`;
   }
@@ -1566,6 +1577,10 @@
               ${icon('columns')}<span>Compare</span>
               <span class="badge" id="nav-cmp"></span>
             </a>
+            <button type="button" class="nav__link nav__link--chat" data-act="open-chat" title="Chat with Curevia assistant">
+              ${icon('sparkle')}<span>Ask Curevia</span>
+              <span class="chat-nav-dot"></span>
+            </button>
             <button type="button" class="nav__link nav__icon-btn" data-act="toggle-text" id="text-btn" title="Toggle larger text" aria-pressed="${state.textLg}">
               ${icon('textSize')}<span class="sr-only">Text size</span>
             </button>
@@ -2199,6 +2214,89 @@
         break;
       case 't-csv': download(`curevia-usability-${new Date().toISOString().slice(0, 10)}.csv`, sessionsCSV(sessions()), 'text/csv;charset=utf-8'); break;
       case 't-md': copyText(sessionsMD(sessions())).then((ok) => toast(ok ? 'Summary table copied (Markdown)' : 'Copy not available in this browser', ok ? 'good' : '')); break;
+
+      /* Curevia Chat Actions */
+      case 'open-chat': {
+        chatState.open = true;
+        chatState.minimized = false;
+        renderChat();
+        setTimeout(() => { const inp = $('#cchat-input'); if (inp && inp.focus) inp.focus(); }, 120);
+        break;
+      }
+      case 'close-chat': {
+        chatState.open = false;
+        renderChat();
+        break;
+      }
+      case 'minimize-chat': {
+        chatState.minimized = !chatState.minimized;
+        renderChat();
+        break;
+      }
+      case 'clear-chat': {
+        if (confirm('Clear your conversation history with Curevia?')) {
+          chatState.messages = [getWelcomeMessage()];
+          saveChatState();
+          renderChat();
+          toast('Conversation cleared.');
+        }
+        break;
+      }
+      case 'chat-chip': {
+        const q = el.dataset.q;
+        if (q) submitChatMessage(q);
+        break;
+      }
+      case 'chat-pick-service': {
+        const sid = el.dataset.sid;
+        if (sid) {
+          pickService(sid);
+          chatState.minimized = true;
+          renderChat();
+        }
+        break;
+      }
+      case 'chat-view-facility': {
+        const fid = el.dataset.fid;
+        if (fid) {
+          go('#/facility/' + fid);
+          chatState.minimized = true;
+          renderChat();
+        }
+        break;
+      }
+      case 'chat-add-compare': {
+        const fid = el.dataset.fid;
+        if (fid) {
+          if (!state.compare.includes(fid)) {
+            if (state.compare.length >= 3) {
+              toast('You can compare up to 3 options. Remove one first.');
+              return;
+            }
+            state.compare.push(fid);
+            saveState();
+            updateHeader();
+            renderTray();
+            toast('Added to comparison! Tap Compare to view side-by-side.', 'good');
+          } else {
+            toast('Facility already in comparison.');
+          }
+        }
+        break;
+      }
+      case 'chat-go-compare': {
+        const ids = (el.dataset.ids || '').split(',').filter(Boolean);
+        if (ids.length >= 2) {
+          state.compare = ids;
+          saveState();
+          updateHeader();
+          renderTray();
+          go('#/compare');
+          chatState.minimized = true;
+          renderChat();
+        }
+        break;
+      }
       default: break;
     }
   });
@@ -2264,6 +2362,7 @@
     }
     if (e.key === 'Escape') {
       if (document.body.classList.contains('filters-open')) closeFilters();
+      else if (chatState.open) { chatState.open = false; renderChat(); }
       else if (ui.testOpen) { ui.testOpen = false; renderTest(); }
     }
   });
@@ -2282,6 +2381,15 @@
 
   document.addEventListener('submit', (e) => {
     if (e.target.matches('[data-form="home-search"]')) { e.preventDefault(); submitSearch($('[data-search]', e.target)); }
+    else if (e.target.matches('[data-form="chat-form"]')) {
+      e.preventDefault();
+      const inp = $('#cchat-input');
+      if (inp && inp.value.trim()) {
+        const val = inp.value;
+        inp.value = '';
+        submitChatMessage(val);
+      }
+    }
   });
 
   // Hover sync between result cards and map pins
@@ -2290,6 +2398,657 @@
     $$('.is-hover').forEach((x) => { if (!el || x.dataset.fid !== el.dataset.fid) x.classList.remove('is-hover'); });
     if (el) $$(`[data-fid="${el.dataset.fid}"]`).forEach((x) => x.classList.add('is-hover'));
   });
+
+  /* ------------------------------------------------------------------ */
+  /* Curevia Chatbox: AI Healthcare Navigator & Triage Assistant       */
+  /* ------------------------------------------------------------------ */
+  function getWelcomeMessage() {
+    return {
+      id: 'msg_welcome',
+      sender: 'curevia',
+      text: "👋 **Hello! I'm Curevia**, your verified healthcare decision assistant.\n\nTell me what symptoms you're experiencing or care you need. You can also ask me to compare nearby hospitals, check real OPD fees, wait times, or wheelchair accessibility.",
+      time: 'Just now',
+      chips: [
+        '🩺 General doctor consultation',
+        '💰 Lowest cost hospitals nearby',
+        '🦽 Wheelchair accessible hospitals',
+        '🚨 24x7 Emergency casualty care',
+        '🧪 Lab test & scan pricing',
+        '⚖️ Compare CDSIMER & Harohalli'
+      ]
+    };
+  }
+
+  const chatState = {
+    open: false,
+    minimized: false,
+    isThinking: false,
+    messages: store.get('chat_history', [getWelcomeMessage()])
+  };
+
+  function saveChatState() {
+    store.set('chat_history', chatState.messages.slice(-30));
+  }
+
+  function formatChatText(txt) {
+    if (!txt) return '';
+    let s = esc(txt);
+    s = s.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    s = s.replace(/\*(.*?)\*/g, '<em>$1</em>');
+    const lines = s.split('\n');
+    let inUl = false, inOl = false;
+    const out = [];
+    for (const rawLine of lines) {
+      const line = rawLine.trim();
+      if (line.startsWith('- ')) {
+        if (!inUl) { out.push('<ul>'); inUl = true; }
+        out.push('<li>' + line.slice(2) + '</li>');
+      } else if (/^\d+\.\s/.test(line)) {
+        if (!inOl) { out.push('<ol>'); inOl = true; }
+        out.push('<li>' + line.replace(/^\d+\.\s/, '') + '</li>');
+      } else {
+        if (inUl) { out.push('</ul>'); inUl = false; }
+        if (inOl) { out.push('</ol>'); inOl = false; }
+        if (line) {
+          out.push('<p>' + line + '</p>');
+        }
+      }
+    }
+    if (inUl) out.push('</ul>');
+    if (inOl) out.push('</ol>');
+    return out.join('');
+  }
+
+  function generateCureviaReply(q) {
+    const raw = q.trim();
+    const lq = raw.toLowerCase();
+    const date = visitDate();
+    const loc = locObj();
+    const timeStr = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+    // 1. Critical Emergency Symptoms
+    const emergencyRegex = /\b(chest pain|heart attack|can't breathe|difficulty breathing|shortness of breath|unconscious|passed out|heavy bleed|bleeding heavily|stroke|seizure|convulsion|poison|poisoning|severe burn|choking|head injury|severe trauma|accident)\b/i;
+    if (emergencyRegex.test(lq)) {
+      const emergFacs = D.facilities
+        .filter((f) => f.open24 || (f.services && f.services.emerg))
+        .map((f) => enrich(f, 'emerg', date))
+        .sort((a, b) => a.dist - b.dist)
+        .slice(0, 3);
+
+      return {
+        id: 'msg_' + Date.now(),
+        sender: 'curevia',
+        time: timeStr,
+        isAlert: true,
+        text: "⚠️ **CRITICAL MEDICAL ALERT**: You described symptoms that may indicate an immediate life-threatening emergency.\n\n**Do not wait or travel alone without medical support.** Call emergency services immediately or proceed to the nearest 24/7 casualty trauma center.",
+        alertData: {
+          title: "Immediate Action Required",
+          phones: [
+            { label: "112 (National Emergency)", tel: "112" },
+            { label: "108 (Ambulance Service)", tel: "108" }
+          ]
+        },
+        cards: emergFacs.map((r) => ({
+          id: r.f.id,
+          name: r.f.name,
+          type: typeLabel(r.f.type),
+          dist: r.dist,
+          area: r.f.area,
+          rating: r.f.rating,
+          price: r.price == null ? '₹0 - ₹200' : priceText(r.price),
+          priceLabel: 'Emergency Casualty',
+          wait: r.wait || 5,
+          waitLabel: 'Triage wait',
+          phone: r.f.phone,
+          sid: 'emerg'
+        })),
+        chips: [
+          '📞 Call 112 emergency',
+          '🏥 24/7 casualty centers nearby',
+          '📍 What is my closest hospital?'
+        ]
+      };
+    }
+
+    // 2. Hospital Comparison
+    const isCompare = /\b(compare|versus|\bvs\b|difference between)\b/i.test(lq);
+    if (isCompare) {
+      const matched = D.facilities.filter((f) => {
+        const fn = f.name.toLowerCase();
+        const fid = f.id.toLowerCase();
+        return lq.includes(fid) || lq.includes(fn) || (f.area && lq.includes(f.area.toLowerCase().split(' ')[0]));
+      });
+
+      let f1, f2;
+      if (matched.length >= 2) {
+        f1 = matched[0];
+        f2 = matched[1];
+      } else if (matched.length === 1 && state.compare.length >= 1 && state.compare[0] !== matched[0].id) {
+        f1 = D.facilityMap[state.compare[0]] || D.facilities[0];
+        f2 = matched[0];
+      } else {
+        const sorted = D.facilities
+          .map((f) => enrich(f, state.service || 'gp', date))
+          .sort((a, b) => a.dist - b.dist);
+        f1 = sorted[0].f;
+        f2 = sorted[1].f;
+      }
+
+      const sid = state.service || 'gp';
+      const svc = D.serviceMap[sid] || D.services[0];
+      const r1 = enrich(f1, sid, date);
+      const r2 = enrich(f2, sid, date);
+
+      return {
+        id: 'msg_' + Date.now(),
+        sender: 'curevia',
+        time: timeStr,
+        text: `⚖️ **Comparison: ${f1.name} vs ${f2.name}** for **${svc.name}**:\n\n` +
+          `- **Cost:** ${f1.name.split(' ')[0]} is **${priceText(r1.price)}** vs ${f2.name.split(' ')[0]} at **${priceText(r2.price)}**.\n` +
+          `- **Estimated Wait:** **${waitText(r1.wait)}** vs **${waitText(r2.wait)}**.\n` +
+          `- **Distance:** **${r1.dist} km** (~${r1.drive} min) vs **${r2.dist} km** (~${r2.drive} min) from ${loc.name}.\n` +
+          `- **Accessibility:** ${f1.name.split(' ')[0]} has ${f1.access.wheelchair ? 'wheelchair & ramp access' : 'basic access'}; ${f2.name.split(' ')[0]} has ${f2.access.wheelchair ? 'wheelchair & ramp access' : 'basic access'}.`,
+        compareAction: {
+          ids: [f1.id, f2.id],
+          label: `Open Full Side-by-Side Comparison Matrix →`
+        },
+        cards: [
+          { id: f1.id, name: f1.name, type: typeLabel(f1.type), dist: r1.dist, area: f1.area, rating: f1.rating, price: priceText(r1.price), priceLabel: svc.name, wait: r1.wait, waitLabel: 'Wait', phone: f1.phone, sid },
+          { id: f2.id, name: f2.name, type: typeLabel(f2.type), dist: r2.dist, area: f2.area, rating: f2.rating, price: priceText(r2.price), priceLabel: svc.name, wait: r2.wait, waitLabel: 'Wait', phone: f2.phone, sid }
+        ],
+        chips: [
+          `🔍 View all ${svc.name} options`,
+          '💰 Compare lowest price options',
+          '🦽 Which has better wheelchair access?'
+        ]
+      };
+    }
+
+    // 3. Price & Budget Inquiry
+    const isPrice = /\b(cost|price|how much|fee|fees|cheap|cheapest|budget|low cost|government|govt|free|ayushman|subsidised|under 100|under 500)\b/i.test(lq);
+    if (isPrice) {
+      const sid = state.service || 'gp';
+      const svc = D.serviceMap[sid] || D.services[0];
+      const lowest = D.facilities
+        .filter((f) => f.services && f.services[sid] && f.services[sid].price != null)
+        .map((f) => enrich(f, sid, date))
+        .sort((a, b) => a.priceMin - b.priceMin)
+        .slice(0, 3);
+
+      return {
+        id: 'msg_' + Date.now(),
+        sender: 'curevia',
+        time: timeStr,
+        text: `💰 **Transparent Pricing & Low-Cost Care Options** for **${svc.name}**:\n\n` +
+          `- **Government & Subsidised Care:** Starts from **₹20** (e.g., Harohalli Govt General Hospital accepts Ayushman Bharat PM-JAY).\n` +
+          `- **Teaching & Non-Profit Hospitals:** **₹400** consultation fee (e.g., CDSIMER Hospital on Kanakapura Rd).\n` +
+          `- **Private Tertiary Centers:** **₹700 – ₹1,050** consultation fee.\n\n` +
+          `Here are the lowest-cost verified facilities near **${loc.name}**:`,
+        cards: lowest.map((r) => ({
+          id: r.f.id,
+          name: r.f.name,
+          type: typeLabel(r.f.type),
+          dist: r.dist,
+          area: r.f.area,
+          rating: r.f.rating,
+          price: priceText(r.price),
+          priceLabel: 'Fee',
+          wait: r.wait,
+          waitLabel: 'Wait',
+          phone: r.f.phone,
+          sid
+        })),
+        chips: [
+          '📉 Filter care under ₹100',
+          '💵 Filter care under ₹500',
+          '⚖️ Compare top 2 budget hospitals'
+        ]
+      };
+    }
+
+    // 4. Wait Time Inquiry
+    const isWait = /\b(wait|waiting|queue|crowd|crowded|fast|fastest|quick|how long)\b/i.test(lq);
+    if (isWait) {
+      const sid = state.service || 'gp';
+      const svc = D.serviceMap[sid] || D.services[0];
+      const fastest = D.facilities
+        .filter((f) => f.services && f.services[sid] && f.services[sid].waitMin != null)
+        .map((f) => enrich(f, sid, date))
+        .sort((a, b) => (a.wait || 999) - (b.wait || 999))
+        .slice(0, 3);
+
+      return {
+        id: 'msg_' + Date.now(),
+        sender: 'curevia',
+        time: timeStr,
+        text: `⏱️ **Typical Waiting Times & Queue Estimates**:\n\n` +
+          `- **24/7 Casualty & Triage:** **~5 – 10 minutes**\n` +
+          `- **Lab Tests & Chest X-rays:** **~10 – 15 minutes**\n` +
+          `- **Private Doctor OPD:** **~15 – 30 minutes**\n` +
+          `- **Government Walk-in OPD:** **~40 – 50 minutes**\n\n` +
+          `💡 *Tip: Visiting between 10:30 AM – 12:30 PM or 4:00 PM – 5:30 PM usually experiences the shortest queues.*\n\n` +
+          `Shortest wait options near **${loc.name}**:`,
+        cards: fastest.map((r) => ({
+          id: r.f.id,
+          name: r.f.name,
+          type: typeLabel(r.f.type),
+          dist: r.dist,
+          area: r.f.area,
+          rating: r.f.rating,
+          price: priceText(r.price),
+          priceLabel: 'Fee',
+          wait: r.wait,
+          waitLabel: 'Est. Wait',
+          phone: r.f.phone,
+          sid
+        })),
+        chips: [
+          '⏱️ Sort results by shortest wait',
+          '🩺 Find fast GP consultation',
+          '🚨 Where is casualty open now?'
+        ]
+      };
+    }
+
+    // 5. Wheelchair & Physical Accessibility Inquiry
+    const isAccess = /\b(wheelchair|accessible|accessibility|ramp|lift|elevator|handicap|disabled|elderly|senior|walker|toilet|parking)\b/i.test(lq);
+    if (isAccess) {
+      const sid = state.service || 'gp';
+      const svc = D.serviceMap[sid] || D.services[0];
+      const accessibleFacs = D.facilities
+        .filter((f) => f.access && f.access.wheelchair)
+        .map((f) => {
+          const r = enrich(f, sid, date);
+          const score = Object.values(f.access || {}).filter(Boolean).length;
+          return { ...r, score };
+        })
+        .sort((a, b) => b.score - a.score || a.dist - b.dist)
+        .slice(0, 3);
+
+      return {
+        id: 'msg_' + Date.now(),
+        sender: 'curevia',
+        time: timeStr,
+        text: `🦽 **Wheelchair & Physical Accessibility Support** near **${loc.name}**:\n\n` +
+          `- **Top Accessible Facility:** **CDSIMER Hospital** (Full accessibility score 7/7) features step-free ramp entrances, wide patient elevators, dedicated disability parking bays, wheelchair accessible restrooms, and hospital transit assistants.\n` +
+          `- **Community Care:** **Harohalli Govt Hospital** offers ground-floor level access and entry ramps.\n\n` +
+          `Here are verified wheelchair-friendly facilities:`,
+        cards: accessibleFacs.map((r) => ({
+          id: r.f.id,
+          name: r.f.name,
+          type: typeLabel(r.f.type),
+          dist: r.dist,
+          area: r.f.area,
+          rating: r.f.rating,
+          price: priceText(r.price),
+          priceLabel: svc.name,
+          wait: r.wait,
+          waitLabel: 'Wait',
+          phone: r.f.phone,
+          sid
+        })),
+        chips: [
+          '♿ Filter wheelchair-friendly in results',
+          '🚗 Facilities with accessible parking',
+          '⚖️ Compare CDSIMER & Dhee accessibility'
+        ]
+      };
+    }
+
+    // 6. Specific Facility Inquiry
+    const genericStopWords = ['hospital', 'clinic', 'dispensary', 'health centre', 'health center', 'nursing home', 'medical centre', 'centre', 'center'];
+    const singleFac = D.facilities.find((f) => {
+      const fn = f.name.toLowerCase().trim();
+      const fid = f.id.toLowerCase().trim();
+      if (genericStopWords.includes(fn) || genericStopWords.includes(fid)) return false;
+      if (lq.includes(fid) && fid.length >= 4) return true;
+      if (fn.length >= 6 && lq.includes(fn)) return true;
+      if (lq.includes('cdsimer') && fid.includes('cdsimer')) return true;
+      if (lq.includes('harohalli') && fid.includes('harohalli')) return true;
+      if (lq.includes('dhee') && fid.includes('dhee')) return true;
+      if (lq.includes('ramaiah') && fid.includes('ramaiah')) return true;
+      if (lq.includes('manipal') && fid.includes('manipal')) return true;
+      if (lq.includes('fortis') && fid.includes('fortis')) return true;
+      if (lq.includes('sparsh') && fid.includes('sparsh')) return true;
+      return false;
+    });
+
+    if (singleFac) {
+      const sid = state.service || 'gp';
+      const svc = D.serviceMap[sid] || D.services[0];
+      const r = enrich(singleFac, sid, date);
+      const ac = accessSummary(singleFac.access);
+
+      return {
+        id: 'msg_' + Date.now(),
+        sender: 'curevia',
+        time: timeStr,
+        text: `🏥 **${singleFac.name}**\n\n` +
+          `- **Type:** ${typeLabel(singleFac.type)} (${singleFac.open24 ? 'Open 24/7' : 'Standard hours'})\n` +
+          `- **Location:** ${singleFac.area} (~${r.dist} km, ${r.drive} min drive from ${loc.name})\n` +
+          `- **OPD Consultation Fee:** ${priceText(r.price)} (${priceSub(r)})\n` +
+          `- **Typical Wait:** ${waitText(r.wait)}\n` +
+          `- **Accessibility:** ${ac.title} · ${ac.sub}\n` +
+          `- **Rating:** ${singleFac.rating} ★ (${fmtN(singleFac.reviews)} patient reviews)\n` +
+          (singleFac.phone ? `- **Contact:** ${singleFac.phone}` : ''),
+        cards: [{
+          id: singleFac.id,
+          name: singleFac.name,
+          type: typeLabel(singleFac.type),
+          dist: r.dist,
+          area: singleFac.area,
+          rating: singleFac.rating,
+          price: priceText(r.price),
+          priceLabel: svc.name,
+          wait: r.wait,
+          waitLabel: 'Wait',
+          phone: singleFac.phone,
+          sid
+        }],
+        chips: [
+          `⚖️ Compare ${singleFac.name.split(' ')[0]} with another`,
+          `📍 Get directions to ${singleFac.name.split(' ')[0]}`,
+          `📋 View all services at ${singleFac.name.split(' ')[0]}`
+        ]
+      };
+    }
+
+    // 7. Symptom / Service Keyword Matching
+    const serviceMatchMap = [
+      { sid: 'gp', words: ['fever', 'cold', 'cough', 'headache', 'vomit', 'stomach', 'belly', 'general doctor', 'physician', 'flu', 'viral', 'sick', 'weakness', 'body pain', 'diarrhea'] },
+      { sid: 'paed', words: ['child', 'baby', 'infant', 'kid', 'pediatric', 'pediatrician', 'toddler', 'newborn'] },
+      { sid: 'gyn', words: ['pregnancy', 'pregnant', 'period', 'menstrual', 'gynae', 'gynecology', 'maternity', 'delivery', 'women', 'pelvic'] },
+      { sid: 'ortho', words: ['bone', 'fracture', 'knee', 'joint', 'sprain', 'ortho', 'orthopedic', 'back pain', 'spine', 'shoulder', 'arthritis'] },
+      { sid: 'derm', words: ['skin', 'rash', 'itching', 'acne', 'pimple', 'allergy', 'eczema', 'dermatology', 'dermatologist'] },
+      { sid: 'ent', words: ['ear', 'nose', 'throat', 'sinus', 'tonsil', 'hearing', 'tinnitus', 'ent'] },
+      { sid: 'eye', words: ['eye', 'vision', 'blur', 'spectacles', 'glasses', 'cataract', 'ophthalmology'] },
+      { sid: 'cbc', words: ['cbc', 'blood test', 'hemoglobin', 'platelet', 'wbc', 'blood count'] },
+      { sid: 'thyroid', words: ['thyroid', 'tsh', 't3', 't4', 'hypothyroid', 'neck swelling'] },
+      { sid: 'lipid', words: ['cholesterol', 'lipid', 'triglyceride', 'heart test'] },
+      { sid: 'hba1c', words: ['sugar', 'diabetes', 'glucose', 'hba1c', 'diabetic'] },
+      { sid: 'xray', words: ['xray', 'x-ray', 'chest xray', 'bone scan'] },
+      { sid: 'usg', words: ['ultrasound', 'sonography', 'scan', 'usg', 'abdomen scan', 'pelvis scan'] },
+      { sid: 'ct', words: ['ct', 'ct scan', 'brain scan', 'tomography'] },
+      { sid: 'mri', words: ['mri', 'mri scan', 'magnetic resonance'] },
+      { sid: 'dentcheck', words: ['tooth', 'teeth', 'dental', 'dentist', 'cavity', 'toothache'] },
+      { sid: 'rct', words: ['root canal', 'rct', 'nerve tooth'] },
+      { sid: 'dressing', words: ['dressing', 'wound', 'cut', 'stitches', 'suture', 'bandage'] },
+      { sid: 'physio', words: ['physio', 'physiotherapy', 'rehab', 'exercise therapy', 'paralysis'] },
+      { sid: 'vacc', words: ['vaccine', 'vaccination', 'immunization', 'booster', 'tetanus', 'rabies'] },
+      { sid: 'emerg', words: ['casualty', 'urgent care', 'trauma', 'emergency'] }
+    ];
+
+    let matchedService = null;
+    for (const sm of serviceMatchMap) {
+      if (sm.words.some((w) => lq.includes(w))) {
+        matchedService = D.serviceMap[sm.sid];
+        break;
+      }
+    }
+
+    if (matchedService) {
+      const sid = matchedService.id;
+      const stats = serviceStats(sid);
+      const topFacs = D.facilities
+        .filter((f) => f.services && f.services[sid])
+        .map((f) => enrich(f, sid, date))
+        .sort((a, b) => a.dist - b.dist)
+        .slice(0, 3);
+
+      return {
+        id: 'msg_' + Date.now(),
+        sender: 'curevia',
+        time: timeStr,
+        text: `🩺 For your symptoms, I recommend **${matchedService.name}**:\n\n` +
+          `- **What it is:** ${matchedService.blurb || 'Clinical consultation & diagnosis'}.\n` +
+          `- **Pricing Range:** ${fromPrice(stats.min)} (across government & private providers).\n` +
+          `- **Verified Options:** **${stats.count}** nearby facilities offer this service.\n\n` +
+          `Here are the closest verified facilities near **${loc.name}**:`,
+        serviceAction: {
+          sid: matchedService.id,
+          label: `Explore All ${matchedService.name} Options (${stats.count} places) →`
+        },
+        cards: topFacs.map((r) => ({
+          id: r.f.id,
+          name: r.f.name,
+          type: typeLabel(r.f.type),
+          dist: r.dist,
+          area: r.f.area,
+          rating: r.f.rating,
+          price: priceText(r.price),
+          priceLabel: 'Fee',
+          wait: r.wait,
+          waitLabel: 'Wait',
+          phone: r.f.phone,
+          sid
+        })),
+        chips: [
+          `🔍 View all ${matchedService.name} facilities`,
+          '💰 Compare lowest price options',
+          '⏱️ Shortest wait time options'
+        ]
+      };
+    }
+
+    // 8. General Greetings / Help Fallback
+    const isGreeting = /\b(hi|hello|hey|namaste|morning|evening|help|who are you|what is curevia)\b/i.test(lq);
+    return {
+      id: 'msg_' + Date.now(),
+      sender: 'curevia',
+      time: timeStr,
+      text: isGreeting
+        ? `👋 **Hello! I'm Curevia**, your healthcare navigation assistant.\n\nI can help you explore over **2,600+ verified hospitals, clinics, and diagnostic centers** across Bengaluru and India.\n\nHow can I help you today?`
+        : `I understand you're looking for healthcare guidance. I can search our verified database of **2,600+ healthcare facilities** to help you:\n\n` +
+          `1. **Match Symptoms to Care:** Ask about fever, knee pain, pregnancy, dental issues, or lab tests.\n` +
+          `2. **Compare Providers:** Compare hospital consultation fees, typical wait times, and distances.\n` +
+          `3. **Budget & Low-Cost Care:** Discover government hospital rates (OPD from ₹20).\n` +
+          `4. **Accessibility:** Find wheelchair, ramp, and elevator accessible hospitals.\n` +
+          `5. **Emergency Triage:** Instant lookup of 24/7 casualty trauma centers.`,
+      chips: [
+        '🩺 General physician near me',
+        '💰 Lowest cost hospital options',
+        '🦽 Wheelchair accessible care',
+        '🚨 24x7 Emergency casualty care',
+        '🧪 Blood test & ultrasound prices',
+        '⚖️ Compare CDSIMER & Harohalli'
+      ]
+    };
+  }
+
+  function scrollChatToBottom() {
+    const b = $('#cchat-body');
+    if (b) {
+      setTimeout(() => { b.scrollTop = b.scrollHeight; }, 30);
+    }
+  }
+
+  function renderChatMessage(m) {
+    return `
+      <div class="cchat-msg cchat-msg--${m.sender}">
+        <div class="cchat-bubble">
+          ${formatChatText(m.text)}
+
+          ${m.isAlert && m.alertData ? `
+            <div class="cchat-alert">
+              <div class="cchat-alert__head">${icon('siren')}<span>${esc(m.alertData.title)}</span></div>
+              <div class="cchat-alert__actions">
+                ${m.alertData.phones.map((p) => `
+                  <a href="tel:${p.tel}" class="cchat-alert__call-btn">${icon('phone')}<span>Call ${esc(p.label)}</span></a>
+                `).join('')}
+              </div>
+            </div>
+          ` : ''}
+
+          ${m.serviceAction ? `
+            <div style="margin-top:8px;">
+              <button type="button" class="btn btn--primary btn--sm" style="width:100%;font-size:0.78rem;" data-act="chat-pick-service" data-sid="${m.serviceAction.sid}">
+                ${icon('search')}${esc(m.serviceAction.label)}
+              </button>
+            </div>
+          ` : ''}
+
+          ${m.compareAction ? `
+            <div style="margin-top:8px;">
+              <button type="button" class="btn btn--primary btn--sm" style="width:100%;font-size:0.78rem;" data-act="chat-go-compare" data-ids="${m.compareAction.ids.join(',')}">
+                ${icon('columns')}${esc(m.compareAction.label)}
+              </button>
+            </div>
+          ` : ''}
+
+          ${m.cards && m.cards.length ? `
+            <div class="cchat-cards">
+              ${m.cards.map((c) => `
+                <div class="cchat-card">
+                  <div class="cchat-card__head">
+                    <span class="cchat-card__title">${esc(c.name)}</span>
+                    <span class="cchat-card__badge">${esc(c.type)}</span>
+                  </div>
+                  <div class="cchat-card__meta">
+                    <span>${icon('pin')}${c.dist} km · ${esc(c.area)}</span>
+                    ${c.rating ? `<span>★ ${c.rating}</span>` : ''}
+                  </div>
+                  <div class="cchat-card__metrics">
+                    <div class="cchat-metric">
+                      <span class="cchat-metric__label">${esc(c.priceLabel || 'Cost')}</span>
+                      <span class="cchat-metric__val">${esc(c.price)}</span>
+                    </div>
+                    <div class="cchat-metric">
+                      <span class="cchat-metric__label">${esc(c.waitLabel || 'Wait')}</span>
+                      <span class="cchat-metric__val">${typeof c.wait === 'number' ? c.wait + ' min' : (c.wait || 'Standard')}</span>
+                    </div>
+                    <div class="cchat-metric">
+                      <span class="cchat-metric__label">Contact</span>
+                      <span class="cchat-metric__val">${c.phone ? 'Phone available' : 'Walk-in'}</span>
+                    </div>
+                  </div>
+                  <div class="cchat-card__actions">
+                    <button type="button" class="cchat-card__btn cchat-card__btn--primary" data-act="chat-view-facility" data-fid="${c.id}">
+                      Details
+                    </button>
+                    <button type="button" class="cchat-card__btn" data-act="chat-add-compare" data-fid="${c.id}">
+                      ${icon('plus')}Compare
+                    </button>
+                    ${c.phone ? `
+                      <a href="tel:${c.phone.replace(/\s+/g, '')}" class="cchat-card__btn" title="Call">
+                        ${icon('phone')}Call
+                      </a>
+                    ` : ''}
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          ` : ''}
+        </div>
+        <span class="cchat-time">${esc(m.time)}</span>
+      </div>
+    `;
+  }
+
+  function renderChat() {
+    const root = $('#chat-root');
+    if (!root) return;
+
+    if (!chatState.open) {
+      root.innerHTML = `
+        <button type="button" class="cchat-launcher" data-act="open-chat" aria-label="Open Curevia healthcare assistant">
+          <span class="cchat-launcher__icon-wrap">
+            ${icon('sparkle')}
+            <span class="cchat-launcher__pulse"></span>
+          </span>
+          <span class="cchat-launcher__text">Ask Curevia</span>
+        </button>
+      `;
+      return;
+    }
+
+    const loc = locObj();
+    const isMin = chatState.minimized;
+
+    root.innerHTML = `
+      <div class="cchat-window ${isMin ? 'is-minimized' : ''}" role="dialog" aria-label="Curevia Healthcare Assistant">
+        <header class="cchat-header">
+          <div class="cchat-header__main">
+            <div class="cchat-header__avatar">${icon('sparkle')}</div>
+            <div class="cchat-header__info">
+              <div class="cchat-header__title-row">
+                <h3 class="cchat-header__title">Curevia</h3>
+                <span class="cchat-header__status-badge">Live AI Guide</span>
+              </div>
+              <div class="cchat-header__subtitle">Verified Care Navigator · Near ${esc(loc.name)}</div>
+            </div>
+          </div>
+          <div class="cchat-header__actions">
+            <button type="button" class="cchat-hdr-btn" data-act="clear-chat" title="Clear conversation">${icon('trash')}</button>
+            <button type="button" class="cchat-hdr-btn" data-act="minimize-chat" title="${isMin ? 'Expand' : 'Minimise'}">${icon(isMin ? 'plus' : 'minus')}</button>
+            <button type="button" class="cchat-hdr-btn" data-act="close-chat" title="Close chat">${icon('x')}</button>
+          </div>
+        </header>
+
+        <div class="cchat-body" id="cchat-body">
+          ${chatState.messages.map((m) => renderChatMessage(m)).join('')}
+          ${chatState.isThinking ? `
+            <div class="cchat-typing">
+              <span></span><span></span><span></span>
+            </div>
+          ` : ''}
+        </div>
+
+        ${!isMin && chatState.messages.length && chatState.messages[chatState.messages.length - 1].chips ? `
+          <div class="cchat-quick">
+            ${chatState.messages[chatState.messages.length - 1].chips.map((c) => `
+              <button type="button" class="cchat-chip" data-act="chat-chip" data-q="${esc(c)}">${esc(c)}</button>
+            `).join('')}
+          </div>
+        ` : ''}
+
+        <footer class="cchat-footer">
+          <form class="cchat-form" data-form="chat-form">
+            <input type="text" class="cchat-input" id="cchat-input" placeholder="Ask about symptoms, costs, wait times..." autocomplete="off">
+            <button type="submit" class="cchat-send" aria-label="Send message">${icon('arrowR')}</button>
+          </form>
+          <p class="cchat-disclaimer">Verified directory estimates. For life-threatening emergencies, call 112 / 108.</p>
+        </footer>
+      </div>
+    `;
+
+    scrollChatToBottom();
+  }
+
+  function submitChatMessage(text) {
+    if (!text || !text.trim()) return;
+    const cleanText = text.trim();
+    const timeStr = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+    chatState.messages.push({
+      id: 'usr_' + Date.now(),
+      sender: 'user',
+      text: cleanText,
+      time: timeStr
+    });
+    chatState.isThinking = true;
+    saveChatState();
+    renderChat();
+
+    setTimeout(() => {
+      try {
+        const reply = generateCureviaReply(cleanText);
+        chatState.messages.push(reply);
+      } catch (err) {
+        console.error('Curevia AI error:', err);
+        chatState.messages.push({
+          id: 'err_' + Date.now(),
+          sender: 'curevia',
+          text: "I experienced a brief hitch finding facility details. How else can I assist with your care search?",
+          time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+          chips: ['🩺 General physician near me', '💰 Lowest cost hospitals', '🚨 24/7 Emergency care']
+        });
+      } finally {
+        chatState.isThinking = false;
+        saveChatState();
+        renderChat();
+      }
+    }, 400);
+  }
 
   /* ------------------------------------------------------------------ */
   /* Init                                                                */
@@ -2301,4 +3060,5 @@
   window.addEventListener('hashchange', render);
   render();
   renderTest();
+  renderChat();
 })();
