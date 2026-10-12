@@ -3379,7 +3379,7 @@ select.tinput {
   position: fixed;
   bottom: 24px;
   right: 24px;
-  z-index: 80;
+  z-index: 999;
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -3510,20 +3510,20 @@ select.tinput {
 /* Chat Window */
 .cchat-window {
   position: fixed;
-  bottom: 84px;
+  bottom: 24px;
   right: 24px;
   width: 420px;
   max-width: calc(100vw - 32px);
-  height: 600px;
-  max-height: calc(100vh - 110px);
+  height: 580px;
+  max-height: calc(100vh - 48px);
   background: #ffffff;
   border: 1px solid var(--line);
   border-radius: 18px;
-  box-shadow: 0 20px 48px -10px rgba(16, 42, 67, 0.24), 0 8px 18px -4px rgba(16, 42, 67, 0.12);
+  box-shadow: 0 20px 48px -10px rgba(16, 42, 67, 0.28), 0 8px 18px -4px rgba(16, 42, 67, 0.16);
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  z-index: 85;
+  z-index: 1000;
   animation: cchat-pop 0.24s cubic-bezier(0.16, 1, 0.3, 1);
   font-family: var(--font);
 }
@@ -3532,7 +3532,7 @@ select.tinput {
   to { opacity: 1; transform: translateY(0) scale(1); }
 }
 .has-tray .cchat-window {
-  bottom: 144px;
+  bottom: 84px;
 }
 
 /* Minimized Window */
@@ -4017,10 +4017,22 @@ select.tinput {
     max-height: 100vh;
     max-width: 100vw;
     border-radius: 0;
-    z-index: 100;
+    z-index: 1000;
     border: none;
   }
-  .has-tray .cchat-window {
+  .cchat-window.is-minimized {
+    top: auto;
+    left: auto;
+    bottom: 68px;
+    right: 14px;
+    width: 280px;
+    height: auto;
+    border-radius: 14px;
+  }
+  .has-tray .cchat-window.is-minimized {
+    bottom: 120px;
+  }
+  .has-tray .cchat-window:not(.is-minimized) {
     bottom: 0;
   }
 }

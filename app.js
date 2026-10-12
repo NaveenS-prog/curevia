@@ -1738,6 +1738,7 @@
     }
     updateHeader(r0);
     renderTray(r0);
+    renderChat();
   }
 
   /* ------------------------------------------------------------------ */
@@ -2420,7 +2421,7 @@
   }
 
   const chatState = {
-    open: false,
+    open: true,
     minimized: false,
     isThinking: false,
     messages: store.get('chat_history', [getWelcomeMessage()])
@@ -2945,8 +2946,12 @@
   }
 
   function renderChat() {
-    const root = $('#chat-root');
-    if (!root) return;
+    let root = $('#chat-root');
+    if (!root) {
+      root = document.createElement('div');
+      root.id = 'chat-root';
+      document.body.appendChild(root);
+    }
 
     if (!chatState.open) {
       root.innerHTML = `
