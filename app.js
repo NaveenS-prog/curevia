@@ -8,12 +8,57 @@
   'use strict';
 
   const D = window.CUREVIA_DATA;
+  const I18N = window.CUREVIA_I18N || {};
+  const LANGUAGES = window.CUREVIA_LANGUAGES || {
+    en: { code: 'en', name: 'English', native: 'English', speechCode: 'en-IN' },
+    ta: { code: 'ta', name: 'Tamil', native: 'தமிழ்', speechCode: 'ta-IN' },
+    ml: { code: 'ml', name: 'Malayalam', native: 'മലയാളം', speechCode: 'ml-IN' },
+    te: { code: 'te', name: 'Telugu', native: 'తెలుగు', speechCode: 'te-IN' },
+    kn: { code: 'kn', name: 'Kannada', native: 'ಕನ್ನಡ', speechCode: 'kn-IN' },
+    hi: { code: 'hi', name: 'Hindi', native: 'हिन्दी', speechCode: 'hi-IN' }
+  };
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => Array.from(el.querySelectorAll(s));
   const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const fmtN = (n) => Number(n).toLocaleString('en-IN');
   const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   const DAYS_S = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+  function t(key, vars = {}, fallback = '') {
+    const lang = (typeof state !== 'undefined' && state.lang) || 'en';
+    const dict = I18N[lang] || I18N.en || {};
+    let str = dict[key] !== undefined ? dict[key] : (I18N.en && I18N.en[key] !== undefined ? I18N.en[key] : (fallback || key));
+    if (vars && typeof vars === 'object') {
+      Object.keys(vars).forEach((k) => {
+        str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+      });
+    }
+    return str;
+  }
+
+  function tService(sid) {
+    if (!sid) return '';
+    const key = 'svc_' + sid;
+    const tr = t(key);
+    if (tr && tr !== key) return tr;
+    return D.serviceMap[sid] ? D.serviceMap[sid].name : sid;
+  }
+
+  function tCategory(cid) {
+    if (!cid) return '';
+    const key = 'cat_' + cid;
+    const tr = t(key);
+    if (tr && tr !== key) return tr;
+    return D.catMap[cid] ? D.catMap[cid].name : cid;
+  }
+
+  function tType(type) {
+    if (!type) return '';
+    const key = 'type_' + type;
+    const tr = t(key);
+    if (tr && tr !== key) return tr;
+    return typeLabel(type);
+  }
 
   /* ------------------------------------------------------------------ */
   /* Icons (Lucide-style, inline SVG)                                    */
@@ -176,6 +221,7 @@
     loc: initialLoc,
     when: store.get('when', 'now'),
     sort: store.get('sort', 'best'),
+    lang: store.get('lang', 'en'),
     pageLimit: 30,
     filters: Object.assign(defaultFilters(), store.get('filters', {})),
     compare: store.get('compare', []).filter((id) => D.facilityMap[id]),
@@ -191,7 +237,27 @@
   };
 
   function saveState() {
-    ['service', 'loc', 'when', 'sort', 'filters', 'compare', 'textLg', 'test'].forEach((k) => store.set(k, state[k]));
+    ['service', 'loc', 'when', 'sort', 'filters', 'compare', 'textLg', 'test', 'lang'].forEach((k) => store.set(k, state[k]));
+  }
+
+  function setLanguage(code) {
+    if (!LANGUAGES[code]) return;
+    state.lang = code;
+    document.documentElement.lang = code;
+    saveState();
+    const menu = $('#lang-menu');
+    const btn = $('#lang-btn');
+    if (menu) menu.hidden = true;
+    if (btn) btn.setAttribute('aria-expanded', 'false');
+
+    renderHeader();
+    renderFooter();
+    renderTray(parseHash().parts[0] || '');
+    renderChat();
+    render();
+
+    const l = LANGUAGES[code];
+    toast(`${l.native} (${l.name}) selected`, 'good');
   }
 
   /* ------------------------------------------------------------------ */
@@ -206,12 +272,15 @@
     if (key === 'tmrw') { d.setDate(d.getDate() + 1); d.setHours(10, 0, 0, 0); }
     return d;
   }
-  function whenLabel(key) {
+  function whenLabel(key = state.when) {
     const n = new Date();
-    if (key === 'now') return 'Now';
-    if (key === 'plus2') return 'In 2 hours (' + fmtTime(visitDate('plus2').getHours() * 60 + visitDate('plus2').getMinutes()) + ')';
-    if (key === 'evening') return n.getHours() >= 18 ? 'Tomorrow evening, 6 PM' : 'This evening, 6 PM';
-    return 'Tomorrow morning, 10 AM';
+    if (key === 'now') return t('when_now', {}, 'Now (Open today)');
+    if (key === 'plus2') {
+      const vd = visitDate('plus2');
+      return t('when_plus2', {}, 'In 2 hours') + ' (' + fmtTime(vd.getHours() * 60 + vd.getMinutes()) + ')';
+    }
+    if (key === 'evening') return n.getHours() >= 18 ? 'Tomorrow evening, 6 PM' : t('when_evening', {}, 'This evening (6 PM)');
+    return t('when_tmrw', {}, 'Tomorrow morning (10 AM)');
   }
   const isNow = () => state.when === 'now';
 
@@ -435,9 +504,9 @@
       winners.forEach((r) => tags.get(r.f.id).push(tag));
     };
 
-    addMin((r) => r.priceMin, { k: 'price', icon: 'rupee', label: 'Lowest cost' });
-    addMin((r) => r.wait, { k: 'wait', icon: 'hourglass', label: 'Shortest wait' });
-    addMin((r) => r.dist, { k: 'dist', icon: 'pin', label: 'Best nearby' });
+    addMin((r) => r.priceMin, { k: 'price', icon: 'rupee', label: t('lowest_cost_win', {}, 'Lowest cost') });
+    addMin((r) => r.wait, { k: 'wait', icon: 'hourglass', label: t('shortest_wait_win', {}, 'Shortest wait') });
+    addMin((r) => r.dist, { k: 'dist', icon: 'pin', label: t('closest_win', {}, 'Best nearby') });
 
     // Accessibility score
     const accessScore = (f) => (f.access ? (f.access.wheelchair ? 2 : 0) + (f.access.ramp ? 1 : 0) + (f.access.lift || f.access.ground ? 2 : 0) + (f.access.toilet ? 1 : 0) + (f.access.parking ? 1 : 0) : 0);
@@ -446,7 +515,7 @@
     if (maxAccess >= 4) {
       list.filter((r) => accessScore(r.f) === maxAccess).slice(0, 3).forEach((r) => {
         if (!tags.get(r.f.id).some((t) => t.k === 'access')) {
-          tags.get(r.f.id).push({ k: 'access', icon: 'access', label: 'Best accessibility' });
+          tags.get(r.f.id).push({ k: 'access', icon: 'access', label: t('best_access_win', {}, 'Best accessibility') });
         }
       });
     }
@@ -454,19 +523,19 @@
     // Open now
     list.filter((r) => r.avail && r.avail.ok).forEach((r) => {
       if (!tags.get(r.f.id).some((t) => t.k === 'open')) {
-        tags.get(r.f.id).push({ k: 'open', icon: 'clock', label: 'Open now' });
+        tags.get(r.f.id).push({ k: 'open', icon: 'clock', label: t('open_now', {}, 'Open now') });
       }
     });
 
     // Government / subsidised
     list.filter((r) => r.f.type === 'government' || (r.f.payment && r.f.payment.some((p) => /ayushman|subsidised|free/i.test(p)))).forEach((r) => {
       if (!tags.get(r.f.id).some((t) => t.k === 'govt')) {
-        tags.get(r.f.id).push({ k: 'govt', icon: 'building', label: 'Government / Subsidised' });
+        tags.get(r.f.id).push({ k: 'govt', icon: 'building', label: t('type_government', {}, 'Government / Subsidised') });
       }
     });
 
     if (state.sort === 'best' && list[0] && !tags.get(list[0].f.id).some((t) => t.k === 'top')) {
-      tags.get(list[0].f.id).unshift({ k: 'top', icon: 'sparkle', label: 'Best overall' });
+      tags.get(list[0].f.id).unshift({ k: 'top', icon: 'sparkle', label: t('sort_best', {}, 'Best overall') });
     }
     return tags;
   }
@@ -476,11 +545,11 @@
   /* ------------------------------------------------------------------ */
   function searchBox(id, compact) {
     return `<div class="search ${compact ? 'search--compact' : ''}" data-search>
-      <label class="sr-only" for="${id}">What healthcare service do you need?</label>
+      <label class="sr-only" for="${id}">${t('search_input_label', {}, 'What healthcare service do you need?')}</label>
       ${icon('search', 'search__ic')}
       <input id="${id}" class="search__input" type="text" autocomplete="off" spellcheck="false" role="combobox"
         aria-expanded="false" aria-controls="${id}-list" aria-autocomplete="list"
-        placeholder="${compact ? 'Search another service…' : 'e.g. blood test, child doctor, X-ray, tooth pain'}">
+        placeholder="${compact ? t('search_placeholder', {}, 'Search another service…') : t('search_placeholder', {}, 'Search doctors, tests, scans, casualty…')}">
       <div class="search__list" id="${id}-list" role="listbox" hidden></div>
     </div>`;
   }
@@ -488,21 +557,25 @@
   function selectField(kind, opts = {}) {
     let inner = '', ic = '', label = '';
     if (kind === 'loc') {
-      ic = 'pin'; label = 'Area';
+      ic = 'pin'; label = t('near_label', {}, 'Area');
       inner = D.localities.map((l) => `<option value="${l.id}" ${l.id === state.loc ? 'selected' : ''}>${opts.prefix ? 'Near ' : ''}${esc(l.name)}</option>`).join('');
       return `<div style="display:inline-flex; gap:6px; align-items:center; flex-wrap:wrap;">
         <label class="selectw">${icon(ic)}<span class="sr-only">${label}</span><select class="select" data-state="${kind}">${inner}</select></label>
         <button type="button" class="btn--gps" data-act="use-gps" title="Calculate exact distances using your real device GPS coordinates">
-          ${icon('crosshair')} My GPS
+          ${icon('crosshair')} ${t('my_gps', {}, 'My GPS')}
         </button>
       </div>`;
     } else if (kind === 'when') {
-      ic = 'clock'; label = 'Visit time';
+      ic = 'clock'; label = t('when_label', {}, 'Visit time');
       inner = WHEN_KEYS.map((k) => `<option value="${k}" ${k === state.when ? 'selected' : ''}>${esc(whenLabel(k))}</option>`).join('');
     } else {
-      ic = 'sort'; label = 'Sort by';
-      inner = [['best', 'Best match'], ['distance', 'Closest first'], ['price', 'Lowest cost'], ['wait', 'Shortest wait']]
-        .map(([v, l]) => `<option value="${v}" ${v === state.sort ? 'selected' : ''}>${opts.prefix ? 'Sort: ' : ''}${l}</option>`).join('');
+      ic = 'sort'; label = t('sort_by', {}, 'Sort by');
+      inner = [
+        ['best', t('sort_best', {}, 'Best match')],
+        ['distance', t('sort_dist', {}, 'Closest first')],
+        ['price', t('sort_price', {}, 'Lowest cost')],
+        ['wait', t('sort_wait', {}, 'Shortest wait')]
+      ].map(([v, l]) => `<option value="${v}" ${v === state.sort ? 'selected' : ''}>${opts.prefix ? (t('sort_by', {}, 'Sort') + ': ') : ''}${l}</option>`).join('');
     }
     return `<label class="selectw">${icon(ic)}<span class="sr-only">${label}</span><select class="select" data-state="${kind}">${inner}</select></label>`;
   }
@@ -693,49 +766,50 @@
     <section class="hero hero--compact">
       <div class="container hero__inner">
         <div class="hero__header">
-          <span class="badge badge--brand">${icon('heartPulse')} Healthcare Decision Support</span>
-          <h1>Find and compare nearby care</h1>
-          <p class="hero__lead">Compare nearby care by cost, wait, availability, distance, and accessibility.</p>
+          <span class="badge badge--brand">${icon('heartPulse')} ${t('hero_badge', {}, 'Healthcare Decision Support')}</span>
+          <h1>${t('hero_title', {}, 'Find and compare nearby care')}</h1>
+          <p class="hero__lead">${t('hero_sub', {}, 'Compare nearby care by cost, wait, availability, distance, and accessibility.')}</p>
         </div>
 
         <div class="finder-wrap">
           <form class="finder" data-form="home-search" autocomplete="off">
             <div class="finder__input-row">
               <div class="field finder__search-field">
-                <span class="field__label">What care or symptom do you need?</span>
+                <span class="field__label">${t('search_input_label', {}, 'What care or symptom do you need?')}</span>
                 ${searchBox('q-home', false)}
               </div>
             </div>
             <div class="finder__controls-row">
               <div class="field">
-                <span class="field__label">${icon('pin')} Near Location</span>
+                <span class="field__label">${icon('pin')} ${t('near_label', {}, 'Near Location')}</span>
                 ${selectField('loc')}
               </div>
               <div class="field">
-                <span class="field__label">${icon('clock')} Visit Time</span>
+                <span class="field__label">${icon('clock')} ${t('when_label', {}, 'Visit Time')}</span>
                 ${selectField('when')}
               </div>
               <button class="btn btn--primary btn--lg finder__go" type="submit">
-                ${icon('search')} Find care
+                ${icon('search')} ${t('find_care_btn', {}, 'Find care')}
               </button>
             </div>
           </form>
 
           <div class="popular">
-            <span class="popular__title">Popular services:</span>
+            <span class="popular__title">${t('popular_services', {}, 'Popular services:')}</span>
             <div class="popular__chips">
               ${D.popular.map((id) => {
                 const s = D.serviceMap[id];
                 const cat = D.catMap[s.cat];
+                const sName = tService(id) || s.name;
                 return `<button type="button" class="chip chip--icon" data-act="pick-service" data-sid="${id}">
-                  ${icon(cat.icon)}<span>${esc(shortName(s.name))}</span>
+                  ${icon(cat.icon)}<span>${esc(shortName(sName))}</span>
                 </button>`;
               }).join('')}
             </div>
           </div>
           <div style="text-align:center;margin-top:12px;">
             <button type="button" class="hero-chat-prompt" data-act="open-chat">
-              ${icon('sparkle')}<span>Not sure what care you need? <strong>Ask Curevia Assistant</strong> for triage &amp; comparison &rarr;</span>
+              ${icon('sparkle')}<span>${t('chat_hero_prompt', {}, 'Not sure what care you need? <strong>Ask Curevia Assistant</strong> for triage &amp; comparison &rarr;')}</span>
             </button>
           </div>
         </div>
@@ -747,8 +821,8 @@
       <div class="container">
         <div class="section__head">
           <div>
-            <h2>Browse by care category</h2>
-            <p>Select a medical specialty or service type to compare verified options.</p>
+            <h2>${t('browse_categories', {}, 'Browse by care category')}</h2>
+            <p>${t('browse_cat_sub', {}, 'Select a medical specialty or service type to compare verified options.')}</p>
           </div>
         </div>
         <div class="cat-grid cat-grid--simple">
@@ -757,8 +831,8 @@
               <div class="cat__head">
                 <span class="cat__ic" style="background: ${CAT_COLOR[c.id][1]}; color: ${CAT_COLOR[c.id][0]};">${icon(c.icon)}</span>
                 <div>
-                  <span class="cat__name">${esc(c.name)}</span>
-                  <span class="cat__meta">${stats[c.id].places} places nearby</span>
+                  <span class="cat__name">${esc(tCategory(c.id) || c.name)}</span>
+                  <span class="cat__meta">${t('places_count', { n: stats[c.id].places }, `${stats[c.id].places} places nearby`)}</span>
                 </div>
               </div>
               <span class="cat__blurb">${esc(c.blurb)}</span>
@@ -794,15 +868,16 @@
     const c = D.catMap[id];
     if (!c) return viewNotFound();
     const list = D.services.filter((s) => s.cat === id);
+    const catTitle = tCategory(id) || c.name;
     return `
     <section class="page-head">
       <div class="container">
-        <a class="back" href="#/">${icon('arrowL')} Home</a>
+        <a class="back" href="#/">${icon('arrowL')} ${t('nav_find_care', {}, 'Home')}</a>
         <div class="page-head__row">
           <span class="cat__ic cat__ic--lg">${icon(c.icon)}</span>
           <div>
-            <h1>${esc(c.name)}</h1>
-            <p>${esc(c.blurb)}. Compare nearby providers by cost, wait, and accessibility.</p>
+            <h1>${esc(catTitle)}</h1>
+            <p>${esc(c.blurb)}. ${t('hero_sub', {}, 'Compare nearby care by cost, wait, availability, distance, and accessibility.')}</p>
           </div>
         </div>
         <div class="page-head__controls">${selectField('loc', { prefix: true })}${selectField('when')}</div>
@@ -812,21 +887,22 @@
       <ul class="svc-list">
         ${list.map((s) => {
           const st = serviceStats(s.id);
+          const sName = tService(s.id) || s.name;
           const desc = s.unit ? `Standard fee ${esc(s.unit)}` : 'Routine healthcare service';
           return `<li><button type="button" class="svc-row" data-act="pick-service" data-sid="${s.id}">
             <span class="svc-row__ic">${icon(c.icon)}</span>
             <div class="svc-row__main">
-              <strong>${esc(s.name)}</strong>
+              <strong>${esc(sName)}</strong>
               <span class="svc-row__desc">${desc}</span>
             </div>
             <div class="svc-row__stats">
-              <span class="svc-pill">${icon('building')}${st.count} places nearby</span>
+              <span class="svc-pill">${icon('building')}${t('places_count', { n: st.count }, `${st.count} places nearby`)}</span>
               ${st.min != null ? `<span class="svc-pill svc-pill--price">${icon('rupee')}${fromPrice(st.min)}</span>` : ''}
               <span class="svc-pill ${st.avail ? 'svc-pill--good' : 'svc-pill--muted'}">
-                ${icon('clock')}${st.avail} available ${isNow() ? 'now' : 'then'}
+                ${icon('clock')}${st.avail} ${t('open_now', {}, 'open now')}
               </span>
             </div>
-            <span class="btn btn--sm btn--primary svc-row__cta">View options${icon('arrowR')}</span>
+            <span class="btn btn--sm btn--primary svc-row__cta">${t('view_details', {}, 'View options')}${icon('arrowR')}</span>
           </button></li>`;
         }).join('')}
       </ul>
@@ -836,6 +912,8 @@
   function viewResults() {
     const svc = D.serviceMap[state.service];
     const cat = D.catMap[svc.cat];
+    const svcTitle = tService(svc.id) || svc.name;
+    const catTitle = tCategory(cat.id) || cat.name;
     return `
     <section class="res-top">
       <div class="container res-top__inner">
@@ -845,7 +923,7 @@
           ${selectField('when')}
           ${selectField('sort', { prefix: true })}
           <button class="btn btn--ghost filters-btn" data-act="open-filters">
-            ${icon('sliders')}<span>Filters</span><span class="badge" id="fcount"></span>
+            ${icon('sliders')}<span>${t('filters_btn', {}, 'Filters')}</span><span class="badge" id="fcount"></span>
           </button>
         </div>
       </div>
@@ -856,11 +934,11 @@
       <div class="res-main">
         <div class="res-head">
           <div>
-            <a class="crumb" href="#/category/${cat.id}">${icon(cat.icon)}${esc(cat.name)}</a>
-            <h1 class="res-title">${esc(svc.name)}</h1>
+            <a class="crumb" href="#/category/${cat.id}">${icon(cat.icon)}${esc(catTitle)}</a>
+            <h1 class="res-title">${esc(svcTitle)}</h1>
             <p class="res-sub" id="res-count"></p>
           </div>
-          <button class="btn btn--ghost btn--sm map-toggle" data-act="toggle-map">${icon('map')}<span>Show map</span></button>
+          <button class="btn btn--ghost btn--sm map-toggle" data-act="toggle-map">${icon('map')}<span>${t('show_map', {}, 'Show map')}</span></button>
         </div>
         ${state.service === 'emerg' ? `<div class="callout callout--bad">${icon('siren')}<div><strong>In a medical emergency, don’t wait to compare.</strong> Call <a href="tel:112">112</a> or <a href="tel:108">108</a> immediately for an ambulance.</div></div>` : ''}
         <div id="res-chips"></div>
@@ -870,16 +948,16 @@
     </div>
     <div class="mobile-action-bar">
       <button type="button" class="btn btn--ghost btn--sm mobile-action-bar__btn" data-act="open-filters">
-        ${icon('sliders')}<span>Filters</span><span class="badge" id="m-fcount"></span>
+        ${icon('sliders')}<span>${t('filters_btn', {}, 'Filters')}</span><span class="badge" id="m-fcount"></span>
       </button>
       <button type="button" class="btn btn--ghost btn--sm mobile-action-bar__btn" data-act="go-compare">
-        ${icon('columns')}<span>Compare</span><span class="badge" id="m-cmp-count">${state.compare.length || ''}</span>
+        ${icon('columns')}<span>${t('nav_compare', {}, 'Compare')}</span><span class="badge" id="m-cmp-count">${state.compare.length || ''}</span>
       </button>
       <button type="button" class="btn btn--ghost btn--sm mobile-action-bar__btn map-toggle" data-act="toggle-map">
-        ${icon('map')}<span>Map</span>
+        ${icon('map')}<span>${t('show_map', {}, 'Map')}</span>
       </button>
       <button type="button" class="btn btn--primary btn--sm mobile-action-bar__btn mobile-action-bar__btn--chat" data-act="open-chat">
-        ${icon('sparkle')}<span>Curevia</span>
+        ${icon('sparkle')}<span>${t('chat_title', {}, 'Curevia')}</span>
       </button>
     </div>`;
   }
@@ -891,37 +969,37 @@
     const sw = (k, l, hint) => `<label class="switch"><input type="checkbox" data-f="${k}" ${F[k] ? 'checked' : ''}><span class="switch__track"></span><span class="switch__label">${l}${hint ? `<small>${hint}</small>` : ''}</span></label>`;
     return `
       <div class="filters__head">
-        <h2>${icon('sliders')}Filters</h2>
-        <button type="button" class="link" data-act="clear-filters">Clear all</button>
-        <button type="button" class="icon-btn filters__close" data-act="close-filters" aria-label="Close filters">${icon('x')}</button>
+        <h2>${icon('sliders')}${t('filters_btn', {}, 'Filters')}</h2>
+        <button type="button" class="link" data-act="clear-filters">${t('clear_all', {}, 'Clear all')}</button>
+        <button type="button" class="icon-btn filters__close" data-act="close-filters" aria-label="${t('close_filters', {}, 'Close filters')}">${icon('x')}</button>
       </div>
       <div class="fgroup">
-        <div class="fgroup__label">${icon('clock')}Timing</div>
-        ${sw('availableOnly', 'Open / Available at visit time', esc(whenLabel(state.when)))}
+        <div class="fgroup__label">${icon('clock')}${t('filter_timing', {}, 'Timing')}</div>
+        ${sw('availableOnly', t('filter_available_now', {}, 'Open / Available at visit time'), esc(whenLabel(state.when)))}
       </div>
       <div class="fgroup">
         <div class="fgroup__label">
-          <span>${icon('pin')}Distance</span>
-          <output id="o-dist">${F.maxDist >= 40 ? 'Any distance' : 'Within ' + F.maxDist + ' km'}</output>
+          <span>${icon('pin')}${t('filter_distance', {}, 'Distance')}</span>
+          <output id="o-dist">${F.maxDist >= 40 ? t('filter_any_dist', {}, 'Any distance') : t('filter_within_km', { n: F.maxDist }, 'Within ' + F.maxDist + ' km')}</output>
         </div>
-        ${seg('maxDist', [[2, '2 km'], [5, '5 km'], [15, '15 km'], [40, 'Any']])}
+        ${seg('maxDist', [[2, '2 km'], [5, '5 km'], [15, '15 km'], [40, t('filter_any_dist', {}, 'Any')]])}
         <input type="range" class="range" min="2" max="40" step="2" value="${F.maxDist}" data-f="maxDist" aria-label="Maximum distance">
       </div>
       <div class="fgroup">
-        <div class="fgroup__label">${icon('rupee')}Maximum cost</div>
-        ${seg('maxPrice', [[0, 'Any'], [100, '< ₹100'], [500, '< ₹500'], [1000, '< ₹1k'], [2000, '< ₹2k']])}
-        <p class="fhint">Shows options offering service at or below this limit.</p>
+        <div class="fgroup__label">${icon('rupee')}${t('filter_max_cost', {}, 'Maximum cost')}</div>
+        ${seg('maxPrice', [[0, t('filter_any_dist', {}, 'Any')], [100, '< ₹100'], [500, '< ₹500'], [1000, '< ₹1k'], [2000, '< ₹2k']])}
+        <p class="fhint">${t('filter_cost_hint', {}, 'Shows options offering service at or below this limit.')}</p>
       </div>
       <div class="fgroup">
-        <div class="fgroup__label">${icon('hourglass')}Waiting time</div>
-        ${seg('maxWait', [[0, 'Any'], [15, '15 min'], [30, '30 min'], [60, '1 hr']])}
+        <div class="fgroup__label">${icon('hourglass')}${t('filter_wait_time', {}, 'Waiting time')}</div>
+        ${seg('maxWait', [[0, t('filter_any_dist', {}, 'Any')], [15, '15 min'], [30, '30 min'], [60, '1 hr']])}
       </div>
       <div class="fgroup">
-        <div class="fgroup__label">${icon('access')}Accessibility</div>
+        <div class="fgroup__label">${icon('access')}${t('filter_access', {}, 'Accessibility')}</div>
         ${ACCESS_FILTERS.map(([v, l]) => check('access', v, l)).join('')}
       </div>
       <div class="fgroup">
-        <div class="fgroup__label">${icon('building')}Facility type</div>
+        <div class="fgroup__label">${icon('building')}${t('filter_facility_type', {}, 'Facility type')}</div>
         ${TYPE_GROUPS.map(([v, l]) => check('types', v, l)).join('')}
       </div>
       <div class="fgroup">
@@ -929,7 +1007,7 @@
         ${sw('insurance', 'Accepts health insurance / TPA')}
         ${sw('fresh', 'Verified in last 24 hours')}
       </div>
-      <div class="filters__foot"><button type="button" class="btn btn--primary btn--block" data-act="close-filters">Show <span id="fshow">results</span></button></div>`;
+      <div class="filters__foot"><button type="button" class="btn btn--primary btn--block" data-act="close-filters"><span id="fshow">${t('show_results_btn', { n: '' }, 'Show results')}</span></button></div>`;
   }
 
   function updateResults() {
@@ -1005,7 +1083,7 @@
         <span class="pin-no pin-no--${r.avail.tone}">${i + 1}</span>
         <div class="rcard__title">
           <div class="rcard__meta-top">
-            <span class="rcard__type">${typeLabel(f.type)}</span>
+            <span class="rcard__type">${tType(f.type)}</span>
             <span class="rcard__dist-pill">${icon('pin')}${r.dist} km</span>
             ${ratingText(f)}
             ${tags && tags.length ? `<div class="tags">${tags.map((t) => `<span class="tag tag--${t.k}">${icon(t.icon)}${t.label}</span>`).join('')}</div>` : ''}
@@ -1016,28 +1094,28 @@
           </div>
         </div>
         <button type="button" class="cmp-toggle ${inCmp ? 'is-on' : ''}" data-act="toggle-compare" data-id="${f.id}" aria-pressed="${inCmp}" title="Compare this facility">
-          ${icon(inCmp ? 'check' : 'plus')}<span>${inCmp ? 'Added' : 'Compare'}</span>
+          ${icon(inCmp ? 'check' : 'plus')}<span>${inCmp ? t('added_action', {}, 'Added') : t('compare_action', {}, 'Compare')}</span>
         </button>
       </div>
 
       <div class="metrics">
         <div class="metric metric--cost ${r.price == null ? 'metric--muted' : ''}">
-          <span class="metric__label">${icon('rupee')}Cost</span>
+          <span class="metric__label">${icon('rupee')}${t('cost_label', {}, 'Cost')}</span>
           <span class="metric__value">${priceText(r.price)}</span>
           <span class="metric__sub">${esc(priceSub(r))}</span>
         </div>
         <div class="metric metric--wait metric--${waitTone(r.wait)}">
-          <span class="metric__label">${icon('hourglass')}Wait</span>
+          <span class="metric__label">${icon('hourglass')}${t('wait_label', {}, 'Wait')}</span>
           <span class="metric__value">${waitText(r.wait)}</span>
-          <span class="metric__sub">${r.wait == null ? 'Call facility' : 'Typical wait'}</span>
+          <span class="metric__sub">${r.wait == null ? t('call_facility', {}, 'Call facility') : t('typical_wait', {}, 'Typical wait')}</span>
         </div>
         <div class="metric metric--avail metric--${r.avail.tone}">
-          <span class="metric__label">${icon('clock')}Availability</span>
+          <span class="metric__label">${icon('clock')}${t('avail_label', {}, 'Availability')}</span>
           <span class="metric__value"><i class="dot"></i>${r.avail.title}</span>
           <span class="metric__sub">${r.avail.sub}</span>
         </div>
         <div class="metric metric--dist">
-          <span class="metric__label">${icon('pin')}Distance</span>
+          <span class="metric__label">${icon('pin')}${t('dist_label', {}, 'Distance')}</span>
           <span class="metric__value">${r.dist} km</span>
           <span class="metric__sub">~${r.drive} min drive</span>
         </div>
@@ -1051,9 +1129,9 @@
           ${r.s.doctor ? `<span class="rcard__by">${icon('stethoscope')}${esc(r.s.doctor)}</span>` : ''}
         </div>
         <div class="rcard__actions">
-          ${cleanPhone ? `<a href="tel:${cleanPhone}" class="btn btn--ghost btn--sm rcard__btn" title="Call facility">${icon('phone')}<span>Call</span></a>` : ''}
-          ${mapUrl ? `<a href="${mapUrl}" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--sm rcard__btn" title="Open Google Maps directions">${icon('nav')}<span>Directions</span></a>` : ''}
-          <a class="btn btn--primary btn--sm rcard__btn rcard__btn--view" href="#/facility/${f.id}">View details${icon('chevR')}</a>
+          ${cleanPhone ? `<a href="tel:${cleanPhone}" class="btn btn--ghost btn--sm rcard__btn" title="Call facility">${icon('phone')}<span>${t('call_btn', {}, 'Call')}</span></a>` : ''}
+          ${mapUrl ? `<a href="${mapUrl}" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--sm rcard__btn" title="Open Google Maps directions">${icon('nav')}<span>${t('directions_btn', {}, 'Directions')}</span></a>` : ''}
+          <a class="btn btn--primary btn--sm rcard__btn rcard__btn--view" href="#/facility/${f.id}">${t('view_details', {}, 'View details')}${icon('chevR')}</a>
         </div>
       </div>
     </article>`;
@@ -1077,11 +1155,11 @@
     return `
     <section class="fac-hero">
       <div class="container">
-        <a class="back" href="${sid ? '#/results?s=' + sid : '#/'}">${icon('arrowL')}${sid ? 'Back to results' : 'Home'}</a>
+        <a class="back" href="${sid ? '#/results?s=' + sid : '#/'}">${icon('arrowL')}${sid ? (tService(sid) || 'Back to results') : t('nav_find_care', {}, 'Home')}</a>
         <div class="fac-hero__top">
           <div class="fac-hero__id">
             <div class="fac-hero__meta-top">
-              <span class="rcard__type">${typeLabel(f.type)}</span>
+              <span class="rcard__type">${tType(f.type)}</span>
               <span class="status status--${anyR.avail.tone}"><i class="dot"></i>${anyR.avail.title}</span>
               <span class="rcard__dist-pill">${icon('pin')}${anyR.dist} km (${anyR.drive}m drive)</span>
               ${ratingText(f)}
@@ -1092,9 +1170,9 @@
             <p class="fac-hero__addr">${icon('pin')}${esc(f.address)}, ${esc(f.area)}${f.city ? ' · ' + esc(f.city) : ''}</p>
           </div>
           <div class="fac-actions">
-            ${cleanPhone ? `<a class="btn btn--ghost" href="tel:${cleanPhone}">${icon('phone')}Call</a>` : ''}
-            ${mapUrl ? `<a class="btn btn--ghost" href="${mapUrl}" target="_blank" rel="noopener noreferrer">${icon('nav')}Directions</a>` : ''}
-            <button type="button" class="btn btn--ghost ${inCmp ? 'is-on' : ''}" data-act="toggle-compare" data-id="${f.id}">${icon(inCmp ? 'check' : 'columns')}<span>${inCmp ? 'In comparison' : 'Compare'}</span></button>
+            ${cleanPhone ? `<a class="btn btn--ghost" href="tel:${cleanPhone}">${icon('phone')}${t('call_btn', {}, 'Call')}</a>` : ''}
+            ${mapUrl ? `<a class="btn btn--ghost" href="${mapUrl}" target="_blank" rel="noopener noreferrer">${icon('nav')}${t('directions_btn', {}, 'Directions')}</a>` : ''}
+            <button type="button" class="btn btn--ghost ${inCmp ? 'is-on' : ''}" data-act="toggle-compare" data-id="${f.id}">${icon(inCmp ? 'check' : 'columns')}<span>${inCmp ? t('in_compare', {}, 'In comparison') : t('compare_action', {}, 'Compare')}</span></button>
             <a class="btn btn--primary" href="#/plan/${f.id}">Choose this option${icon('arrowR')}</a>
           </div>
         </div>
@@ -1103,14 +1181,14 @@
         <!-- Section: For your visit -->
         <div class="focus-panel">
           <div class="focus-panel__head">
-            <span class="focus-panel__tag">For your visit</span>
-            <strong>${esc(D.serviceMap[sid].name)}</strong>
+            <span class="focus-panel__tag">${t('for_visit', {}, 'For your visit')}</span>
+            <strong>${esc(tService(sid) || D.serviceMap[sid].name)}</strong>
             <span class="focus-panel__when">${icon('clock')}${esc(whenLabel(state.when))}</span>
           </div>
           <div class="metrics metrics--lg">
-            ${metric('rupee', 'Cost', priceText(r.price), esc(priceSub(r)), r.price == null ? 'muted' : '')}
-            ${metric('clock', 'Availability', r.avail.title, r.avail.sub, r.avail.tone, true)}
-            ${metric('hourglass', 'Est. wait', waitText(r.wait), r.wait == null ? 'Call facility' : 'Typical estimate', waitTone(r.wait))}
+            ${metric('rupee', t('cost_label', {}, 'Cost'), priceText(r.price), esc(priceSub(r)), r.price == null ? 'muted' : '')}
+            ${metric('clock', t('avail_label', {}, 'Availability'), r.avail.title, r.avail.sub, r.avail.tone, true)}
+            ${metric('hourglass', t('wait_label', {}, 'Est. wait'), waitText(r.wait), r.wait == null ? t('call_facility', {}, 'Call facility') : t('typical_wait', {}, 'Typical wait'), waitTone(r.wait))}
             ${metric('access', 'Access', ac.title, ac.sub, ac.tone)}
           </div>
           ${r.s.doctor ? `<div class="focus-panel__doc">${icon('stethoscope')}<span><strong>${esc(r.s.doctor)}</strong> · ${esc(serviceDaysText(f, sid))}</span></div>` : `<div class="focus-panel__doc">${icon('calendar')}<span>${esc(serviceDaysText(f, sid))}</span></div>`}
@@ -1125,7 +1203,7 @@
         <!-- Section: Services & prices -->
         <section class="panel">
           <div class="panel__head-row">
-            <h2>${icon('stethoscope')}Services &amp; prices</h2>
+            <h2>${icon('stethoscope')}${t('services_prices', {}, 'Services & prices')}</h2>
             <span class="panel__head-meta">${svcIds.length} available services</span>
           </div>
           <div class="fac-services-list">
@@ -1133,7 +1211,7 @@
               const rr = enrich(f, s, date);
               return `<div class="fac-svc-card ${s === sid ? 'is-current' : ''}">
                 <div class="fac-svc-card__main">
-                  <strong>${esc(D.serviceMap[s].name)}</strong>
+                  <strong>${esc(tService(s) || D.serviceMap[s].name)}</strong>
                   ${rr.s.doctor ? `<span class="fac-svc-card__doc">${icon('stethoscope')}${esc(rr.s.doctor)}</span>` : ''}
                 </div>
                 <div class="fac-svc-card__price">
@@ -1152,7 +1230,7 @@
         <!-- Section: Hours today -->
         <section class="panel">
           <div class="panel__head-row">
-            <h2>${icon('calendar')}Hours today</h2>
+            <h2>${icon('calendar')}${t('hours_today', {}, 'Hours today')}</h2>
             <span class="badge badge--brand">${DAYS[day]}</span>
           </div>
           <div class="today-hours-card">
@@ -1161,14 +1239,14 @@
               <strong>${fmtRange(f.hours[day])}</strong>
             </div>
             ${sid && f.services[sid] ? `<div class="today-hours-card__svc">
-              <span class="today-hours-card__label">${esc(shortName(D.serviceMap[sid].name))}:</span>
+              <span class="today-hours-card__label">${esc(shortName(tService(sid) || D.serviceMap[sid].name))}:</span>
               <span>${f.services[sid].byAppt ? 'By appointment' : fmtRange(svcSchedule(f, sid, day))}</span>
             </div>` : ''}
           </div>
           <details class="weekly-hours">
             <summary class="weekly-hours__toggle">${icon('clock')}View full week schedule <span>${icon('chevD')}</span></summary>
             <table class="tbl tbl--hours">
-              <thead><tr><th>Day</th><th>Facility hours</th>${sid ? `<th>${esc(shortName(D.serviceMap[sid].name))}</th>` : ''}</tr></thead>
+              <thead><tr><th>Day</th><th>Facility hours</th>${sid ? `<th>${esc(shortName(tService(sid) || D.serviceMap[sid].name))}</th>` : ''}</tr></thead>
               <tbody>
                 ${[1, 2, 3, 4, 5, 6, 0].map((d) => `<tr class="${d === day ? 'is-current' : ''}">
                   <td><strong>${DAYS[d]}</strong>${d === day ? ' <span class="pill-sm">Today</span>' : ''}</td>
@@ -1193,7 +1271,7 @@
 
         <!-- Section: Contact & payment -->
         <section class="panel">
-          <h2>${icon('phone')}Contact &amp; payment</h2>
+          <h2>${icon('phone')}${t('contact_payment', {}, 'Contact & payment')}</h2>
           <dl class="dl dl--icons">
             <dt>${icon('phone')} Phone</dt><dd>${cleanPhone ? `<a class="link" href="tel:${cleanPhone}">${esc(f.phone)}</a>` : 'Not available'}</dd>
             <dt>${icon('pin')} Address</dt><dd>${esc(f.address)}, ${esc(f.area)}${f.city ? ' · ' + esc(f.city) : ''}</dd>
@@ -1202,18 +1280,18 @@
             <dt>${icon('clock')} Hours</dt><dd>${f.open24 ? 'Open 24 hours daily' : fmtRange(f.hours[day])}</dd>
           </dl>
           <div class="panel__actions">
-            ${cleanPhone ? `<a class="btn btn--ghost btn--sm" href="tel:${cleanPhone}">${icon('phone')}Call now</a>` : ''}
-            ${mapUrl ? `<a class="btn btn--ghost btn--sm" href="${mapUrl}" target="_blank" rel="noopener noreferrer">${icon('nav')}Directions</a>` : ''}
+            ${cleanPhone ? `<a class="btn btn--ghost btn--sm" href="tel:${cleanPhone}">${icon('phone')}${t('call_btn', {}, 'Call now')}</a>` : ''}
+            ${mapUrl ? `<a class="btn btn--ghost btn--sm" href="${mapUrl}" target="_blank" rel="noopener noreferrer">${icon('nav')}${t('directions_btn', {}, 'Directions')}</a>` : ''}
             <button type="button" class="btn btn--ghost btn--sm" data-act="edit-facility" data-fid="${f.id}" title="Simulate field update">${icon('edit')} Field Verify</button>
           </div>
         </section>
 
         <!-- Section: Information quality -->
         <section class="panel panel--muted">
-          <h2>${icon('shield')}Information quality</h2>
+          <h2>${icon('shield')}${t('info_quality', {}, 'Information quality')}</h2>
           <p class="fresh-line fresh-line--${fr.tone}"><strong>${fr.title}.</strong> Last updated ${fr.ago} · ${fr.source}.</p>
           <p class="fhint">Verified with national directories and field reports to provide transparent healthcare decision support.</p>
-          <button type="button" class="btn btn--ghost btn--sm" data-act="report-info">${icon('flag')}Report incorrect information</button>
+          <button type="button" class="btn btn--ghost btn--sm" data-act="report-info">${icon('flag')}${t('report_info', {}, 'Report incorrect information')}</button>
         </section>
       </div>
     </div>`;
@@ -1235,13 +1313,13 @@
     const ids = state.compare.filter((id) => D.facilityMap[id]);
     if (ids.length < 2) {
       return `<section class="page-head"><div class="container">
-        <a class="back" href="${state.service ? '#/results?s=' + state.service : '#/'}">${icon('arrowL')}${state.service ? 'Back to results' : 'Home'}</a>
-        <h1>Compare options</h1></div></section>
+        <a class="back" href="${state.service ? '#/results?s=' + state.service : '#/'}">${icon('arrowL')}${state.service ? (tService(state.service) || 'Back to results') : t('nav_find_care', {}, 'Home')}</a>
+        <h1>${t('compare_title', {}, 'Compare options')}</h1></div></section>
         <div class="container section--tight"><div class="empty">
           <span class="empty__ic">${icon('columns')}</span>
           <h3>${ids.length === 1 ? 'Add one more option to compare' : 'Nothing to compare yet'}</h3>
-          <p>${ids.length === 1 ? `You have selected <strong>${esc(D.facilityMap[ids[0]].name)}</strong>. Pick at least one more facility to compare them side-by-side.` : 'Search for a healthcare service and choose “Compare” on two or three options to see them side by side.'}</p>
-          <div class="empty__actions"><a class="btn btn--primary" href="${state.service ? '#/results?s=' + state.service : '#/'}">${state.service ? 'Back to results' : 'Find a service'}</a></div>
+          <p>${ids.length === 1 ? `You have selected <strong>${esc(D.facilityMap[ids[0]].name)}</strong>. ${t('add_more_compare', {}, 'Pick at least one more facility to compare them side-by-side.')}` : t('add_more_compare', {}, 'Search for a healthcare service and choose “Compare” on two or three options to see them side by side.')}</p>
+          <div class="empty__actions"><a class="btn btn--primary" href="${state.service ? '#/results?s=' + state.service : '#/'}">${state.service ? (tService(state.service) || 'Back to results') : t('find_care_btn', {}, 'Find care')}</a></div>
         </div></div>`;
     }
     const date = visitDate(), day = date.getDay();
@@ -1260,10 +1338,10 @@
 
     const groups = [
       { title: 'Decision essentials', rows: [
-        { label: 'Cost', ic: 'rupee', cells: rows.map((r) => cell(priceText(r.price), esc(priceSub(r)), r.price == null ? 'muted' : '')), best: bestMin(rows.map((r) => r.priceMin)), bestLabel: 'Lowest' },
-        { label: isNow() ? 'Availability now' : 'Availability at your time', ic: 'clock', cells: rows.map((r) => cell(r.avail.title, r.avail.sub, r.avail.tone, true)), best: bestBool(rows.map((r) => r.avail.ok)), bestLabel: 'Available' },
-        { label: 'Estimated wait', ic: 'hourglass', cells: rows.map((r) => cell(waitText(r.wait), r.wait == null ? 'No reliable data' : 'Typical estimate', waitTone(r.wait))), best: bestMin(rows.map((r) => r.wait)), bestLabel: 'Shortest' },
-        { label: 'Distance', ic: 'pin', cells: rows.map((r) => cell(`${r.dist} km`, `~${r.drive} min by road · ${esc(r.f.area)}`)), best: bestMin(rows.map((r) => r.dist)), bestLabel: 'Closest' },
+        { label: t('cost_label', {}, 'Cost'), ic: 'rupee', cells: rows.map((r) => cell(priceText(r.price), esc(priceSub(r)), r.price == null ? 'muted' : '')), best: bestMin(rows.map((r) => r.priceMin)), bestLabel: t('lowest_cost_win', {}, 'Lowest') },
+        { label: isNow() ? (t('avail_label', {}, 'Availability') + ' ' + t('when_now', {}, 'now')) : t('avail_label', {}, 'Availability'), ic: 'clock', cells: rows.map((r) => cell(r.avail.title, r.avail.sub, r.avail.tone, true)), best: bestBool(rows.map((r) => r.avail.ok)), bestLabel: 'Available' },
+        { label: t('filter_wait_time', {}, 'Estimated wait'), ic: 'hourglass', cells: rows.map((r) => cell(waitText(r.wait), r.wait == null ? 'No reliable data' : t('typical_wait', {}, 'Typical estimate'), waitTone(r.wait))), best: bestMin(rows.map((r) => r.wait)), bestLabel: t('shortest_wait_win', {}, 'Shortest') },
+        { label: t('dist_label', {}, 'Distance'), ic: 'pin', cells: rows.map((r) => cell(`${r.dist} km`, `~${r.drive} min by road · ${esc(r.f.area)}`)), best: bestMin(rows.map((r) => r.dist)), bestLabel: t('closest_win', {}, 'Closest') },
         { label: 'Doctor / service', ic: 'stethoscope', cells: rows.map((r) => cell(esc(r.s.doctor || (r.s.byAppt ? 'Appointment needed' : 'Walk-in service')), esc(serviceDaysText(r.f, r.sid)))) }
       ] },
       { title: 'Timing', rows: [
@@ -1281,7 +1359,7 @@
         { label: 'Phone', ic: 'phone', cells: rows.map((r) => cell(`<a class="link" href="tel:${r.f.phone.replace(/\s/g, '')}">${esc(r.f.phone)}</a>`)) }
       ] },
       { title: 'Information quality', rows: [
-        { label: 'Last updated', ic: 'refresh', cells: rows.map((r) => { const fr = freshness(r.f); return cell(fr.ago, fr.source, fr.tone); }), best: bestMin(rows.map((r) => r.f.updated)), bestLabel: 'Freshest' },
+        { label: t('last_updated', {}, 'Last updated'), ic: 'refresh', cells: rows.map((r) => { const fr = freshness(r.f); return cell(fr.ago, fr.source, fr.tone); }), best: bestMin(rows.map((r) => r.f.updated)), bestLabel: 'Freshest' },
         { label: 'Visitor rating', ic: 'star', cells: rows.map((r) => cell(`★ ${r.f.rating.toFixed(1)}`, `${fmtN(r.f.reviews)} reviews · secondary`)) }
       ] }
     ];
@@ -1291,10 +1369,10 @@
     const accessScore = (f) => (f.access ? (f.access.wheelchair ? 2 : 0) + (f.access.ramp ? 1 : 0) + (f.access.lift || f.access.ground ? 2 : 0) + (f.access.toilet ? 1 : 0) + (f.access.parking ? 1 : 0) : 0);
     const bestAccess = bestMin(rows.map((r) => -accessScore(r.f)));
     const verdict = [
-      ['rupee', 'Lowest cost', pick(groups[0].rows[0].best), 'price'],
-      ['hourglass', 'Shortest wait', pick(groups[0].rows[2].best), 'wait'],
-      ['pin', 'Closest', pick(groups[0].rows[3].best), 'dist'],
-      ['access', 'Best accessibility', pick(bestAccess), 'access']
+      ['rupee', t('lowest_cost_win', {}, 'Lowest cost'), pick(groups[0].rows[0].best), 'price'],
+      ['hourglass', t('shortest_wait_win', {}, 'Shortest wait'), pick(groups[0].rows[2].best), 'wait'],
+      ['pin', t('closest_win', {}, 'Closest'), pick(groups[0].rows[3].best), 'dist'],
+      ['access', t('best_access_win', {}, 'Best accessibility'), pick(bestAccess), 'access']
     ];
 
     const isSame = (row) => { const vals = row.raw || row.cells.map((c) => c.v + '|' + (c.sub || '')); return vals.every((v) => v === vals[0]); };
@@ -1302,9 +1380,9 @@
     return `
     <section class="page-head">
       <div class="container">
-        <a class="back" href="#/results?s=${svc.id}">${icon('arrowL')}Back to results</a>
+        <a class="back" href="#/results?s=${svc.id}">${icon('arrowL')}${tService(svc.id) || 'Back to results'}</a>
         <div class="page-head__row page-head__row--split">
-          <div><h1>Comparing ${n} options</h1><p><strong>${esc(svc.name)}</strong> · near ${esc(locObj().name)} · ${esc(whenLabel(state.when))}</p></div>
+          <div><h1>${t('compare_title', {}, 'Compare Healthcare Options')} (${n})</h1><p><strong>${esc(tService(svc.id) || svc.name)}</strong> · near ${esc(locObj().name)} · ${esc(whenLabel(state.when))}</p></div>
           <div class="page-head__controls">${selectField('when')}${n < 3 ? `<a class="btn btn--ghost" href="#/results?s=${svc.id}">${icon('plus')}Add an option</a>` : ''}</div>
         </div>
         <div class="verdicts">
@@ -1317,15 +1395,15 @@
     </section>
     <div class="container section--tight cmp-section">
       <div class="cmp-toolbar">
-        <label class="switch switch--sm"><input type="checkbox" id="diff-only" ${ui.diffOnly ? 'checked' : ''}><span class="switch__track"></span><span class="switch__label">Show differences only</span></label>
+        <label class="switch switch--sm"><input type="checkbox" id="diff-only" ${ui.diffOnly ? 'checked' : ''}><span class="switch__track"></span><span class="switch__label">${t('diff_only', {}, 'Show differences only')}</span></label>
         <span class="cmp-hint">${icon('sparkle')}Highlighted cells are the best value in that row</span>
       </div>
       <div class="cmp-wrap">
         <table class="cmp" style="--n:${n}">
-          <thead><tr><th class="cmp__corner"><span>${esc(shortName(svc.name))}</span></th>
+          <thead><tr><th class="cmp__corner"><span>${esc(shortName(tService(svc.id) || svc.name))}</span></th>
             ${rows.map((r) => `<th class="cmp__fac">
-              <button class="icon-btn cmp__rm" data-act="toggle-compare" data-id="${r.f.id}" aria-label="Remove ${esc(r.f.name)}">${icon('x')}</button>
-              <div class="rcard__type">${typeLabel(r.f.type)}</div>
+              <button class="icon-btn cmp__rm" data-act="toggle-compare" data-id="${r.f.id}" aria-label="${t('remove_item', {}, 'Remove')} ${esc(r.f.name)}">${icon('x')}</button>
+              <div class="rcard__type">${tType(r.f.type)}</div>
               <a href="#/facility/${r.f.id}" class="cmp__name">${esc(r.f.name)}</a>
               <a class="btn btn--primary btn--sm btn--block" href="#/plan/${r.f.id}">Choose${icon('arrowR')}</a>
             </th>`).join('')}
@@ -1467,21 +1545,23 @@
   /* ------------------------------------------------------------------ */
   function matchServices(q) {
     q = q.toLowerCase().trim();
-    const words = q.split(/\s+/).filter((w) => w.length >= 3);
+    const words = q.split(/\s+/).filter((w) => w.length >= 2);
     return D.services.map((s) => {
       const name = s.name.toLowerCase();
+      const trName = (tService(s.id) || '').toLowerCase();
       let sc = 0;
-      if (name.startsWith(q)) sc += 10; else if (name.includes(q)) sc += 7;
+      if (name.startsWith(q) || trName.startsWith(q)) sc += 10;
+      else if (name.includes(q) || trName.includes(q)) sc += 7;
       s.keywords.forEach((k) => {
         if (k === q) sc += 9;
-        else if (k.startsWith(q) || (q.length >= 3 && k.includes(q))) sc += 5;
-        else if (k.length >= 3 && q.includes(k)) sc += 4;
+        else if (k.startsWith(q) || (q.length >= 2 && k.includes(q))) sc += 5;
+        else if (k.length >= 2 && q.includes(k)) sc += 4;
       });
       words.forEach((w) => {
-        if (name.includes(w)) sc += 2;
+        if (name.includes(w) || trName.includes(w)) sc += 2;
         if (s.keywords.some((k) => k.split(' ').some((kw) => kw.startsWith(w)))) sc += 2;
       });
-      if (D.catMap[s.cat].name.toLowerCase().includes(q)) sc += 3;
+      if (D.catMap[s.cat].name.toLowerCase().includes(q) || (tCategory(s.cat) || '').toLowerCase().includes(q)) sc += 3;
       return { s, sc };
     }).filter((x) => x.sc > 0).sort((a, b) => b.sc - a.sc).slice(0, 7).map((x) => x.s);
   }
@@ -1499,17 +1579,19 @@
     const list = wrap.querySelector('.search__list');
     const q = input.value.trim();
     const items = q ? matchServices(q) : D.popular.map((id) => D.serviceMap[id]);
-    let html = q ? '' : '<div class="opt-head">Popular searches</div>';
+    let html = q ? '' : `<div class="opt-head">${t('popular_services', {}, 'Popular searches')}</div>`;
     if (q && !items.length) {
       html = `<div class="opt-empty">${icon('help')}<div><strong>No exact match for “${esc(q)}”.</strong><span>Try simpler words, or browse a type of care:</span></div></div>
-        <div class="opt-cats">${D.categories.map((c) => `<a class="chip chip--sm" href="#/category/${c.id}">${esc(c.name)}</a>`).join('')}</div>`;
+        <div class="opt-cats">${D.categories.map((c) => `<a class="chip chip--sm" href="#/category/${c.id}">${esc(tCategory(c.id) || c.name)}</a>`).join('')}</div>`;
     }
     html += items.map((s, i) => {
       const st = serviceStats(s.id);
+      const sName = tService(s.id) || s.name;
+      const cName = tCategory(s.cat) || D.catMap[s.cat].name;
       return `<div class="opt" role="option" id="${input.id}-o${i}" data-act="pick-service" data-sid="${s.id}" style="${catStyle(s.cat)}">
         <span class="opt__ic">${icon(D.catMap[s.cat].icon)}</span>
-        <span class="opt__txt"><span class="opt__name">${hl(s.name, q)}</span>
-        <span class="opt__meta">${esc(D.catMap[s.cat].name)} · ${st.count} places nearby${st.min != null ? ' · ' + fromPrice(st.min) : ''}</span></span>
+        <span class="opt__txt"><span class="opt__name">${hl(sName, q)}</span>
+        <span class="opt__meta">${esc(cName)} · ${t('places_count', { n: st.count }, `${st.count} places`)}${st.min != null ? ' · ' + fromPrice(st.min) : ''}</span></span>
         ${icon('arrowR', 'opt__go')}
       </div>`;
     }).join('');
@@ -1555,12 +1637,13 @@
   /* Header, footer, tray, toasts                                        */
   /* ------------------------------------------------------------------ */
   function renderHeader() {
+    const curLang = LANGUAGES[state.lang] || LANGUAGES.en;
     $('#header').innerHTML = `
       <div class="proto-bar">
         <div class="container proto-bar__inner">
-          <span class="proto-bar__em">${icon('siren')} <strong>Emergency 24/7:</strong> Call <a href="tel:112">112</a> or <a href="tel:108">108</a></span>
+          <span class="proto-bar__em">${icon('siren')} <strong>${t('proto_bar_em', {}, 'Emergency 24/7:')}</strong> <a href="tel:112">${t('proto_bar_call', {}, 'Call 112 or 108')}</a></span>
           <span class="proto-bar__sep">·</span>
-          <span class="proto-bar__meta">${icon('shield')} Healthcare Decision Support &amp; Verified Directory</span>
+          <span class="proto-bar__meta">${icon('shield')} ${t('proto_bar_meta', {}, 'Healthcare Decision Support & Verified Directory')}</span>
         </div>
       </div>
       <header class="site-header">
@@ -1569,26 +1652,44 @@
             <span class="brand__mark">${icon('heartPulse')}</span>
             <span class="brand__text">
               <span class="brand__name">CUREVIA</span>
-              <span class="brand__tag">Healthcare Decision Support</span>
+              <span class="brand__tag">${t('brand_tag', {}, 'Healthcare Decision Support')}</span>
             </span>
           </a>
           <nav class="nav" aria-label="Main">
             <a href="#/" class="nav__link" data-nav="home">
-              ${icon('search')}<span>Find Care</span>
+              ${icon('search')}<span>${t('nav_find_care', {}, 'Find Care')}</span>
             </a>
             <a href="#/compare" class="nav__link" data-nav="compare">
-              ${icon('columns')}<span>Compare</span>
+              ${icon('columns')}<span>${t('nav_compare', {}, 'Compare')}</span>
               <span class="badge" id="nav-cmp"></span>
             </a>
-            <button type="button" class="nav__link nav__link--chat" data-act="open-chat" title="Chat with Curevia assistant">
-              ${icon('sparkle')}<span>Ask Curevia</span>
+            <button type="button" class="nav__link nav__link--chat" data-act="open-chat" title="${t('nav_ask_curevia', {}, 'Ask Curevia')}">
+              ${icon('sparkle')}<span>${t('nav_ask_curevia', {}, 'Ask Curevia')}</span>
               <span class="chat-nav-dot"></span>
             </button>
-            <button type="button" class="nav__link nav__icon-btn" data-act="toggle-text" id="text-btn" title="Toggle larger text" aria-pressed="${state.textLg}">
-              ${icon('textSize')}<span class="sr-only">Text size</span>
+            <div class="lang-picker" id="lang-picker">
+              <button type="button" class="lang-btn" data-act="toggle-lang" id="lang-btn" aria-haspopup="true" aria-expanded="false" title="${t('nav_lang', {}, 'Language')}">
+                ${icon('globe')}
+                <span>${esc(curLang.native)}</span>
+                ${icon('chevD', 'ic--sm')}
+              </button>
+              <div class="lang-dropdown" id="lang-menu" hidden>
+                ${Object.keys(LANGUAGES).map((code) => {
+                  const l = LANGUAGES[code];
+                  const active = state.lang === code;
+                  return `<button type="button" class="lang-opt ${active ? 'is-active' : ''}" data-act="set-lang" data-lang="${code}">
+                    <span class="lang-opt__native">${esc(l.native)}</span>
+                    <span class="lang-opt__name">${esc(l.name)}</span>
+                    ${active ? icon('check', 'lang-opt__chk') : ''}
+                  </button>`;
+                }).join('')}
+              </div>
+            </div>
+            <button type="button" class="nav__link nav__icon-btn" data-act="toggle-text" id="text-btn" title="${t('nav_text_size', {}, 'Text size')}" aria-pressed="${state.textLg}">
+              ${icon('textSize')}<span class="sr-only">${t('nav_text_size', {}, 'Text size')}</span>
             </button>
-            <button type="button" class="nav__link nav__icon-btn nav__link--subtle" data-act="open-test" title="Usability testing mode">
-              ${icon('clipboard')}<span class="sr-only">Test mode</span>
+            <button type="button" class="nav__link nav__icon-btn nav__link--subtle" data-act="open-test" title="${t('nav_test_mode', {}, 'Test mode')}">
+              ${icon('clipboard')}<span class="sr-only">${t('nav_test_mode', {}, 'Test mode')}</span>
             </button>
           </nav>
         </div>
@@ -1610,23 +1711,23 @@
           <span class="brand__mark">${icon('heartPulse')}</span>
           <span class="brand__text">
             <span class="brand__name">CUREVIA</span>
-            <span class="brand__tag">Healthcare Decision Support</span>
+            <span class="brand__tag">${t('brand_tag', {}, 'Healthcare Decision Support')}</span>
           </span>
         </a>
-        <p>Transparent healthcare discovery and decision support. Helping patients and caregivers compare cost, availability, waiting times, and accessibility before traveling.</p>
+        <p>${t('footer_brand_desc', {}, 'Transparent healthcare discovery and decision support. Helping patients and caregivers compare cost, availability, waiting times, and accessibility before traveling.')}</p>
       </div>
       <div class="footer__note">
         ${icon('shield')}
         <div>
-          <strong>Verified Healthcare Data</strong>
-          <span>Facility coordinates &amp; services verified via State Registry &amp; OpenStreetMap. Always verify emergency availability directly.</span>
+          <strong>${t('footer_verified_title', {}, 'Verified Healthcare Data')}</strong>
+          <span>${t('footer_verified_sub', {}, 'Facility coordinates & services verified via State Registry & OpenStreetMap. Always verify emergency availability directly.')}</span>
         </div>
       </div>
       <div class="footer__em">
         ${icon('siren')}
         <div>
-          <strong>Medical Emergency?</strong>
-          <span>Call <a href="tel:112">112</a> or Ambulance <a href="tel:108">108</a> immediately.</span>
+          <strong>${t('footer_emergency_title', {}, 'Medical Emergency?')}</strong>
+          <span>${t('footer_emergency_sub', {}, 'Call 112 or Ambulance 108 immediately.')}</span>
         </div>
       </div>
     </div>`;
@@ -1640,8 +1741,8 @@
     document.body.classList.toggle('has-tray', !!show);
     if (!show) { el.hidden = true; el.innerHTML = ''; return; }
 
-    const labelTxt = n === 1 ? '1 selected · Add 1 more to compare' : `${n} selected · Compare options`;
-    const svcTitle = svc ? shortName(svc.name) : 'Healthcare options';
+    const labelTxt = t('tray_selected', { n }, `${n} selected`);
+    const svcTitle = svc ? (tService(svc.id) || shortName(svc.name)) : 'Healthcare options';
 
     el.hidden = false;
     el.innerHTML = `<div class="tray__inner">
@@ -1662,9 +1763,9 @@
         </div>`;
       }).join('')}</div>
       <div class="tray__actions">
-        <button type="button" class="link tray__clear" data-act="clear-compare">Clear all</button>
+        <button type="button" class="link tray__clear" data-act="clear-compare">${t('tray_clear', {}, 'Clear all')}</button>
         <button type="button" class="btn btn--primary btn--sm" data-act="go-compare">
-          ${n >= 2 ? `Compare options ${icon('arrowR')}` : `Compare (${n}/2 selected)`}
+          ${n >= 2 ? `${t('tray_compare_btn', {}, 'Compare options')} ${icon('arrowR')}` : `${t('compare_action', {}, 'Compare')} (${n}/2)`}
         </button>
       </div>
     </div>`;
@@ -2040,6 +2141,16 @@
     const el = e.target.closest('[data-act]');
     // Hide suggestion lists when clicking elsewhere
     $$('[data-search]').forEach((w) => { if (!w.contains(e.target)) hideSuggest(w); });
+    // Dismiss language menu if clicking outside
+    const langPicker = e.target.closest('#lang-picker');
+    if (!langPicker) {
+      const menu = $('#lang-menu');
+      const btn = $('#lang-btn');
+      if (menu && !menu.hidden) {
+        menu.hidden = true;
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      }
+    }
     if (!el) return;
     const act = el.dataset.act;
     const F = state.filters;
@@ -2151,6 +2262,21 @@
         updateHeader(parseHash().parts[0] || '');
         toast(state.textLg ? 'Larger text on' : 'Standard text size');
         break;
+      case 'toggle-lang': {
+        const menu = $('#lang-menu');
+        const btn = $('#lang-btn');
+        if (menu) {
+          const isHidden = menu.hidden;
+          menu.hidden = !isHidden;
+          if (btn) btn.setAttribute('aria-expanded', String(isHidden));
+        }
+        break;
+      }
+      case 'set-lang': {
+        const code = el.dataset.lang;
+        if (code) setLanguage(code);
+        break;
+      }
       case 'report-info': toast('Thanks. In the full version, this report would go to the facility for verification.'); break;
       case 'open-maps': {
         const fid = el.dataset.id;
@@ -2439,20 +2565,66 @@
   /* ------------------------------------------------------------------ */
   /* Curevia Chatbox: AI Healthcare Navigator & Triage Assistant       */
   /* ------------------------------------------------------------------ */
+  const CHAT_PROMPTS = {
+    en: [
+      '🩺 General physician near me',
+      '💰 Lowest cost hospital options',
+      '🦽 Wheelchair accessible care',
+      '🚨 24x7 Emergency casualty care',
+      '🧪 Lab test & ultrasound pricing',
+      '⚖️ Compare CDSIMER & Harohalli'
+    ],
+    ta: [
+      '🩺 அருகிலுள்ள பொது மருத்துவர்',
+      '💰 குறைந்த கட்டண மருத்துவமனை',
+      '🦽 சக்கர நாற்காலி வசதியுள்ள இடங்கள்',
+      '🚨 24x7 அவசர சிகிச்சை பிரிவு',
+      '🧪 ரத்தப் பரிசோதனை மற்றும் ஸ்கேன்',
+      '⚖️ மருத்துவமனைகளை ஒப்பிடு'
+    ],
+    ml: [
+      '🩺 അടുത്തുള്ള ജനറൽ ഫിസിഷ്യൻ',
+      '💰 കുറഞ്ഞ നിരക്കിലുള്ള ആശുപത്രികൾ',
+      '🦽 വീൽചെയർ സൗകര്യമുള്ള ആശുപത്രികൾ',
+      '🚨 24x7 അത്യാഹിത വിഭാഗം',
+      '🧪 ലാബ് ടെസ്റ്റുകളും സ്കാനുകളും',
+      '⚖️ ആശുപത്രികളെ താരതമ്യം ചെയ്യുക'
+    ],
+    te: [
+      '🩺 దగ్గరలోని జనరల్ ఫిజీషియన్',
+      '💰 తక్కువ ఖర్చుతో కూడిన ఆసుపత్రులు',
+      '🦽 వీల్ చైర్ సదుపాయం ఉన్న ఆసుపత్రులు',
+      '🚨 24x7 అత్యవసర చికిత్స విభాగం',
+      '🧪 ల్యాబ్ పరీక్షలు మరియు స్కాన్లు',
+      '⚖️ ఆసుపత్రులను పోల్చండి'
+    ],
+    kn: [
+      '🩺 ಹತ್ತಿರದ ಸಾಮಾನ್ಯ ವೈದ್ಯರು (General Physician)',
+      '💰 ಕಡಿಮೆ ವೆಚ್ಚದ ಆಸ್ಪತ್ರೆಗಳು',
+      '🦽 ಗಾಲಿಕುರ್ಚಿ ಲಭ್ಯವಿರುವ ಆಸ್ಪತ್ರೆಗಳು',
+      '🚨 24x7 ತುರ್ತು ಚಿಕಿತ್ಸಾ ಘಟಕ',
+      '🧪 ರಕ್ತ ಪರೀಕ್ಷೆ ಮತ್ತು ಸ್ಕ್ಯಾನ್ ದರಗಳು',
+      '⚖️ ಆಸ್ಪತ್ರೆಗಳನ್ನು ಹೋಲಿಕೆ ಮಾಡಿ'
+    ],
+    hi: [
+      '🩺 नजदीकी सामान्य चिकित्सक (General Physician)',
+      '💰 सबसे कम खर्च वाले अस्पताल',
+      '🦽 व्हीलचेयर सुलभ अस्पताल',
+      '🚨 24x7 आपातकालीन चिकित्सा',
+      '🧪 ब्लड टेस्ट और अल्ट्रासाउंड दरें',
+      '⚖️ अस्पतालों की तुलना करें'
+    ]
+  };
+
   function getWelcomeMessage() {
+    const lang = (typeof state !== 'undefined' && state.lang) || 'en';
+    const chips = CHAT_PROMPTS[lang] || CHAT_PROMPTS.en;
     return {
       id: 'msg_welcome',
       sender: 'curevia',
-      text: "👋 **Hello! I'm Curevia**, your verified healthcare decision assistant.\n\nTell me what symptoms you're experiencing or care you need. You can also ask me to compare nearby hospitals, check real OPD fees, wait times, or wheelchair accessibility.",
+      text: t('chat_welcome', {}, "👋 **Hello! I'm Curevia**, your verified healthcare decision assistant.\n\nTell me what symptoms you're experiencing or care you need. You can also ask me to compare nearby hospitals, check real OPD fees, wait times, or wheelchair accessibility."),
       time: 'Just now',
-      chips: [
-        '🩺 General doctor consultation',
-        '💰 Lowest cost hospitals nearby',
-        '🦽 Wheelchair accessible hospitals',
-        '🚨 24x7 Emergency casualty care',
-        '🧪 Lab test & scan pricing',
-        '⚖️ Compare CDSIMER & Harohalli'
-      ]
+      chips
     };
   }
 
@@ -2487,12 +2659,12 @@
       speechRec = new SpeechRecognition();
       speechRec.continuous = false;
       speechRec.interimResults = false;
-      speechRec.lang = 'en-IN';
+      speechRec.lang = (LANGUAGES[state.lang] && LANGUAGES[state.lang].speechCode) || 'en-IN';
 
       speechRec.onstart = () => {
         chatState.isListening = true;
         renderChat();
-        toast('Listening… Speak your symptoms or healthcare question.', 'info');
+        toast(t('chat_listening', {}, 'Listening… Speak your symptoms or healthcare question.'), 'info');
       };
 
       speechRec.onresult = (e) => {
@@ -2542,9 +2714,9 @@
     const utter = new SpeechSynthesisUtterance(clean);
     utter.rate = 1.0;
     utter.pitch = 1.0;
-    utter.lang = 'en-IN';
+    utter.lang = (LANGUAGES[state.lang] && LANGUAGES[state.lang].speechCode) || 'en-IN';
     window.speechSynthesis.speak(utter);
-    toast('Playing voice summary…', 'good');
+    toast(t('chat_playing_audio', {}, 'Playing voice summary…'), 'good');
   }
 
   function formatChatText(txt) {
@@ -3280,7 +3452,7 @@
             ${icon('sparkle')}
             <span class="cchat-launcher__pulse"></span>
           </span>
-          <span class="cchat-launcher__text">Ask Curevia</span>
+          <span class="cchat-launcher__text">${t('chat_title', {}, 'Ask Curevia')}</span>
         </button>
       `;
       return;
@@ -3293,14 +3465,7 @@
     const lastMsg = chatState.messages.length ? chatState.messages[chatState.messages.length - 1] : null;
     const activeChips = (!isMin && lastMsg && lastMsg.chips && lastMsg.chips.length)
       ? lastMsg.chips
-      : [
-          '🩺 General physician near me',
-          '💰 Lowest cost hospital options',
-          '🦽 Wheelchair accessible care',
-          '🚨 24x7 Emergency casualty care',
-          '🧪 Lab test & ultrasound pricing',
-          '⚖️ Compare CDSIMER & Harohalli'
-        ];
+      : (CHAT_PROMPTS[state.lang] || CHAT_PROMPTS.en);
 
     root.innerHTML = `
       <div class="cchat-window ${isMin ? 'is-minimized' : ''} ${isExp ? 'is-expanded' : ''}" role="dialog" aria-label="Curevia Healthcare Assistant">
@@ -3309,10 +3474,10 @@
             <div class="cchat-header__avatar">${icon('sparkle')}</div>
             <div class="cchat-header__info">
               <div class="cchat-header__title-row">
-                <h3 class="cchat-header__title">Curevia</h3>
-                <span class="cchat-header__status-badge"><span class="cchat-live-dot"></span>Live AI Guide</span>
+                <h3 class="cchat-header__title">${t('chat_title', {}, 'Curevia')}</h3>
+                <span class="cchat-header__status-badge"><span class="cchat-live-dot"></span>${t('chat_badge', {}, 'Live AI Guide')}</span>
               </div>
-              <div class="cchat-header__subtitle">Verified Care Navigator · Near ${esc(loc.name)}</div>
+              <div class="cchat-header__subtitle">${t('chat_sub', {}, 'Verified Care Navigator')} · Near ${esc(loc.name)}</div>
             </div>
           </div>
           <div class="cchat-header__actions">
@@ -3345,13 +3510,13 @@
 
         <footer class="cchat-footer">
           <form class="cchat-form" data-form="chat-form">
-            <input type="text" class="cchat-input" id="cchat-input" placeholder="Ask about symptoms, costs, wait times, hospitals…" autocomplete="off">
+            <input type="text" class="cchat-input" id="cchat-input" placeholder="${t('chat_placeholder', {}, 'Ask about symptoms, costs, wait times, hospitals…')}" autocomplete="off">
             <button type="button" class="cchat-btn-mic ${chatState.isListening ? 'is-listening' : ''}" data-act="chat-mic" title="${chatState.isListening ? 'Listening… click to stop' : 'Voice input (Speak to Curevia)'}">
               ${icon('mic')}
             </button>
             <button type="submit" class="cchat-send" aria-label="Send message">${icon('send')}</button>
           </form>
-          <p class="cchat-disclaimer">Verified directory estimates. For life-threatening emergencies, call 112 / 108.</p>
+          <p class="cchat-disclaimer">${t('chat_disclaimer', {}, 'Verified directory estimates. For life-threatening emergencies, call 112 / 108.')}</p>
         </footer>
       </div>
     `;
@@ -3385,7 +3550,7 @@
           sender: 'curevia',
           text: "I experienced a brief hitch finding facility details. How else can I assist with your care search?",
           time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
-          chips: ['🩺 General physician near me', '💰 Lowest cost hospitals', '🚨 24/7 Emergency care']
+          chips: CHAT_PROMPTS[state.lang] || CHAT_PROMPTS.en
         });
       } finally {
         chatState.isThinking = false;
@@ -3399,6 +3564,7 @@
   /* Init                                                                */
   /* ------------------------------------------------------------------ */
   const app = $('#app');
+  document.documentElement.lang = state.lang || 'en';
   document.documentElement.classList.toggle('lg', state.textLg);
   renderHeader();
   renderFooter();
