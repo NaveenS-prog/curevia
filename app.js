@@ -1183,7 +1183,7 @@
           <div class="fac-actions">
             ${cleanPhone ? `<a class="btn btn--ghost" href="tel:${cleanPhone}">${icon('phone')}${t('call_btn', {}, 'Call')}</a>` : ''}
             ${mapUrl ? `<a class="btn btn--ghost" href="${mapUrl}" target="_blank" rel="noopener noreferrer">${icon('nav')}${t('directions_btn', {}, 'Directions')}</a>` : ''}
-            <a class="btn btn--ghost" href="#/pharmacies?q=${encodeURIComponent(f.area || f.name.split(' ')[0])}" title="Find 24/7 pharmacies & Jan Aushadhi Kendras near this facility">${icon('pill')}<span>${t('nav_pharmacies', {}, 'Pharmacies')}</span></a>
+            <a class="btn btn--ghost" href="#/pharmacies?lat=${f.lat}&lon=${f.lon}&name=${encodeURIComponent(f.name)}" title="Find 24/7 pharmacies & Jan Aushadhi Kendras near this facility">${icon('pill')}<span>${t('nav_pharmacies', {}, 'Pharmacies')}</span></a>
             <button type="button" class="btn btn--ghost ${inCmp ? 'is-on' : ''}" data-act="toggle-compare" data-id="${f.id}">${icon(inCmp ? 'check' : 'columns')}<span>${inCmp ? t('in_compare', {}, 'In comparison') : t('compare_action', {}, 'Compare')}</span></button>
             <a class="btn btn--primary" href="#/plan/${f.id}">Choose this option${icon('arrowR')}</a>
           </div>
@@ -1836,7 +1836,7 @@
       return { lat: pharmState.userLat, lon: pharmState.userLon, name: pharmState.locName || 'Current Location (GPS)' };
     }
     const loc = locObj();
-    return { lat: loc.lat || 12.9250, lon: loc.lon || 77.5800, name: loc.name || 'South Bengaluru' };
+    return { lat: loc.lat || 12.6518, lon: loc.lon || 77.4422, name: loc.name || 'Jain Global Campus (Harohalli)' };
   }
 
   function getEnrichedPharmacies() {
@@ -1853,14 +1853,33 @@
     });
   }
 
+  function matchPharmacySearch(p, q) {
+    if (!q || !q.trim()) return true;
+    
+    // Clean string: lower and remove punctuation
+    const cleanQ = q.toLowerCase().replace(/[()[\],.-]/g, ' ').replace(/\s+/g, ' ').trim();
+    if (!cleanQ) return true;
+
+    const text = `${p.name} ${p.brand || ''} ${p.area} ${p.address} ${(p.services || []).join(' ')} ${p.discount || ''}`
+      .toLowerCase().replace(/[()[\],.-]/g, ' ').replace(/\s+/g, ' ');
+
+    // 1. Direct substring match
+    if (text.includes(cleanQ)) return true;
+
+    // 2. Tokenized search with stopword filtering
+    const stopWords = new Set(['taluk', 'district', 'dist', 'road', 'rd', 'town', 'cross', 'main', 'near', 'opp', 'in', 'at', 'and', 'or', 'the', 'karnataka']);
+    const tokens = cleanQ.split(' ').filter(w => w.length > 2);
+    const sigTokens = tokens.filter(w => !stopWords.has(w));
+    const testTokens = sigTokens.length > 0 ? sigTokens : tokens;
+
+    return testTokens.some(t => text.includes(t));
+  }
+
   function getFilteredPharmacies(qStr = pharmState.query, filterType = pharmState.filter) {
     let list = getEnrichedPharmacies();
-    const q = (qStr || '').trim().toLowerCase();
+    const q = (qStr || '').trim();
     if (q) {
-      list = list.filter(p => {
-        const text = `${p.name} ${p.brand || ''} ${p.area} ${p.address} ${(p.services || []).join(' ')} ${p.discount || ''}`.toLowerCase();
-        return text.includes(q);
-      });
+      list = list.filter(p => matchPharmacySearch(p, q));
     }
 
     if (filterType === '247') {
@@ -1880,85 +1899,108 @@
     return list.sort((a, b) => a.dist - b.dist);
   }
 
+  function renderPharmacyCardItem(p, isSel) {
+    let badgeHtml = '';
+    if (p.type === 'janaushadhi') {
+      badgeHtml = `<span class="badge-janaushadhi">${icon('shield')} ${t('pharm_type_janaushadhi', {}, 'Jan Aushadhi Kendra (Govt)')}</span>`;
+    } else if (p.is24x7) {
+      badgeHtml = `<span class="badge-247">${icon('clock')} ${t('pharm_open_247', {}, '24/7 Open')}</span>`;
+    } else if (p.type === 'chain') {
+      badgeHtml = `<span class="badge-chain">${icon('building')} ${esc(p.brand || 'Retail Chain')}</span>`;
+    } else if (p.type === 'hospital') {
+      badgeHtml = `<span class="badge-hospital">${icon('building')} ${t('pharm_type_hospital', {}, 'Hospital Dispensary')}</span>`;
+    } else {
+      badgeHtml = `<span class="badge-independent">${icon('building')} ${t('pharm_type_independent', {}, 'Chemist Store')}</span>`;
+    }
+
+    return `
+      <article class="pharm-card ${isSel ? 'is-selected' : ''}" data-pid="${p.id}" id="pharm-card-${p.id}" tabindex="0">
+        <div class="pharm-card__top">
+          <h3 class="pharm-card__title">${esc(p.name)}</h3>
+          <span class="pharm-dist-pill">${p.dist} km · ~${p.drive} min</span>
+        </div>
+
+        <div class="pharm-card__badges">
+          ${badgeHtml}
+          ${p.delivery ? `<span class="pharm-tag" style="background:#e0f2fe;color:#0369a1;font-weight:700;">🛵 ${t('pharm_filter_delivery', {}, 'Home Delivery')}</span>` : ''}
+          ${p.wheelchair ? `<span class="pharm-tag" style="background:#f1f5f9;color:#334155;">♿ Ramp</span>` : ''}
+        </div>
+
+        <div class="pharm-address">
+          ${icon('pin')}
+          <span>${esc(p.address)}</span>
+        </div>
+
+        ${p.discount ? `
+          <div class="pharm-discount-banner">
+            ${icon('rupee')}
+            <span>${esc(p.discount)}</span>
+          </div>
+        ` : ''}
+
+        <div class="pharm-tags">
+          ${(p.services || []).slice(0, 4).map(s => `<span class="pharm-tag">${esc(s)}</span>`).join('')}
+        </div>
+
+        <div class="pharm-card__actions">
+          ${p.phone ? `
+            <a href="tel:${p.phone.replace(/[^0-9+]/g, '')}" class="btn--pharm btn--pharm-call" onclick="event.stopPropagation();">
+              ${icon('phone')} ${t('pharm_call', {}, 'Call')}
+            </a>
+          ` : ''}
+          <a href="https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lon}" target="_blank" rel="noopener" class="btn--pharm btn--pharm-dir" onclick="event.stopPropagation();">
+            ${icon('nav')} ${t('pharm_directions', {}, 'Directions')}
+          </a>
+          <button type="button" class="btn--pharm btn--pharm-map" data-act="pharm-focus-marker" data-pid="${p.id}">
+            ${icon('pin')} ${t('pharm_view_map', {}, 'Locate')}
+          </button>
+        </div>
+      </article>
+    `;
+  }
+
   function renderPharmacyCards(list) {
     if (!list || !list.length) {
+      const center = getPharmCenter();
+      const allNearby = getEnrichedPharmacies().sort((a, b) => a.dist - b.dist).slice(0, 6);
       return `
         <div class="pharm-empty">
           ${icon('alert')}
-          <h3>No pharmacies found</h3>
-          <p>${t('pharm_no_results', {}, 'No pharmacies match your filters in this area. Try selecting "All" or searching a different term.')}</p>
-          <button type="button" class="btn btn--primary btn--sm" data-act="pharm-reset-filters">Show All Nearby Stores</button>
+          <h3>No pharmacies found for "${esc(pharmState.query || '')}"</h3>
+          <p>${t('pharm_no_results', {}, 'Showing closest available pharmacies near ' + esc(center.name) + ':')}</p>
+          <div style="margin: 12px 0;">
+            <button type="button" class="btn btn--primary btn--sm" data-act="pharm-reset-filters">
+              Clear Search &amp; Show All
+            </button>
+          </div>
+        </div>
+        <div class="pharm-fallback-list" style="display:flex;flex-direction:column;gap:12px;margin-top:10px;">
+          ${allNearby.map(p => renderPharmacyCardItem(p, pharmState.selectedId === p.id)).join('')}
         </div>
       `;
     }
 
-    return list.slice(0, 60).map(p => {
-      const isSel = pharmState.selectedId === p.id;
-      let badgeHtml = '';
-      if (p.type === 'janaushadhi') {
-        badgeHtml = `<span class="badge-janaushadhi">${icon('shield')} ${t('pharm_type_janaushadhi', {}, 'Jan Aushadhi Kendra (Govt)')}</span>`;
-      } else if (p.is24x7) {
-        badgeHtml = `<span class="badge-247">${icon('clock')} ${t('pharm_open_247', {}, '24/7 Open')}</span>`;
-      } else if (p.type === 'chain') {
-        badgeHtml = `<span class="badge-chain">${icon('building')} ${esc(p.brand || 'Retail Chain')}</span>`;
-      } else if (p.type === 'hospital') {
-        badgeHtml = `<span class="badge-hospital">${icon('building')} ${t('pharm_type_hospital', {}, 'Hospital Dispensary')}</span>`;
-      } else {
-        badgeHtml = `<span class="badge-independent">${icon('building')} ${t('pharm_type_independent', {}, 'Chemist Store')}</span>`;
-      }
-
-      return `
-        <article class="pharm-card ${isSel ? 'is-selected' : ''}" data-pid="${p.id}" id="pharm-card-${p.id}" tabindex="0">
-          <div class="pharm-card__top">
-            <h3 class="pharm-card__title">${esc(p.name)}</h3>
-            <span class="pharm-dist-pill">${p.dist} km · ~${p.drive} min</span>
-          </div>
-
-          <div class="pharm-card__badges">
-            ${badgeHtml}
-            ${p.delivery ? `<span class="pharm-tag" style="background:#e0f2fe;color:#0369a1;font-weight:700;">🛵 ${t('pharm_filter_delivery', {}, 'Home Delivery')}</span>` : ''}
-            ${p.wheelchair ? `<span class="pharm-tag" style="background:#f1f5f9;color:#334155;">♿ Ramp</span>` : ''}
-          </div>
-
-          <div class="pharm-address">
-            ${icon('pin')}
-            <span>${esc(p.address)}</span>
-          </div>
-
-          ${p.discount ? `
-            <div class="pharm-discount-banner">
-              ${icon('rupee')}
-              <span>${esc(p.discount)}</span>
-            </div>
-          ` : ''}
-
-          <div class="pharm-tags">
-            ${(p.services || []).slice(0, 4).map(s => `<span class="pharm-tag">${esc(s)}</span>`).join('')}
-          </div>
-
-          <div class="pharm-card__actions">
-            ${p.phone ? `
-              <a href="tel:${p.phone.replace(/[^0-9+]/g, '')}" class="btn--pharm btn--pharm-call" onclick="event.stopPropagation();">
-                ${icon('phone')} ${t('pharm_call', {}, 'Call')}
-              </a>
-            ` : ''}
-            <a href="https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lon}" target="_blank" rel="noopener" class="btn--pharm btn--pharm-dir" onclick="event.stopPropagation();">
-              ${icon('nav')} ${t('pharm_directions', {}, 'Directions')}
-            </a>
-            <button type="button" class="btn--pharm btn--pharm-map" data-act="pharm-focus-marker" data-pid="${p.id}">
-              ${icon('pin')} ${t('pharm_view_map', {}, 'Locate')}
-            </button>
-          </div>
-        </article>
-      `;
-    }).join('');
+    return list.slice(0, 60).map(p => renderPharmacyCardItem(p, pharmState.selectedId === p.id)).join('');
   }
 
   function viewPharmacies(focusId, queryParams) {
     if (queryParams && queryParams.get('filter')) {
       pharmState.filter = queryParams.get('filter');
     }
-    if (queryParams && queryParams.get('q')) {
+    if (queryParams && queryParams.get('lat') && queryParams.get('lon')) {
+      pharmState.userLat = parseFloat(queryParams.get('lat'));
+      pharmState.userLon = parseFloat(queryParams.get('lon'));
+      pharmState.locName = queryParams.get('name') || 'Facility Location';
+      pharmState.query = '';
+    } else if (queryParams && queryParams.get('loc')) {
+      const matchedLoc = D.localities.find(l => l.id === queryParams.get('loc'));
+      if (matchedLoc) {
+        state.loc = matchedLoc.id;
+        pharmState.userLat = null;
+        pharmState.userLon = null;
+        pharmState.locName = '';
+      }
+    } else if (queryParams && queryParams.get('q')) {
       pharmState.query = queryParams.get('q');
     }
     if (focusId) {
@@ -1986,9 +2028,17 @@
                 <p>${t('pharm_sub', {}, 'Find 24/7 emergency medical stores, affordable generic medicines (50-90% discount), and retail chains on an interactive map.')}</p>
               </div>
               <div class="pharm-view__loc-actions">
-                <span class="pharm-loc-pill" title="Current search center">
-                  ${icon('pin')} ${esc(center.name)}
-                </span>
+                <div class="pharm-loc-picker" title="Select location to find nearby stores">
+                  ${icon('pin')}
+                  <select id="pharm-loc-select" class="pharm-loc-select" data-act="pharm-change-loc" aria-label="Select search location">
+                    ${D.localities.map(loc => `
+                      <option value="${loc.id}" ${(!pharmState.userLat && state.loc === loc.id) ? 'selected' : ''}>
+                        ${esc(loc.name)}
+                      </option>
+                    `).join('')}
+                    ${pharmState.userLat ? `<option value="gps" selected>📍 ${esc(pharmState.locName || 'GPS Location')}</option>` : ''}
+                  </select>
+                </div>
                 <button type="button" class="btn--gps-locate" data-act="pharm-gps">
                   ${icon('crosshair')} ${t('pharm_locate_me', {}, 'Locate Me (GPS)')}
                 </button>
@@ -2105,7 +2155,11 @@
       radius: 3000
     }).addTo(map);
 
-    const filtered = getFilteredPharmacies();
+    let filtered = getFilteredPharmacies();
+    // If no filtered, display the nearest ones on the map so map is never empty
+    if (!filtered.length) {
+      filtered = getEnrichedPharmacies().sort((a, b) => a.dist - b.dist).slice(0, 10);
+    }
     const bounds = [[center.lat, center.lon]];
 
     filtered.slice(0, 100).forEach(p => {
@@ -2617,6 +2671,9 @@
       case 'pharm-clear-q': {
         e.preventDefault();
         pharmState.query = '';
+        if (location.hash.includes('?')) {
+          window.history.replaceState(null, '', '#/pharmacies');
+        }
         const inp = document.getElementById('pharm-search-input');
         if (inp) inp.value = '';
         el.remove();
@@ -2627,7 +2684,29 @@
         e.preventDefault();
         pharmState.filter = 'all';
         pharmState.query = '';
+        if (location.hash.includes('?')) {
+          window.history.replaceState(null, '', '#/pharmacies');
+        }
         render();
+        break;
+      }
+      case 'pharm-change-loc': {
+        const val = el.value;
+        if (val !== 'gps') {
+          const loc = D.localities.find(l => l.id === val);
+          if (loc) {
+            state.loc = loc.id;
+            pharmState.userLat = null;
+            pharmState.userLon = null;
+            pharmState.locName = '';
+            pharmState.query = '';
+            if (location.hash.includes('?')) {
+              window.history.replaceState(null, '', '#/pharmacies');
+            }
+            saveState();
+            render();
+          }
+        }
         break;
       }
       case 'pharm-mode': {
