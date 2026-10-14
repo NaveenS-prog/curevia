@@ -66,6 +66,7 @@
   const ICONS = {
     crosshair: '<circle cx="12" cy="12" r="10"/><line x1="22" x2="18" y1="12" y2="12"/><line x1="6" x2="2" y1="12" y2="12"/><line x1="12" x2="12" y1="6" y2="2"/><line x1="12" x2="12" y1="22" y2="18"/>',
     edit: '<path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>',
+    pill: '<path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/>',
     search: '<circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>',
     pin: '<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>',
     stethoscope: '<path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/>',
@@ -812,6 +813,16 @@
               ${icon('sparkle')}<span>${t('chat_hero_prompt', {}, 'Not sure what care you need? <strong>Ask Curevia Assistant</strong> for triage &amp; comparison &rarr;')}</span>
             </button>
           </div>
+          <div class="hero-quick-cards">
+            <a href="#/pharmacies" class="quick-care-card quick-care-card--pharmacy">
+              <div class="quick-care-card__icon">${icon('pill')}</div>
+              <div class="quick-care-card__body">
+                <strong>${t('pharm_title', {}, 'Nearby Pharmacies & Jan Aushadhi Kendras')}</strong>
+                <span>${t('pharm_quick_sub', {}, '560+ verified 24/7 emergency stores & 50-90% subsidized generic meds on live map')}</span>
+              </div>
+              <span class="quick-care-card__arrow">${icon('arrowR')}</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -1172,6 +1183,7 @@
           <div class="fac-actions">
             ${cleanPhone ? `<a class="btn btn--ghost" href="tel:${cleanPhone}">${icon('phone')}${t('call_btn', {}, 'Call')}</a>` : ''}
             ${mapUrl ? `<a class="btn btn--ghost" href="${mapUrl}" target="_blank" rel="noopener noreferrer">${icon('nav')}${t('directions_btn', {}, 'Directions')}</a>` : ''}
+            <a class="btn btn--ghost" href="#/pharmacies?q=${encodeURIComponent(f.area || f.name.split(' ')[0])}" title="Find 24/7 pharmacies & Jan Aushadhi Kendras near this facility">${icon('pill')}<span>${t('nav_pharmacies', {}, 'Pharmacies')}</span></a>
             <button type="button" class="btn btn--ghost ${inCmp ? 'is-on' : ''}" data-act="toggle-compare" data-id="${f.id}">${icon(inCmp ? 'check' : 'columns')}<span>${inCmp ? t('in_compare', {}, 'In comparison') : t('compare_action', {}, 'Compare')}</span></button>
             <a class="btn btn--primary" href="#/plan/${f.id}">Choose this option${icon('arrowR')}</a>
           </div>
@@ -1663,6 +1675,9 @@
               ${icon('columns')}<span>${t('nav_compare', {}, 'Compare')}</span>
               <span class="badge" id="nav-cmp"></span>
             </a>
+            <a href="#/pharmacies" class="nav__link" data-nav="pharmacies">
+              ${icon('pill')}<span>${t('nav_pharmacies', {}, 'Pharmacies')}</span>
+            </a>
             <button type="button" class="nav__link nav__link--chat" data-act="open-chat" title="${t('nav_ask_curevia', {}, 'Ask Curevia')}">
               ${icon('sparkle')}<span>${t('nav_ask_curevia', {}, 'Ask Curevia')}</span>
               <span class="chat-nav-dot"></span>
@@ -1697,7 +1712,12 @@
   }
 
   function updateHeader(r0) {
-    $$('.nav__link[data-nav]').forEach((a) => a.classList.toggle('is-active', (a.dataset.nav === 'compare' && r0 === 'compare') || (a.dataset.nav === 'home' && ['', 'category', 'results'].includes(r0))));
+    $$('.nav__link[data-nav]').forEach((a) => {
+      const isAct = (a.dataset.nav === 'compare' && r0 === 'compare') ||
+                    (a.dataset.nav === 'pharmacies' && (r0 === 'pharmacies' || r0 === 'pharmacy')) ||
+                    (a.dataset.nav === 'home' && ['', 'category', 'results'].includes(r0));
+      a.classList.toggle('is-active', isAct);
+    });
     const count = state.compare.length || '';
     const badge = $('#nav-cmp'); if (badge) badge.textContent = count;
     const mBadge = $('#m-cmp-count'); if (mBadge) mBadge.textContent = count;
@@ -1794,6 +1814,394 @@
     ta.remove(); return ok;
   }
 
+
+  /* ------------------------------------------------------------------ */
+  /* Nearby Pharmacies & Jan Aushadhi Interactive Map System            */
+  /* ------------------------------------------------------------------ */
+  const pharmState = {
+    filter: 'all', // 'all', '247', 'janaushadhi', 'delivery', 'near3', 'near5', 'chain'
+    query: '',
+    userLat: null,
+    userLon: null,
+    locName: '',
+    selectedId: null,
+    mobileMode: 'split' // 'split', 'map', 'list'
+  };
+
+  let activePharmMap = null;
+  let activePharmMarkers = {};
+
+  function getPharmCenter() {
+    if (pharmState.userLat != null && pharmState.userLon != null) {
+      return { lat: pharmState.userLat, lon: pharmState.userLon, name: pharmState.locName || 'Current Location (GPS)' };
+    }
+    const loc = locObj();
+    return { lat: loc.lat || 12.9250, lon: loc.lon || 77.5800, name: loc.name || 'South Bengaluru' };
+  }
+
+  function getEnrichedPharmacies() {
+    const list = window.CUREVIA_PHARMACIES || [];
+    const center = getPharmCenter();
+    return list.map(p => {
+      const dist = haversineDistKm(center.lat, center.lon, p.lat, p.lon);
+      return {
+        ...p,
+        dist,
+        drive: Math.max(2, Math.round(dist / 22 * 60 + 2)),
+        walk: Math.max(2, Math.round(dist / 4.5 * 60))
+      };
+    });
+  }
+
+  function getFilteredPharmacies(qStr = pharmState.query, filterType = pharmState.filter) {
+    let list = getEnrichedPharmacies();
+    const q = (qStr || '').trim().toLowerCase();
+    if (q) {
+      list = list.filter(p => {
+        const text = `${p.name} ${p.brand || ''} ${p.area} ${p.address} ${(p.services || []).join(' ')} ${p.discount || ''}`.toLowerCase();
+        return text.includes(q);
+      });
+    }
+
+    if (filterType === '247') {
+      list = list.filter(p => p.is24x7);
+    } else if (filterType === 'janaushadhi') {
+      list = list.filter(p => p.type === 'janaushadhi');
+    } else if (filterType === 'delivery') {
+      list = list.filter(p => p.delivery);
+    } else if (filterType === 'near3') {
+      list = list.filter(p => p.dist <= 3.0);
+    } else if (filterType === 'near5') {
+      list = list.filter(p => p.dist <= 5.0);
+    } else if (filterType === 'chain') {
+      list = list.filter(p => p.type === 'chain');
+    }
+
+    return list.sort((a, b) => a.dist - b.dist);
+  }
+
+  function renderPharmacyCards(list) {
+    if (!list || !list.length) {
+      return `
+        <div class="pharm-empty">
+          ${icon('alert')}
+          <h3>No pharmacies found</h3>
+          <p>${t('pharm_no_results', {}, 'No pharmacies match your filters in this area. Try selecting "All" or searching a different term.')}</p>
+          <button type="button" class="btn btn--primary btn--sm" data-act="pharm-reset-filters">Show All Nearby Stores</button>
+        </div>
+      `;
+    }
+
+    return list.slice(0, 60).map(p => {
+      const isSel = pharmState.selectedId === p.id;
+      let badgeHtml = '';
+      if (p.type === 'janaushadhi') {
+        badgeHtml = `<span class="badge-janaushadhi">${icon('shield')} ${t('pharm_type_janaushadhi', {}, 'Jan Aushadhi Kendra (Govt)')}</span>`;
+      } else if (p.is24x7) {
+        badgeHtml = `<span class="badge-247">${icon('clock')} ${t('pharm_open_247', {}, '24/7 Open')}</span>`;
+      } else if (p.type === 'chain') {
+        badgeHtml = `<span class="badge-chain">${icon('building')} ${esc(p.brand || 'Retail Chain')}</span>`;
+      } else if (p.type === 'hospital') {
+        badgeHtml = `<span class="badge-hospital">${icon('building')} ${t('pharm_type_hospital', {}, 'Hospital Dispensary')}</span>`;
+      } else {
+        badgeHtml = `<span class="badge-independent">${icon('building')} ${t('pharm_type_independent', {}, 'Chemist Store')}</span>`;
+      }
+
+      return `
+        <article class="pharm-card ${isSel ? 'is-selected' : ''}" data-pid="${p.id}" id="pharm-card-${p.id}" tabindex="0">
+          <div class="pharm-card__top">
+            <h3 class="pharm-card__title">${esc(p.name)}</h3>
+            <span class="pharm-dist-pill">${p.dist} km · ~${p.drive} min</span>
+          </div>
+
+          <div class="pharm-card__badges">
+            ${badgeHtml}
+            ${p.delivery ? `<span class="pharm-tag" style="background:#e0f2fe;color:#0369a1;font-weight:700;">🛵 ${t('pharm_filter_delivery', {}, 'Home Delivery')}</span>` : ''}
+            ${p.wheelchair ? `<span class="pharm-tag" style="background:#f1f5f9;color:#334155;">♿ Ramp</span>` : ''}
+          </div>
+
+          <div class="pharm-address">
+            ${icon('pin')}
+            <span>${esc(p.address)}</span>
+          </div>
+
+          ${p.discount ? `
+            <div class="pharm-discount-banner">
+              ${icon('rupee')}
+              <span>${esc(p.discount)}</span>
+            </div>
+          ` : ''}
+
+          <div class="pharm-tags">
+            ${(p.services || []).slice(0, 4).map(s => `<span class="pharm-tag">${esc(s)}</span>`).join('')}
+          </div>
+
+          <div class="pharm-card__actions">
+            ${p.phone ? `
+              <a href="tel:${p.phone.replace(/[^0-9+]/g, '')}" class="btn--pharm btn--pharm-call" onclick="event.stopPropagation();">
+                ${icon('phone')} ${t('pharm_call', {}, 'Call')}
+              </a>
+            ` : ''}
+            <a href="https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lon}" target="_blank" rel="noopener" class="btn--pharm btn--pharm-dir" onclick="event.stopPropagation();">
+              ${icon('nav')} ${t('pharm_directions', {}, 'Directions')}
+            </a>
+            <button type="button" class="btn--pharm btn--pharm-map" data-act="pharm-focus-marker" data-pid="${p.id}">
+              ${icon('pin')} ${t('pharm_view_map', {}, 'Locate')}
+            </button>
+          </div>
+        </article>
+      `;
+    }).join('');
+  }
+
+  function viewPharmacies(focusId, queryParams) {
+    if (queryParams && queryParams.get('filter')) {
+      pharmState.filter = queryParams.get('filter');
+    }
+    if (queryParams && queryParams.get('q')) {
+      pharmState.query = queryParams.get('q');
+    }
+    if (focusId) {
+      pharmState.selectedId = focusId;
+    }
+
+    const center = getPharmCenter();
+    const enriched = getEnrichedPharmacies();
+    const countTotal = enriched.length;
+    const count247 = enriched.filter(p => p.is24x7).length;
+    const countJan = enriched.filter(p => p.type === 'janaushadhi').length;
+    const countDel = enriched.filter(p => p.delivery).length;
+    const countNear3 = enriched.filter(p => p.dist <= 3.0).length;
+
+    const filtered = getFilteredPharmacies();
+
+    return `
+      <section class="pharm-view">
+        <div class="container">
+          <div class="pharm-view__header">
+            <div class="pharm-view__head-row">
+              <div class="pharm-view__titles">
+                <span class="badge badge--brand">${icon('pill')} ${t('pharm_hero_badge', {}, 'Map & Store Finder')}</span>
+                <h1>${t('pharm_title', {}, 'Nearby Pharmacies & Jan Aushadhi Kendras')}</h1>
+                <p>${t('pharm_sub', {}, 'Find 24/7 emergency medical stores, affordable generic medicines (50-90% discount), and retail chains on an interactive map.')}</p>
+              </div>
+              <div class="pharm-view__loc-actions">
+                <span class="pharm-loc-pill" title="Current search center">
+                  ${icon('pin')} ${esc(center.name)}
+                </span>
+                <button type="button" class="btn--gps-locate" data-act="pharm-gps">
+                  ${icon('crosshair')} ${t('pharm_locate_me', {}, 'Locate Me (GPS)')}
+                </button>
+              </div>
+            </div>
+
+            <div class="pharm-view__controls">
+              <div class="pharm-search-box">
+                ${icon('search')}
+                <input type="text" class="pharm-search-input" id="pharm-search-input"
+                  placeholder="${t('pharm_search_placeholder', {}, 'Search pharmacy name, area, or medicine (e.g. Apollo, Jan Aushadhi, Insulin)...')}"
+                  value="${esc(pharmState.query)}" autocomplete="off" />
+                ${pharmState.query ? `<button type="button" class="pharm-search-clear" data-act="pharm-clear-q">${icon('x')}</button>` : ''}
+              </div>
+
+              <div class="pharm-chips">
+                <button type="button" class="pharm-chip ${pharmState.filter === 'all' ? 'is-active' : ''}" data-act="pharm-filter" data-val="all">
+                  ${t('pharm_filter_all', {}, 'All')} <span class="pharm-chip-count">${countTotal}</span>
+                </button>
+                <button type="button" class="pharm-chip ${pharmState.filter === '247' ? 'is-active' : ''}" data-act="pharm-filter" data-val="247">
+                  ${t('pharm_filter_247', {}, '🟢 24/7 Open')} <span class="pharm-chip-count">${count247}</span>
+                </button>
+                <button type="button" class="pharm-chip ${pharmState.filter === 'janaushadhi' ? 'is-active' : ''}" data-act="pharm-filter" data-val="janaushadhi">
+                  ${t('pharm_filter_janaushadhi', {}, '🏷️ Jan Aushadhi (Generic)')} <span class="pharm-chip-count">${countJan}</span>
+                </button>
+                <button type="button" class="pharm-chip ${pharmState.filter === 'delivery' ? 'is-active' : ''}" data-act="pharm-filter" data-val="delivery">
+                  ${t('pharm_filter_delivery', {}, '🛵 Home Delivery')} <span class="pharm-chip-count">${countDel}</span>
+                </button>
+                <button type="button" class="pharm-chip ${pharmState.filter === 'near3' ? 'is-active' : ''}" data-act="pharm-filter" data-val="near3">
+                  ${t('pharm_filter_near3', {}, '📏 Under 3 km')} <span class="pharm-chip-count">${countNear3}</span>
+                </button>
+                <button type="button" class="pharm-chip ${pharmState.filter === 'chain' ? 'is-active' : ''}" data-act="pharm-filter" data-val="chain">
+                  ${t('pharm_filter_chains', {}, '🏢 Apollo / MedPlus')}
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pharm-view-toggle">
+            <button type="button" class="pharm-view-toggle-btn ${pharmState.mobileMode !== 'list' ? 'is-active' : ''}" data-act="pharm-mode" data-val="map">
+              ${icon('pin')} ${t('pharm_view_map', {}, 'Map View')}
+            </button>
+            <button type="button" class="pharm-view-toggle-btn ${pharmState.mobileMode === 'list' ? 'is-active' : ''}" data-act="pharm-mode" data-val="list">
+              ${icon('columns')} ${t('pharm_view_list', {}, 'List View')}
+            </button>
+          </div>
+
+          <div class="pharm-layout ${pharmState.mobileMode === 'list' ? 'is-mode-list' : 'is-mode-map'}" id="pharm-layout">
+            <div class="pharm-sidebar" id="pharm-sidebar">
+              <div class="pharm-results-count">
+                ${t('pharm_found', { n: filtered.length, loc: center.name }, `${filtered.length} pharmacies near ${center.name}`)}
+              </div>
+              ${renderPharmacyCards(filtered)}
+            </div>
+
+            <div class="pharm-map-wrapper">
+              <div id="pharmacy-map"></div>
+              <div class="pharm-map-float-bar">
+                <button type="button" class="pharm-map-float-btn" data-act="pharm-recenter" title="${t('pharm_recenter', {}, 'Recenter Map')}">
+                  ${icon('crosshair')} ${t('pharm_recenter', {}, 'Recenter Map')}
+                </button>
+              </div>
+              <div class="pharm-map-legend">
+                <span class="pharm-legend-item"><span class="pharm-legend-dot pharm-legend-dot--247"></span> 24/7 Open</span>
+                <span class="pharm-legend-item"><span class="pharm-legend-dot pharm-legend-dot--janaushadhi"></span> Jan Aushadhi (Govt)</span>
+                <span class="pharm-legend-item"><span class="pharm-legend-dot pharm-legend-dot--chain"></span> Retail Chain</span>
+                <span class="pharm-legend-item"><span class="pharm-legend-dot pharm-legend-dot--independent"></span> Local Chemist</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    `;
+  }
+
+  function mountPharmacyMap(focusId, queryParams) {
+    const mapEl = document.getElementById('pharmacy-map');
+    if (!mapEl || typeof L === 'undefined') return;
+
+    if (activePharmMap) {
+      activePharmMap.remove();
+      activePharmMap = null;
+    }
+    activePharmMarkers = {};
+
+    const center = getPharmCenter();
+    const map = L.map(mapEl, {
+      scrollWheelZoom: true,
+      touchZoom: true
+    }).setView([center.lat, center.lon], 13);
+    activePharmMap = map;
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap'
+    }).addTo(map);
+
+    // User location marker
+    const userIcon = L.divIcon({
+      className: 'leaflet-user-marker',
+      html: '<div style="background:#2563eb; width:20px; height:20px; border-radius:50%; border:3px solid white; box-shadow:0 0 0 5px rgba(37,99,235,0.35);"></div>',
+      iconSize: [24, 24],
+      iconAnchor: [12, 12]
+    });
+    L.marker([center.lat, center.lon], { icon: userIcon })
+      .addTo(map)
+      .bindPopup(`<strong>${esc(center.name)}</strong><br>Your search reference center`);
+
+    // Add radius circle
+    L.circle([center.lat, center.lon], {
+      color: '#0f766e',
+      fillColor: '#0f766e',
+      fillOpacity: 0.05,
+      radius: 3000
+    }).addTo(map);
+
+    const filtered = getFilteredPharmacies();
+    const bounds = [[center.lat, center.lon]];
+
+    filtered.slice(0, 100).forEach(p => {
+      bounds.push([p.lat, p.lon]);
+      let colorClass = 'pharm-pin--independent';
+      let pinSymbol = '💊';
+      if (p.is24x7) {
+        colorClass = 'pharm-pin--247';
+        pinSymbol = '🟢';
+      } else if (p.type === 'janaushadhi') {
+        colorClass = 'pharm-pin--janaushadhi';
+        pinSymbol = '🏷️';
+      } else if (p.type === 'chain') {
+        colorClass = 'pharm-pin--chain';
+        pinSymbol = '⚕️';
+      } else if (p.type === 'hospital') {
+        colorClass = 'pharm-pin--hospital';
+        pinSymbol = '🏥';
+      }
+
+      const pinIcon = L.divIcon({
+        className: 'leaflet-fac-marker',
+        html: `<div class="pharm-pin ${colorClass}" style="width:30px;height:30px;font-size:13px;">${pinSymbol}</div>`,
+        iconSize: [30, 30],
+        iconAnchor: [15, 15]
+      });
+
+      const popupHtml = `
+        <div class="pharm-popup">
+          <strong>${esc(p.name)}</strong>
+          <div class="pharm-popup-badge" style="background:${p.type === 'janaushadhi' ? '#fef3c7' : (p.is24x7 ? '#dcfce7' : '#e0f2fe')}; color:${p.type === 'janaushadhi' ? '#92400e' : (p.is24x7 ? '#166534' : '#0369a1')}">
+            ${p.type === 'janaushadhi' ? 'Jan Aushadhi (Govt)' : (p.is24x7 ? '24/7 Emergency' : esc(p.brand || 'Chemist'))}
+          </div>
+          <div class="pharm-popup-meta">
+            📍 ${p.dist} km (${p.drive} min drive) · ${esc(p.area)}<br>
+            🕒 ${esc(p.hours)}<br>
+            ${p.discount ? `<span style="color:#b45309;font-weight:600;">🏷️ ${esc(p.discount)}</span><br>` : ''}
+          </div>
+          <div class="pharm-popup-actions">
+            ${p.phone ? `<a href="tel:${p.phone.replace(/[^0-9+]/g, '')}" class="pharm-popup-btn pharm-popup-btn--call">📞 ${t('pharm_call', {}, 'Call')}</a>` : ''}
+            <a href="https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lon}" target="_blank" rel="noopener" class="pharm-popup-btn pharm-popup-btn--dir">🗺️ ${t('pharm_directions', {}, 'Directions')}</a>
+          </div>
+        </div>
+      `;
+
+      const m = L.marker([p.lat, p.lon], { icon: pinIcon })
+        .addTo(map)
+        .bindPopup(popupHtml);
+
+      m.on('click', () => {
+        pharmState.selectedId = p.id;
+        document.querySelectorAll('.pharm-card').forEach(el => el.classList.remove('is-selected'));
+        const card = document.getElementById(`pharm-card-${p.id}`);
+        if (card) {
+          card.classList.add('is-selected');
+          card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      });
+
+      activePharmMarkers[p.id] = m;
+    });
+
+    if (focusId && activePharmMarkers[focusId]) {
+      const targetM = activePharmMarkers[focusId];
+      map.setView(targetM.getLatLng(), 15);
+      targetM.openPopup();
+      const card = document.getElementById(`pharm-card-${focusId}`);
+      if (card) {
+        card.classList.add('is-selected');
+        card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    } else if (bounds.length > 1 && !focusId) {
+      map.fitBounds(bounds.slice(0, 20), { padding: [30, 30], maxZoom: 14 });
+    }
+  }
+
+  function updatePharmacyListAndMap() {
+    const sidebar = document.getElementById('pharm-sidebar');
+    if (!sidebar) return;
+    const center = getPharmCenter();
+    const filtered = getFilteredPharmacies();
+
+    sidebar.innerHTML = `
+      <div class="pharm-results-count">
+        ${t('pharm_found', { n: filtered.length, loc: center.name }, `${filtered.length} pharmacies near ${center.name}`)}
+      </div>
+      ${renderPharmacyCards(filtered)}
+    `;
+
+    // Re-mount map markers
+    if (activePharmMap) {
+      mountPharmacyMap();
+    }
+  }
+
+
   /* ------------------------------------------------------------------ */
   /* Router                                                              */
   /* ------------------------------------------------------------------ */
@@ -1820,6 +2228,7 @@
     else if (r0 === 'facility') { html = viewFacility(parts[1]); title = ((D.facilityMap[parts[1]] || {}).name || 'Facility') + ' · CUREVIA'; }
     else if (r0 === 'compare') { html = viewCompare(); title = 'Compare · CUREVIA'; }
     else if (r0 === 'plan') { html = viewPlan(parts[1]); title = 'Your plan · CUREVIA'; }
+    else if (r0 === 'pharmacies' || r0 === 'pharmacy') { html = viewPharmacies(parts[1], q); title = t('nav_pharmacies', {}, 'Pharmacies') + ' · CUREVIA'; }
     else if (r0 === 'test') { html = viewHome(); ui.testOpen = true; }
     else html = viewNotFound();
     app.innerHTML = `<div class="view view--${r0 || 'home'}">${html}</div>`;
@@ -1839,6 +2248,8 @@
         const psid = (state.service && pfac.services[state.service]) ? state.service : Object.keys(pfac.services)[0];
         mountLeafletMap([enrich(pfac, psid)], { route: true, focusFacility: pfac, h: 300 });
       }
+    } else if (r0 === 'pharmacies' || r0 === 'pharmacy') {
+      mountPharmacyMap(parts[1], q);
     }
     updateHeader(r0);
     renderTray(r0);
@@ -2151,10 +2562,109 @@
         if (btn) btn.setAttribute('aria-expanded', 'false');
       }
     }
+
+    const pharmCardEl = e.target.closest('.pharm-card');
+    if (pharmCardEl && !e.target.closest('a') && !e.target.closest('button')) {
+      const pid = pharmCardEl.dataset.pid;
+      if (activePharmMarkers[pid] && activePharmMap) {
+        const m = activePharmMarkers[pid];
+        activePharmMap.setView(m.getLatLng(), 15);
+        m.openPopup();
+        pharmState.selectedId = pid;
+        document.querySelectorAll('.pharm-card').forEach((c) => c.classList.remove('is-selected'));
+        pharmCardEl.classList.add('is-selected');
+      }
+      return;
+    }
+
     if (!el) return;
     const act = el.dataset.act;
     const F = state.filters;
     switch (act) {
+      case 'pharm-gps': {
+        e.preventDefault();
+        if (!navigator.geolocation) {
+          toast('Geolocation is not supported by your browser.', 'bad');
+          return;
+        }
+        el.disabled = true;
+        el.innerHTML = `${icon('refresh')} Locating...`;
+        navigator.geolocation.getCurrentPosition(
+          (pos) => {
+            pharmState.userLat = pos.coords.latitude;
+            pharmState.userLon = pos.coords.longitude;
+            pharmState.locName = 'Current GPS Location';
+            toast('📍 Location detected: Showing nearby pharmacies', 'good');
+            render();
+          },
+          (err) => {
+            el.disabled = false;
+            el.innerHTML = `${icon('crosshair')} Locate Me (GPS)`;
+            toast('Unable to retrieve location: ' + err.message, 'bad');
+          },
+          { timeout: 10000, enableHighAccuracy: true }
+        );
+        break;
+      }
+      case 'pharm-filter': {
+        e.preventDefault();
+        pharmState.filter = el.dataset.val;
+        document.querySelectorAll('.pharm-chip').forEach((c) => c.classList.remove('is-active'));
+        el.classList.add('is-active');
+        updatePharmacyListAndMap();
+        break;
+      }
+      case 'pharm-clear-q': {
+        e.preventDefault();
+        pharmState.query = '';
+        const inp = document.getElementById('pharm-search-input');
+        if (inp) inp.value = '';
+        el.remove();
+        updatePharmacyListAndMap();
+        break;
+      }
+      case 'pharm-reset-filters': {
+        e.preventDefault();
+        pharmState.filter = 'all';
+        pharmState.query = '';
+        render();
+        break;
+      }
+      case 'pharm-mode': {
+        e.preventDefault();
+        const mode = el.dataset.val;
+        pharmState.mobileMode = mode;
+        const layout = document.getElementById('pharm-layout');
+        if (layout) {
+          layout.classList.toggle('is-mode-list', mode === 'list');
+          layout.classList.toggle('is-mode-map', mode === 'map');
+        }
+        document.querySelectorAll('.pharm-view-toggle-btn').forEach((b) => b.classList.toggle('is-active', b.dataset.val === mode));
+        if (activePharmMap) setTimeout(() => activePharmMap.invalidateSize(), 150);
+        break;
+      }
+      case 'pharm-recenter': {
+        e.preventDefault();
+        if (activePharmMap) {
+          const c = getPharmCenter();
+          activePharmMap.setView([c.lat, c.lon], 13);
+        }
+        break;
+      }
+      case 'pharm-focus-marker': {
+        e.preventDefault();
+        const pid = el.dataset.pid;
+        if (activePharmMarkers[pid] && activePharmMap) {
+          const m = activePharmMarkers[pid];
+          activePharmMap.setView(m.getLatLng(), 15);
+          m.openPopup();
+          pharmState.selectedId = pid;
+          document.querySelectorAll('.pharm-card').forEach((c) => c.classList.remove('is-selected'));
+          const card = document.getElementById(`pharm-card-${pid}`);
+          if (card) card.classList.add('is-selected');
+        }
+        break;
+      }
       case 'use-gps': requestUserGps(); break;
       case 'edit-facility': openFacilityEditor(el.dataset.fid); break;
       case 'close-vmodal': closeFacilityEditor(); break;
@@ -2379,7 +2889,11 @@
       }
       case 'chat-pick-service': {
         const sid = el.dataset.sid;
-        if (sid) {
+        if (sid === 'pharmacies') {
+          go('#/pharmacies');
+          chatState.minimized = true;
+          renderChat();
+        } else if (sid) {
           pickService(sid);
           chatState.minimized = true;
           renderChat();
@@ -3208,6 +3722,35 @@
       };
     }
 
+    // 9.5 Pharmacy & Jan Aushadhi Kendra Query Matching
+    const isPharmQuery = /(pharmacy|pharmacies|chemist|medical store|jan aushadhi|janaushadhi|medicine|medicines|tablet|tablets|syrup|paracetamol|insulin|generic|prescription refill|bandages|மருந்தகம்|மருந்து|മരുന്ന്|ഫാർമസി|ఫార్మసీ|మందులు|ಔಷಧಿ|ಮೆಡಿಕಲ್|दवा|दुकान)/i.test(lq);
+    if (isPharmQuery) {
+      const pharms = (window.CUREVIA_PHARMACIES || []).map(p => {
+        const d = haversineDistKm(loc.lat, loc.lon, p.lat, p.lon);
+        return { ...p, dist: d, drive: Math.max(2, Math.round(d / 22 * 60 + 2)) };
+      }).sort((a, b) => a.dist - b.dist);
+      const topP = pharms.slice(0, 3);
+      return {
+        id: 'msg_' + Date.now(),
+        sender: 'curevia',
+        time: timeStr,
+        text: `💊 **Nearby Pharmacies & Jan Aushadhi Kendras**:\n\n` +
+          `We have mapped **560+ verified medical stores** across India with 24/7 emergency counters and **50% - 90% government subsidized generic medicines**.\n\n` +
+          `Closest verified options near **${loc.name}**:\n` +
+          topP.map(p => `• **${p.name}** (${p.dist} km) - ${p.is24x7 ? '🟢 24/7 Open' : '🕒 ' + p.hours} · *${p.discount || p.area}*`).join('\n') +
+          `\n\nTap below to explore all pharmacies and navigate directly on the interactive map:`,
+        serviceAction: {
+          sid: 'pharmacies',
+          label: `🗺️ Explore Nearby Pharmacies on Map (${pharms.length} places) →`
+        },
+        chips: [
+          '🟢 Find 24/7 pharmacies open now',
+          '🏷️ Jan Aushadhi generic medicines (90% off)',
+          '🛵 Home delivery pharmacies near me'
+        ]
+      };
+    }
+
     // 10. Symptom / Clinical Specialty Matching (30+ Conditions)
     const serviceMatchMap = [
       { sid: 'gp', words: ['fever', 'cold', 'cough', 'headache', 'vomit', 'stomach', 'belly', 'general doctor', 'physician', 'flu', 'viral', 'sick', 'weakness', 'body pain', 'diarrhea', 'malaria', 'typhoid', 'dengue', 'fatigue'] },
@@ -3572,4 +4115,15 @@
   render();
   renderTest();
   renderChat();
+
+  // Live Pharmacy Search Input Handler
+  document.addEventListener('input', (e) => {
+    if (e.target && e.target.id === 'pharm-search-input') {
+      pharmState.query = e.target.value;
+      clearTimeout(window._pharmSearchTimer);
+      window._pharmSearchTimer = setTimeout(() => {
+        updatePharmacyListAndMap();
+      }, 150);
+    }
+  });
 })();
