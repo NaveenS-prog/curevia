@@ -307,7 +307,13 @@ MORE_FLAGSHIPS = [
 ]
 
 def run():
-    p_path = "pharmacies.json"
+    root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    proc_dir = os.path.join(root_dir, "data", "processed")
+    src_data_dir = os.path.join(root_dir, "src", "data")
+
+    p_path = os.path.join(proc_dir, "pharmacies.json")
+    if not os.path.exists(p_path):
+        p_path = "pharmacies.json"
     with open(p_path, "r", encoding="utf-8") as f:
         existing = json.load(f)
         
@@ -338,10 +344,12 @@ def run():
     print(f"Hospital total: {sum(1 for p in existing if p['type'] == 'hospital')}")
     print(f"Independent total: {sum(1 for p in existing if p['type'] == 'independent')}")
     
-    with open("pharmacies.json", "w", encoding="utf-8") as f:
+    json_out = os.path.join(proc_dir, "pharmacies.json")
+    with open(json_out, "w", encoding="utf-8") as f:
         json.dump(existing, f, indent=2, ensure_ascii=False)
         
-    with open("pharmacies.js", "w", encoding="utf-8") as f:
+    js_out = os.path.join(src_data_dir, "pharmacies.js")
+    with open(js_out, "w", encoding="utf-8") as f:
         f.write("/*\n")
         f.write(" * CUREVIA PHARMACY DATASET (INDIA)\n")
         f.write(" * Sourced from OpenStreetMap & Verified Indian Healthcare Directories\n")

@@ -747,7 +747,14 @@ def find_closest_bangalore_location(lat, lon):
     return best_loc
 
 def run():
-    csv_file = 'hospital_data_bangalore.csv'
+    root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    raw_dir = os.path.join(root_dir, 'data', 'raw')
+    proc_dir = os.path.join(root_dir, 'data', 'processed')
+    src_data_dir = os.path.join(root_dir, 'src', 'data')
+
+    csv_file = os.path.join(raw_dir, 'hospital_data_bangalore.csv')
+    if not os.path.exists(csv_file):
+        csv_file = 'hospital_data_bangalore.csv'
     if not os.path.exists(csv_file):
         print(f"Error: {csv_file} not found!")
         return
@@ -922,7 +929,9 @@ def run():
     print(f"[OK] Structured {len(facilities)} primary facilities.")
 
     # Process Secondary Dataset: hospitals_india_anonymized.csv
-    anon_file = 'hospitals_india_anonymized.csv'
+    anon_file = os.path.join(raw_dir, 'hospitals_india_anonymized.csv')
+    if not os.path.exists(anon_file):
+        anon_file = 'hospitals_india_anonymized.csv'
     if os.path.exists(anon_file):
         print(f"\n[*] Processing secondary dataset: {anon_file}...")
         with open(anon_file, 'r', encoding='utf-8', errors='replace') as f:
@@ -1070,17 +1079,20 @@ def run():
         print(f"\n[TOTAL UNIFIED DATASET] {len(facilities)} real healthcare facilities across India!")
 
     # Save structured json
-    with open('structured_facilities.json', 'w', encoding='utf-8') as f:
+    json_out = os.path.join(proc_dir, 'structured_facilities.json')
+    with open(json_out, 'w', encoding='utf-8') as f:
         json.dump(facilities, f, indent=2)
+    print(f"[*] Saved structured JSON to: {json_out}")
 
     # Backup data.js
-    if os.path.exists('data.js'):
-        shutil.copy('data.js', 'data.js.backup.js')
-        print("    (Backup created: data.js.backup.js)")
+    js_out = os.path.join(src_data_dir, 'data.js')
+    if os.path.exists(js_out):
+        shutil.copy(js_out, js_out + '.backup.js')
+        print(f"    (Backup created: {js_out}.backup.js)")
 
     # Build data.js
-    write_data_js(facilities, 'data.js')
-    print(f"\n[SUCCESS] Successfully compiled data.js with {len(facilities)} REAL facilities!")
+    write_data_js(facilities, js_out)
+    print(f"\n[SUCCESS] Successfully compiled {js_out} with {len(facilities)} REAL facilities!")
 
 def write_data_js(facilities, target_file):
     template = """/*

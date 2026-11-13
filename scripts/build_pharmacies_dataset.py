@@ -602,14 +602,20 @@ def main():
     print(f"24/7 Pharmacies: {num_247}")
     print(f"Home Delivery Pharmacies: {num_delivery}")
     
-    # Save JSON
-    json_path = os.path.join(os.path.dirname(__file__), "pharmacies.json")
+    # Save JSON & JS in organized directories
+    root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    proc_dir = os.path.join(root_dir, "data", "processed")
+    src_data_dir = os.path.join(root_dir, "src", "data")
+    os.makedirs(proc_dir, exist_ok=True)
+    os.makedirs(src_data_dir, exist_ok=True)
+
+    json_path = os.path.join(proc_dir, "pharmacies.json")
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(all_pharmacies, f, indent=2, ensure_ascii=False)
     print(f"[+] Saved JSON to {json_path}")
     
     # Save standalone JavaScript file for direct inclusion in index.html
-    js_path = os.path.join(os.path.dirname(__file__), "pharmacies.js")
+    js_path = os.path.join(src_data_dir, "pharmacies.js")
     with open(js_path, "w", encoding="utf-8") as f:
         f.write("/*\n")
         f.write(" * CUREVIA PHARMACY DATASET (INDIA)\n")

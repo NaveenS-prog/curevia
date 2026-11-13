@@ -1,0 +1,30 @@
+{
+  "name": "curevia",
+  "version": "4.4.0",
+  "description": "Nearby Healthcare Service Finder — Transparency-focused healthcare prototype featuring real Bangalore/Indian medical facilities, cost comparison, live waiting times, and OSM mapping.",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "dev": "python3 -m http.server 8080",
+    "serve": "npx --yes serve . -p 8080",
+    "data:build": "python3 scripts/build_bangalore_dataset.py",
+    "data:pharmacies": "python3 scripts/build_pharmacies_dataset.py && python3 scripts/enrich_pharmacies.py",
+    "data:osm": "python3 scripts/ingest_osm.py",
+    "data:process": "python3 scripts/process_facilities.py && python3 scripts/generate_full_data_js.py"
+  },
+  "keywords": [
+    "healthcare",
+    "design-thinking",
+    "bangalore",
+    "openstreetmap",
+    "leaflet",
+    "medical-services",
+    "cost-transparency"
+  ],
+  "author": "Naveen S",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NaveenS-prog/curevia.git"
+  }
+}

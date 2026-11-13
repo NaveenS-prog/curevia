@@ -1,6 +1,12 @@
+import os
 import json
 
-with open('structured_facilities.json', 'r', encoding='utf-8') as f:
+root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+input_path = os.path.join(root_dir, 'data', 'processed', 'structured_facilities.json')
+if not os.path.exists(input_path):
+    input_path = 'structured_facilities.json'
+
+with open(input_path, 'r', encoding='utf-8') as f:
     facilities = json.load(f)
 
 # Refine names and ensure nice IDs
@@ -147,7 +153,8 @@ js_code = """/*
 })();
 """
 
-with open('data.js', 'w', encoding='utf-8') as out:
+out_path = os.path.join(root_dir, 'src', 'data', 'data.js')
+with open(out_path, 'w', encoding='utf-8') as out:
     out.write(js_code)
 
-print("Successfully written data.js with real OSM healthcare facilities!")
+print(f"Successfully written {out_path} with real OSM healthcare facilities!")

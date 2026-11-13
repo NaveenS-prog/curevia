@@ -1,7 +1,13 @@
+import os
 import json
 import re
 
-with open('raw_osm_facilities.json', 'r', encoding='utf-8') as f:
+root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+raw_path = os.path.join(root_dir, 'data', 'raw', 'raw_osm_facilities.json')
+if not os.path.exists(raw_path):
+    raw_path = 'raw_osm_facilities.json'
+
+with open(raw_path, 'r', encoding='utf-8') as f:
     raw = json.load(f)
 
 print(f"Total raw records: {len(raw)}")
@@ -241,5 +247,7 @@ for i, r in enumerate(cleaned):
     facilities.append(fac)
 
 print(f"Generated {len(facilities)} structured real facility records.")
-with open('structured_facilities.json', 'w', encoding='utf-8') as f:
+out_path = os.path.join(root_dir, 'data', 'processed', 'structured_facilities.json')
+with open(out_path, 'w', encoding='utf-8') as f:
     json.dump(facilities, f, indent=2)
+print(f"[*] Saved to {out_path}")

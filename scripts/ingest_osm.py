@@ -454,9 +454,21 @@ def run_ingestion(queries, output_file="data.js", cache_json=True):
 
     print(f"[*] Successfully sanitized {len(facilities)} real healthcare facilities.")
 
+    # Resolve organized output paths
+    root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    proc_dir = os.path.join(root_dir, 'data', 'processed')
+    src_data_dir = os.path.join(root_dir, 'src', 'data')
+    os.makedirs(proc_dir, exist_ok=True)
+    os.makedirs(src_data_dir, exist_ok=True)
+
+    if output_file == "data.js":
+        output_file = os.path.join(src_data_dir, "data.js")
+
     # Save structured json cache
-    with open('structured_facilities.json', 'w', encoding='utf-8') as f:
+    cache_path = os.path.join(proc_dir, 'structured_facilities.json')
+    with open(cache_path, 'w', encoding='utf-8') as f:
         json.dump(facilities, f, indent=2)
+    print(f"[*] Saved cache to: {cache_path}")
 
     # Backup existing data.js if exists
     if os.path.exists(output_file):
